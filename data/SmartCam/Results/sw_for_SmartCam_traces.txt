@@ -1,0 +1,465 @@
+Alignment of
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', '#GAP#', 'camera1.camera3.start_search']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search']
+
+	Score: 22.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+and
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+and
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+and
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', '#GAP#', '#GAP#', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+
+	Score: 20.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', '#GAP#', 'camera1.camera3.start_search']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+and
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', '#GAP#', 'camera2.object.sees_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', '#GAP#', 'camera2.object.sees_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', '#GAP#', 'camera1.camera2.start_search']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', '#GAP#', 'camera1.camera3.start_search']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+and
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+and
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+and
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+and
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+and
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+and
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']:
+
+
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+	['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']:
+
+
+	['camera2.object.sees_obj']
+	['camera2.object.sees_obj']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']:
+
+
+	['camera4.object.sees_obj']
+	['camera4.object.sees_obj']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']:
+
+
+	['camera4.object.sees_obj']
+	['camera4.object.sees_obj']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']:
+
+
+	['camera2.object.sees_obj']
+	['camera2.object.sees_obj']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']:
+
+
+	['camera2.object.sees_obj']
+	['camera2.object.sees_obj']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']:
+
+
+	['camera2.object.sees_obj']
+	['camera2.object.sees_obj']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']:
+
+
+	[]
+	[]
+
+	Score: 0.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']:
+
+
+	[]
+	[]
+
+	Score: 0.0

@@ -1,0 +1,126 @@
+Process:
+	ArchitectureModel
+States:
+	84
+Transitions:
+	ArchitectureModel = Q0,
+	Q0	= (engineOn -> Q1),
+	Q1	= (clearSpeed -> Q2
+		  |speed -> Q82),
+	Q2	= (on -> Q3
+		  |engineOff -> Q77),
+	Q3	= (recordSpeed -> Q4),
+	Q4	= (enableControl -> Q5
+		  |speed -> Q44),
+	Q5	= (off -> Q6
+		  |{accelerator, brake} -> Q32
+		  |speed -> Q42),
+	Q6	= (disableControl -> Q7
+		  |speed -> Q29),
+	Q7	= (speed -> Q8
+		  |engineOff -> Q15),
+	Q8	= (engineOff -> Q9),
+	Q9	= (engineOn -> Q10),
+	Q10	= (clearSpeed -> Q11),
+	Q11	= (on -> Q12
+		  |speed -> Q14),
+	Q12	= (speed -> Q13),
+	Q13	= STOP,
+	Q14	= (on -> Q13),
+	Q15	= (engineOn -> Q16),
+	Q16	= (speed -> Q10
+		  |clearSpeed -> Q17),
+	Q17	= (on -> Q18),
+	Q18	= (recordSpeed -> Q19),
+	Q19	= (enableControl -> Q20
+		  |speed -> Q24),
+	Q20	= (on -> Q21
+		  |speed -> Q23),
+	Q21	= (speed -> Q22),
+	Q22	= (setThrottle -> Q13),
+	Q23	= (setThrottle -> Q14
+		  |on -> Q22),
+	Q24	= (enableControl -> Q25),
+	Q25	= (on -> Q26
+		  |speed -> Q28),
+	Q26	= (speed -> Q27),
+	Q27	= (setThrottle -> Q21),
+	Q28	= (setThrottle -> Q20
+		  |on -> Q27),
+	Q29	= (setThrottle -> Q30),
+	Q30	= (disableControl -> Q31),
+	Q31	= (speed -> Q13
+		  |engineOff -> Q15),
+	Q32	= (disableControl -> Q33
+		  |speed -> Q39),
+	Q33	= (engineOff -> Q0
+		  |speed -> Q34),
+	Q34	= (engineOff -> Q35),
+	Q35	= (engineOn -> Q36),
+	Q36	= (clearSpeed -> Q37),
+	Q37	= (engineOff -> Q0
+		  |on -> Q12
+		  |speed -> Q38),
+	Q38	= (on -> Q13
+		  |engineOff -> Q35),
+	Q39	= (setThrottle -> Q40),
+	Q40	= (disableControl -> Q41),
+	Q41	= (engineOff -> Q0
+		  |speed -> Q13),
+	Q42	= (off -> Q29
+		  |{accelerator, brake} -> Q39
+		  |setThrottle -> Q43),
+	Q43	= (off -> Q30
+		  |{accelerator, brake} -> Q40),
+	Q44	= (enableControl -> Q45),
+	Q45	= (off -> Q46
+		  |{accelerator, brake} -> Q64
+		  |speed -> Q78),
+	Q46	= (speed -> Q47),
+	Q47	= (setThrottle -> Q48),
+	Q48	= (speed -> Q49),
+	Q49	= (setThrottle -> Q50),
+	Q50	= (disableControl -> Q51),
+	Q51	= (engineOff -> Q52),
+	Q52	= (engineOn -> Q53),
+	Q53	= (speed -> Q54),
+	Q54	= (clearSpeed -> Q55),
+	Q55	= (on -> Q56),
+	Q56	= (recordSpeed -> Q57),
+	Q57	= (enableControl -> Q58),
+	Q58	= (on -> Q59),
+	Q59	= (recordSpeed -> Q60),
+	Q60	= (enableControl -> Q61),
+	Q61	= (off -> Q62),
+	Q62	= (disableControl -> Q63),
+	Q63	= (engineOff -> Q0),
+	Q64	= (speed -> Q65),
+	Q65	= (setThrottle -> Q66),
+	Q66	= (speed -> Q67),
+	Q67	= (setThrottle -> Q68),
+	Q68	= (disableControl -> Q69),
+	Q69	= (engineOff -> Q70),
+	Q70	= (engineOn -> Q71),
+	Q71	= (speed -> Q72),
+	Q72	= (clearSpeed -> Q73),
+	Q73	= (on -> Q74
+		  |engineOff -> Q77),
+	Q74	= (recordSpeed -> Q75),
+	Q75	= (enableControl -> Q76),
+	Q76	= ({accelerator, brake, off} -> Q13),
+	Q77	= (engineOn -> Q13),
+	Q78	= (off -> Q47
+		  |{accelerator, brake} -> Q65
+		  |setThrottle -> Q79),
+	Q79	= (off -> Q48
+		  |{accelerator, brake} -> Q66
+		  |speed -> Q80),
+	Q80	= (off -> Q49
+		  |{accelerator, brake} -> Q67
+		  |setThrottle -> Q81),
+	Q81	= (off -> Q50
+		  |{accelerator, brake} -> Q68),
+	Q82	= (clearSpeed -> Q83),
+	Q83	= (engineOff -> Q0
+		  |on -> Q12
+		  |speed -> Q14).

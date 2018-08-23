@@ -1,0 +1,11 @@
+Common Behaviors for SmartCam_traces:
+
+  0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+  1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+  2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+  3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+  4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+  5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+  6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']
+  7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+  8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']

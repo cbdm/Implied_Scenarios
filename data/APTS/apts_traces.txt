@@ -1,0 +1,11 @@
+ID: [ordered messages]
+
+0: [passenger2.terminal2.buyTicket, passenger1.terminal1.buyTicket]
+1: [passenger1.terminal1.buyTicket, passenger2.terminal2.buyTicket]
+2: [passenger2.terminal2.buyTicket, terminal2.passenger2.displayGate, terminal2.vehicle.setDestination]
+3: [passenger2.terminal2.buyTicket, terminal2.passenger2.displayGate, passenger1.terminal1.buyTicket]
+4: [passenger1.terminal1.buyTicket, terminal1.controlcentre.requestVehicle, passenger2.terminal2.buyTicket]
+5: [passenger2.terminal2.buyTicket, terminal2.passenger2.displayGate, passenger2.vehicle.enter, passenger1.terminal1.buyTicket]
+6: [passenger2.terminal2.buyTicket, terminal2.passenger2.displayGate, passenger2.vehicle.enter, terminal2.vehicle.setDestination, passenger1.terminal1.buyTicket]
+7: [passenger2.terminal2.buyTicket, terminal2.passenger2.displayGate, passenger2.vehicle.enter, terminal2.vehicle.setDestination, vehicle.terminal2.departReq, passenger1.terminal1.buyTicket]
+8: [passenger2.terminal2.buyTicket, terminal2.passenger2.displayGate, passenger2.vehicle.enter, terminal2.vehicle.setDestination, vehicle.terminal2.departReq, terminal2.vehicle.departAck, passenger1.terminal1.buyTicket]

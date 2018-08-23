@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification>
+  <hmsc>
+    <bmsc name="init" x="50" y="30" />
+    <bmsc name="Login" x="50" y="130" />
+    <bmsc name="FailedLogin" x="170" y="130" />
+    <transition>
+      <from>FailedLogin</from>
+      <to>Login</to>
+    </transition>
+    <transition>
+      <from>FailedLogin</from>
+      <to>FailedLogin</to>
+    </transition>
+    <bmsc name="Criteria" x="50" y="230" />
+    <bmsc name="HeaderView" x="170" y="330" />
+    <bmsc name="DetailsView" x="170" y="430" />
+    <bmsc name="ItemDetails" x="410" y="530" />
+    <transition>
+      <from>Login</from>
+      <to>Criteria</to>
+    </transition>
+    <transition>
+      <from>Criteria</from>
+      <to>HeaderView</to>
+    </transition>
+    <transition>
+      <from>HeaderView</from>
+      <to>DetailsView</to>
+    </transition>
+    <transition>
+      <from>DetailsView</from>
+      <to>ItemDetails</to>
+    </transition>
+    <transition>
+      <from>HeaderView</from>
+      <to>HeaderView</to>
+    </transition>
+    <bmsc name="Back" x="290" y="530" />
+    <transition>
+      <from>ItemDetails</from>
+      <to>Back</to>
+    </transition>
+    <transition>
+      <from>Back</from>
+      <to>ItemDetails</to>
+    </transition>
+    <transition>
+      <from>Back2</from>
+      <to>DetailsView</to>
+    </transition>
+    <bmsc name="Back2" x="290" y="430" />
+    <bmsc name="Back3" x="50" y="330" />
+    <transition>
+      <from>Back</from>
+      <to>Back2</to>
+    </transition>
+    <transition>
+      <from>Back2</from>
+      <to>HeaderView</to>
+    </transition>
+    <transition>
+      <from>DetailsView</from>
+      <to>Back2</to>
+    </transition>
+    <transition>
+      <from>HeaderView</from>
+      <to>Back3</to>
+    </transition>
+    <transition>
+      <from>Back3</from>
+      <to>HeaderView</to>
+    </transition>
+    <bmsc name="StartUp" x="170" y="30" />
+    <transition>
+      <from>StartUp</from>
+      <to>Login</to>
+    </transition>
+    <transition>
+      <from>StartUp</from>
+      <to>FailedLogin</to>
+    </transition>
+    <transition>
+      <from>init</from>
+      <to>StartUp</to>
+    </transition>
+    <bmsc name="Logout" x="290" y="230" />
+    <bmsc name="ShutDown" x="410" y="330" />
+    <transition>
+      <from>Logout</from>
+      <to>ShutDown</to>
+    </transition>
+    <transition>
+      <from>Login</from>
+      <to>Logout</to>
+    </transition>
+  </hmsc>
+  <bmsc name="init" />
+  <bmsc name="Login">
+    <instance name="User">
+      <output timeindex="1">
+        <to>Servlet</to>
+        <name>enterPwd</name>
+      </output>
+      <input timeindex="6">
+        <name>html</name>
+        <from>Servlet</from>
+      </input>
+    </instance>
+    <instance name="Servlet">
+      <input timeindex="1">
+        <from>User</from>
+        <name>enterPwd</name>
+      </input>
+      <output timeindex="2">
+        <to>BizLogic</to>
+        <name>authenticate</name>
+      </output>
+      <output timeindex="6">
+        <name>html</name>
+        <to>User</to>
+      </output>
+      <input timeindex="5">
+        <from>BizLogic</from>
+        <name>verified</name>
+      </input>
+    </instance>
+    <instance name="BizLogic">
+      <input timeindex="2">
+        <from>Servlet</from>
+        <name>authenticate</name>
+      </input>
+      <output timeindex="5">
+        <to>Servlet</to>
+        <name>verified</name>
+      </output>
+      <output timeindex="3">
+        <name>query</name>
+        <to>ERP</to>
+      </output>
+      <input timeindex="4">
+        <from>ERP</from>
+        <name>data</name>
+      </input>
+    </instance>
+    <instance name="ERP">
+      <input timeindex="3">
+        <name>query</name>
+        <from>BizLogic</from>
+      </input>
+      <output timeindex="4">
+        <to>BizLogic</to>
+        <name>data</name>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="FailedLogin">
+    <instance name="User">
+      <output timeindex="1">
+        <to>Servlet</to>
+        <name>enterPwd</name>
+      </output>
+      <input timeindex="6">
+        <name>html</name>
+        <from>Servlet</from>
+      </input>
+    </instance>
+    <instance name="Servlet">
+      <input timeindex="1">
+        <from>User</from>
+        <name>enterPwd</name>
+      </input>
+      <output timeindex="2">
+        <to>BizLogic</to>
+        <name>authenticate</name>
+      </output>
+      <output timeindex="6">
+        <name>html</name>
+        <to>User</to>
+      </output>
+      <input timeindex="5">
+        <from>BizLogic</from>
+        <name>failed</name>
+      </input>
+    </instance>
+    <instance name="BizLogic">
+      <input timeindex="2">
+        <from>Servlet</from>
+        <name>authenticate</name>
+      </input>
+      <output timeindex="5">
+        <to>Servlet</to>
+        <name>failed</name>
+      </output>
+      <output timeindex="3">
+        <name>query</name>
+        <to>ERP</to>
+      </output>
+      <input timeindex="4">
+        <from>ERP</from>
+        <name>data</name>
+      </input>
+    </instance>
+    <instance name="ERP">
+      <input timeindex="3">
+        <name>query</name>
+        <from>BizLogic</from>
+      </input>
+      <output timeindex="4">
+        <to>BizLogic</to>
+        <name>data</name>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="Criteria">
+    <instance name="User">
+      <output timeindex="1">
+        <to>Servlet</to>
+        <name>search</name>
+      </output>
+      <input timeindex="6">
+        <name>html</name>
+        <from>Servlet</from>
+      </input>
+    </instance>
+    <instance name="Servlet">
+      <input timeindex="1">
+        <from>User</from>
+        <name>search</name>
+      </input>
+      <output timeindex="2">
+        <name>action</name>
+        <to>BizLogic</to>
+      </output>
+      <output timeindex="6">
+        <name>html</name>
+        <to>User</to>
+      </output>
+      <input timeindex="5">
+        <name>xml</name>
+        <from>BizLogic</from>
+      </input>
+    </instance>
+    <instance name="BizLogic">
+      <input timeindex="2">
+        <name>action</name>
+        <from>Servlet</from>
+      </input>
+      <output timeindex="5">
+        <name>xml</name>
+        <to>Servlet</to>
+      </output>
+      <output timeindex="3">
+        <name>query</name>
+        <to>ERP</to>
+      </output>
+      <input timeindex="4">
+        <from>ERP</from>
+        <name>data</name>
+      </input>
+    </instance>
+    <instance name="ERP">
+      <input timeindex="3">
+        <name>query</name>
+        <from>BizLogic</from>
+      </input>
+      <output timeindex="4">
+        <to>BizLogic</to>
+        <name>data</name>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="HeaderView">
+    <instance name="User">
+      <output timeindex="1">
+        <to>Servlet</to>
+        <name>orderHeader</name>
+      </output>
+      <input timeindex="6">
+        <name>html</name>
+        <from>Servlet</from>
+      </input>
+    </instance>
+    <instance name="Servlet">
+      <input timeindex="1">
+        <from>User</from>
+        <name>orderHeader</name>
+      </input>
+      <output timeindex="2">
+        <name>action</name>
+        <to>BizLogic</to>
+      </output>
+      <output timeindex="6">
+        <name>html</name>
+        <to>User</to>
+      </output>
+      <input timeindex="5">
+        <name>xml</name>
+        <from>BizLogic</from>
+      </input>
+    </instance>
+    <instance name="BizLogic">
+      <input timeindex="2">
+        <name>action</name>
+        <from>Servlet</from>
+      </input>
+      <output timeindex="5">
+        <name>xml</name>
+        <to>Servlet</to>
+      </output>
+      <output timeindex="3">
+        <name>query</name>
+        <to>ERP</to>
+      </output>
+      <input timeindex="4">
+        <from>ERP</from>
+        <name>data</name>
+      </input>
+    </instance>
+    <instance name="ERP">
+      <input timeindex="3">
+        <name>query</name>
+        <from>BizLogic</from>
+      </input>
+      <output timeindex="4">
+        <to>BizLogic</to>
+        <name>data</name>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="DetailsView">
+    <instance name="User">
+      <output timeindex="1">
+        <to>Servlet</to>
+        <name>orderDetails</name>
+      </output>
+      <input timeindex="6">
+        <name>html</name>
+        <from>Servlet</from>
+      </input>
+    </instance>
+    <instance name="Servlet">
+      <input timeindex="1">
+        <from>User</from>
+        <name>orderDetails</name>
+      </input>
+      <output timeindex="2">
+        <name>action</name>
+        <to>BizLogic</to>
+      </output>
+      <output timeindex="6">
+        <name>html</name>
+        <to>User</to>
+      </output>
+      <input timeindex="5">
+        <name>xml</name>
+        <from>BizLogic</from>
+      </input>
+    </instance>
+    <instance name="BizLogic">
+      <input timeindex="2">
+        <name>action</name>
+        <from>Servlet</from>
+      </input>
+      <output timeindex="5">
+        <name>xml</name>
+        <to>Servlet</to>
+      </output>
+      <output timeindex="3">
+        <name>query</name>
+        <to>ERP</to>
+      </output>
+      <input timeindex="4">
+        <from>ERP</from>
+        <name>data</name>
+      </input>
+    </instance>
+    <instance name="ERP">
+      <input timeindex="3">
+        <name>query</name>
+        <from>BizLogic</from>
+      </input>
+      <output timeindex="4">
+        <to>BizLogic</to>
+        <name>data</name>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="ItemDetails">
+    <instance name="User">
+      <output timeindex="1">
+        <to>Servlet</to>
+        <name>itemDetails</name>
+      </output>
+      <input timeindex="6">
+        <name>html</name>
+        <from>Servlet</from>
+      </input>
+    </instance>
+    <instance name="Servlet">
+      <input timeindex="1">
+        <from>User</from>
+        <name>itemDetails</name>
+      </input>
+      <output timeindex="2">
+        <name>action</name>
+        <to>BizLogic</to>
+      </output>
+      <output timeindex="6">
+        <name>html</name>
+        <to>User</to>
+      </output>
+      <input timeindex="5">
+        <name>xml</name>
+        <from>BizLogic</from>
+      </input>
+    </instance>
+    <instance name="BizLogic">
+      <input timeindex="2">
+        <name>action</name>
+        <from>Servlet</from>
+      </input>
+      <output timeindex="5">
+        <name>xml</name>
+        <to>Servlet</to>
+      </output>
+      <output timeindex="3">
+        <name>query</name>
+        <to>ERP</to>
+      </output>
+      <input timeindex="4">
+        <from>ERP</from>
+        <name>data</name>
+      </input>
+    </instance>
+    <instance name="ERP">
+      <input timeindex="3">
+        <name>query</name>
+        <from>BizLogic</from>
+      </input>
+      <output timeindex="4">
+        <to>BizLogic</to>
+        <name>data</name>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="Back">
+    <instance name="User">
+      <output timeindex="1">
+        <name>back</name>
+        <to>Servlet</to>
+      </output>
+      <input timeindex="6">
+        <name>html</name>
+        <from>Servlet</from>
+      </input>
+    </instance>
+    <instance name="Servlet">
+      <input timeindex="1">
+        <name>back</name>
+        <from>User</from>
+      </input>
+      <output timeindex="2">
+        <name>action</name>
+        <to>BizLogic</to>
+      </output>
+      <input timeindex="5">
+        <name>xml</name>
+        <from>BizLogic</from>
+      </input>
+      <output timeindex="6">
+        <name>html</name>
+        <to>User</to>
+      </output>
+    </instance>
+    <instance name="BizLogic">
+      <input timeindex="2">
+        <name>action</name>
+        <from>Servlet</from>
+      </input>
+      <output timeindex="3">
+        <name>query</name>
+        <to>ERP</to>
+      </output>
+      <input timeindex="4">
+        <name>data</name>
+        <from>ERP</from>
+      </input>
+      <output timeindex="5">
+        <name>xml</name>
+        <to>Servlet</to>
+      </output>
+    </instance>
+    <instance name="ERP">
+      <input timeindex="3">
+        <name>query</name>
+        <from>BizLogic</from>
+      </input>
+      <output timeindex="4">
+        <name>data</name>
+        <to>BizLogic</to>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="Back2">
+    <instance name="User">
+      <output timeindex="1">
+        <name>back</name>
+        <to>Servlet</to>
+      </output>
+      <input timeindex="6">
+        <name>html</name>
+        <from>Servlet</from>
+      </input>
+    </instance>
+    <instance name="Servlet">
+      <input timeindex="1">
+        <name>back</name>
+        <from>User</from>
+      </input>
+      <output timeindex="2">
+        <name>action</name>
+        <to>BizLogic</to>
+      </output>
+      <input timeindex="5">
+        <name>xml</name>
+        <from>BizLogic</from>
+      </input>
+      <output timeindex="6">
+        <name>html</name>
+        <to>User</to>
+      </output>
+    </instance>
+    <instance name="BizLogic">
+      <input timeindex="2">
+        <name>action</name>
+        <from>Servlet</from>
+      </input>
+      <output timeindex="3">
+        <name>query</name>
+        <to>ERP</to>
+      </output>
+      <input timeindex="4">
+        <name>data</name>
+        <from>ERP</from>
+      </input>
+      <output timeindex="5">
+        <name>xml</name>
+        <to>Servlet</to>
+      </output>
+    </instance>
+    <instance name="ERP">
+      <input timeindex="3">
+        <name>query</name>
+        <from>BizLogic</from>
+      </input>
+      <output timeindex="4">
+        <name>data</name>
+        <to>BizLogic</to>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="Back3">
+    <instance name="User">
+      <output timeindex="1">
+        <to>Servlet</to>
+        <name>back</name>
+      </output>
+      <input timeindex="6">
+        <name>html</name>
+        <from>Servlet</from>
+      </input>
+    </instance>
+    <instance name="Servlet">
+      <input timeindex="1">
+        <from>User</from>
+        <name>back</name>
+      </input>
+      <output timeindex="2">
+        <name>action</name>
+        <to>BizLogic</to>
+      </output>
+      <input timeindex="5">
+        <name>xml</name>
+        <from>BizLogic</from>
+      </input>
+      <output timeindex="6">
+        <name>html</name>
+        <to>User</to>
+      </output>
+    </instance>
+    <instance name="BizLogic">
+      <input timeindex="2">
+        <name>action</name>
+        <from>Servlet</from>
+      </input>
+      <output timeindex="3">
+        <name>query</name>
+        <to>ERP</to>
+      </output>
+      <input timeindex="4">
+        <name>data</name>
+        <from>ERP</from>
+      </input>
+      <output timeindex="5">
+        <name>xml</name>
+        <to>Servlet</to>
+      </output>
+    </instance>
+    <instance name="ERP">
+      <input timeindex="3">
+        <name>query</name>
+        <from>BizLogic</from>
+      </input>
+      <output timeindex="4">
+        <name>data</name>
+        <to>BizLogic</to>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="StartUp">
+    <instance name="User" />
+    <instance name="Servlet" />
+    <instance name="BizLogic" />
+    <instance name="ERP">
+      <input timeindex="2">
+        <name>run</name>
+        <from>Admin</from>
+      </input>
+    </instance>
+    <instance name="Admin">
+      <output timeindex="2">
+        <name>run</name>
+        <to>ERP</to>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="Logout">
+    <instance name="User">
+      <output timeindex="2">
+        <name>logout</name>
+        <to>Servlet</to>
+      </output>
+      <input timeindex="7">
+        <name>html</name>
+        <from>Servlet</from>
+      </input>
+    </instance>
+    <instance name="Servlet">
+      <input timeindex="2">
+        <name>logout</name>
+        <from>User</from>
+      </input>
+      <output timeindex="3">
+        <name>action</name>
+        <to>BizLogic</to>
+      </output>
+      <output timeindex="7">
+        <name>html</name>
+        <to>User</to>
+      </output>
+      <input timeindex="6">
+        <name>xml</name>
+        <from>BizLogic</from>
+      </input>
+    </instance>
+    <instance name="BizLogic">
+      <input timeindex="3">
+        <name>action</name>
+        <from>Servlet</from>
+      </input>
+      <output timeindex="4">
+        <name>query</name>
+        <to>ERP</to>
+      </output>
+      <output timeindex="6">
+        <name>xml</name>
+        <to>Servlet</to>
+      </output>
+      <input timeindex="5">
+        <name>data</name>
+        <from>ERP</from>
+      </input>
+    </instance>
+    <instance name="ERP">
+      <input timeindex="4">
+        <name>query</name>
+        <from>BizLogic</from>
+      </input>
+      <output timeindex="5">
+        <name>data</name>
+        <to>BizLogic</to>
+      </output>
+    </instance>
+    <instance name="Admin" />
+  </bmsc>
+  <bmsc name="ShutDown">
+    <instance name="User" />
+    <instance name="Servlet" />
+    <instance name="BizLogic" />
+    <instance name="ERP">
+      <input timeindex="2">
+        <name>shutdown</name>
+        <from>Admin</from>
+      </input>
+    </instance>
+    <instance name="Admin">
+      <output timeindex="2">
+        <name>shutdown</name>
+        <to>ERP</to>
+      </output>
+    </instance>
+  </bmsc>
+</specification>
+

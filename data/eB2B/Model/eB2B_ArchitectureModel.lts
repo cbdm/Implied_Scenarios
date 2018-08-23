@@ -1,0 +1,142 @@
+Process:
+	ArchitectureModel
+States:
+	89
+Transitions:
+	ArchitectureModel = Q0,
+	Q0	= (run -> Q1
+		  |enterPwd -> Q87),
+	Q1	= (enterPwd -> Q2),
+	Q2	= (authenticate -> Q3),
+	Q3	= (query -> Q4),
+	Q4	= (data -> Q5),
+	Q5	= (verified -> Q6
+		  |failed -> Q67),
+	Q6	= (html -> Q7),
+	Q7	= (logout -> Q8
+		  |search -> Q18),
+	Q8	= (action -> Q9),
+	Q9	= (query -> Q10),
+	Q10	= (data -> Q11),
+	Q11	= (shutdown -> Q12
+		  |xml -> Q16),
+	Q12	= (xml -> Q13),
+	Q13	= (html -> Q14),
+	Q14	= (endAction -> Q15),
+	Q15	= END,
+	Q16	= (shutdown -> Q13
+		  |html -> Q17),
+	Q17	= (shutdown -> Q14),
+	Q18	= (action -> Q19),
+	Q19	= (query -> Q20),
+	Q20	= (data -> Q21),
+	Q21	= (shutdown -> Q22
+		  |xml -> Q27),
+	Q22	= (xml -> Q23),
+	Q23	= (html -> Q24),
+	Q24	= (orderHeader -> Q25),
+	Q25	= (action -> Q26),
+	Q26	= STOP,
+	Q27	= (shutdown -> Q23
+		  |html -> Q28),
+	Q28	= (shutdown -> Q24
+		  |orderHeader -> Q29),
+	Q29	= (shutdown -> Q25
+		  |action -> Q30),
+	Q30	= (shutdown -> Q26
+		  |query -> Q31),
+	Q31	= (data -> Q32),
+	Q32	= (shutdown -> Q33
+		  |xml -> Q36),
+	Q33	= (xml -> Q34),
+	Q34	= (html -> Q35),
+	Q35	= ({back, orderDetails, orderHeader} -> Q25),
+	Q36	= (shutdown -> Q34
+		  |html -> Q37),
+	Q37	= (orderHeader -> Q29
+		  |shutdown -> Q35
+		  |orderDetails -> Q38
+		  |back -> Q65),
+	Q38	= (shutdown -> Q25
+		  |action -> Q39),
+	Q39	= (shutdown -> Q26
+		  |query -> Q40),
+	Q40	= (data -> Q41),
+	Q41	= (shutdown -> Q42
+		  |xml -> Q45),
+	Q42	= (xml -> Q43),
+	Q43	= (html -> Q44),
+	Q44	= ({back, itemDetails} -> Q25),
+	Q45	= (shutdown -> Q43
+		  |html -> Q46),
+	Q46	= (shutdown -> Q44
+		  |itemDetails -> Q47
+		  |back -> Q56),
+	Q47	= (shutdown -> Q25
+		  |action -> Q48),
+	Q48	= (shutdown -> Q26
+		  |query -> Q49),
+	Q49	= (data -> Q50),
+	Q50	= (shutdown -> Q51
+		  |xml -> Q54),
+	Q51	= (xml -> Q52),
+	Q52	= (html -> Q53),
+	Q53	= (back -> Q25),
+	Q54	= (shutdown -> Q52
+		  |html -> Q55),
+	Q55	= (back -> Q38
+		  |shutdown -> Q53),
+	Q56	= (shutdown -> Q25
+		  |action -> Q57),
+	Q57	= (shutdown -> Q26
+		  |query -> Q58),
+	Q58	= (data -> Q59),
+	Q59	= (shutdown -> Q60
+		  |xml -> Q63),
+	Q60	= (xml -> Q61),
+	Q61	= (html -> Q62),
+	Q62	= ({orderDetails, orderHeader} -> Q25),
+	Q63	= (shutdown -> Q61
+		  |html -> Q64),
+	Q64	= (orderHeader -> Q29
+		  |orderDetails -> Q38
+		  |shutdown -> Q62),
+	Q65	= (shutdown -> Q25
+		  |action -> Q66),
+	Q66	= (query -> Q20
+		  |shutdown -> Q26),
+	Q67	= (html -> Q68),
+	Q68	= (enterPwd -> Q69),
+	Q69	= (authenticate -> Q70),
+	Q70	= (query -> Q71),
+	Q71	= (data -> Q72),
+	Q72	= (shutdown -> Q73
+		  |verified -> Q79
+		  |failed -> Q83),
+	Q73	= (verified -> Q74
+		  |failed -> Q76),
+	Q74	= (html -> Q75),
+	Q75	= ({logout, search} -> Q25),
+	Q76	= (html -> Q77),
+	Q77	= (enterPwd -> Q78),
+	Q78	= (authenticate -> Q26),
+	Q79	= (shutdown -> Q74
+		  |html -> Q80),
+	Q80	= (search -> Q65
+		  |shutdown -> Q75
+		  |logout -> Q81),
+	Q81	= (shutdown -> Q25
+		  |action -> Q82),
+	Q82	= (query -> Q10
+		  |shutdown -> Q26),
+	Q83	= (shutdown -> Q76
+		  |html -> Q84),
+	Q84	= (shutdown -> Q77
+		  |enterPwd -> Q85),
+	Q85	= (shutdown -> Q78
+		  |authenticate -> Q86),
+	Q86	= (shutdown -> Q26
+		  |query -> Q71),
+	Q87	= (run -> Q2
+		  |authenticate -> Q88),
+	Q88	= (run -> Q3).

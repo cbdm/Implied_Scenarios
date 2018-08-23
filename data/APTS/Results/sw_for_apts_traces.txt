@@ -1,0 +1,465 @@
+Alignment of
+	7: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'passenger1.terminal1.buyTicket']
+and
+	8: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'terminal2.vehicle.departAck', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', '#GAP#', 'passenger1.terminal1.buyTicket']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'terminal2.vehicle.departAck', 'passenger1.terminal1.buyTicket']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'passenger1.terminal1.buyTicket']
+and
+	7: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', '#GAP#', 'passenger1.terminal1.buyTicket']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'passenger1.terminal1.buyTicket']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'passenger1.terminal1.buyTicket']
+and
+	8: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'terminal2.vehicle.departAck', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'passenger1.terminal1.buyTicket']
+and
+	6: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', '#GAP#', 'passenger1.terminal1.buyTicket']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'passenger1.terminal1.buyTicket']
+
+	Score: 10.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'passenger1.terminal1.buyTicket']
+and
+	7: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'passenger1.terminal1.buyTicket']
+and
+	8: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'terminal2.vehicle.departAck', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'terminal2.vehicle.setDestination']
+and
+	6: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', '#GAP#', 'terminal2.vehicle.setDestination']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'terminal2.vehicle.setDestination']
+and
+	7: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', '#GAP#', 'terminal2.vehicle.setDestination']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'terminal2.vehicle.setDestination']
+and
+	8: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'terminal2.vehicle.departAck', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', '#GAP#', 'terminal2.vehicle.setDestination']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger1.terminal1.buyTicket']
+and
+	5: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', '#GAP#', 'passenger1.terminal1.buyTicket']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'passenger1.terminal1.buyTicket']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'terminal2.vehicle.setDestination']
+and
+	3: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'terminal2.vehicle.setDestination']
+and
+	5: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger1.terminal1.buyTicket']
+and
+	6: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger1.terminal1.buyTicket']
+and
+	7: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger1.terminal1.buyTicket']
+and
+	8: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'terminal2.vehicle.departAck', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['passenger2.terminal2.buyTicket', 'passenger1.terminal1.buyTicket']
+and
+	3: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket', '#GAP#', 'passenger1.terminal1.buyTicket']
+	['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger1.terminal1.buyTicket']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['passenger1.terminal1.buyTicket', 'passenger2.terminal2.buyTicket']
+and
+	4: ['passenger1.terminal1.buyTicket', 'terminal1.controlcentre.requestVehicle', 'passenger2.terminal2.buyTicket']:
+
+
+	['passenger1.terminal1.buyTicket', '#GAP#', 'passenger2.terminal2.buyTicket']
+	['passenger1.terminal1.buyTicket', 'terminal1.controlcentre.requestVehicle', 'passenger2.terminal2.buyTicket']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['passenger2.terminal2.buyTicket', 'passenger1.terminal1.buyTicket']
+and
+	1: ['passenger1.terminal1.buyTicket', 'passenger2.terminal2.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket']
+	['passenger2.terminal2.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['passenger2.terminal2.buyTicket', 'passenger1.terminal1.buyTicket']
+and
+	2: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'terminal2.vehicle.setDestination']:
+
+
+	['passenger2.terminal2.buyTicket']
+	['passenger2.terminal2.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['passenger2.terminal2.buyTicket', 'passenger1.terminal1.buyTicket']
+and
+	4: ['passenger1.terminal1.buyTicket', 'terminal1.controlcentre.requestVehicle', 'passenger2.terminal2.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket']
+	['passenger2.terminal2.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['passenger2.terminal2.buyTicket', 'passenger1.terminal1.buyTicket']
+and
+	5: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket']
+	['passenger2.terminal2.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['passenger2.terminal2.buyTicket', 'passenger1.terminal1.buyTicket']
+and
+	6: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket']
+	['passenger2.terminal2.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['passenger2.terminal2.buyTicket', 'passenger1.terminal1.buyTicket']
+and
+	7: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket']
+	['passenger2.terminal2.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['passenger2.terminal2.buyTicket', 'passenger1.terminal1.buyTicket']
+and
+	8: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'terminal2.vehicle.departAck', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket']
+	['passenger2.terminal2.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['passenger1.terminal1.buyTicket', 'passenger2.terminal2.buyTicket']
+and
+	2: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'terminal2.vehicle.setDestination']:
+
+
+	['passenger2.terminal2.buyTicket']
+	['passenger2.terminal2.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['passenger1.terminal1.buyTicket', 'passenger2.terminal2.buyTicket']
+and
+	3: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger1.terminal1.buyTicket']
+	['passenger1.terminal1.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['passenger1.terminal1.buyTicket', 'passenger2.terminal2.buyTicket']
+and
+	5: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger1.terminal1.buyTicket']
+	['passenger1.terminal1.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['passenger1.terminal1.buyTicket', 'passenger2.terminal2.buyTicket']
+and
+	6: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger1.terminal1.buyTicket']
+	['passenger1.terminal1.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['passenger1.terminal1.buyTicket', 'passenger2.terminal2.buyTicket']
+and
+	7: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger1.terminal1.buyTicket']
+	['passenger1.terminal1.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['passenger1.terminal1.buyTicket', 'passenger2.terminal2.buyTicket']
+and
+	8: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'terminal2.vehicle.departAck', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger1.terminal1.buyTicket']
+	['passenger1.terminal1.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'terminal2.vehicle.setDestination']
+and
+	4: ['passenger1.terminal1.buyTicket', 'terminal1.controlcentre.requestVehicle', 'passenger2.terminal2.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket']
+	['passenger2.terminal2.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger1.terminal1.buyTicket']
+and
+	4: ['passenger1.terminal1.buyTicket', 'terminal1.controlcentre.requestVehicle', 'passenger2.terminal2.buyTicket']:
+
+
+	['passenger2.terminal2.buyTicket']
+	['passenger2.terminal2.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['passenger1.terminal1.buyTicket', 'terminal1.controlcentre.requestVehicle', 'passenger2.terminal2.buyTicket']
+and
+	5: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger1.terminal1.buyTicket']
+	['passenger1.terminal1.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['passenger1.terminal1.buyTicket', 'terminal1.controlcentre.requestVehicle', 'passenger2.terminal2.buyTicket']
+and
+	6: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger1.terminal1.buyTicket']
+	['passenger1.terminal1.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['passenger1.terminal1.buyTicket', 'terminal1.controlcentre.requestVehicle', 'passenger2.terminal2.buyTicket']
+and
+	7: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger1.terminal1.buyTicket']
+	['passenger1.terminal1.buyTicket']
+
+	Score: 3.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['passenger1.terminal1.buyTicket', 'terminal1.controlcentre.requestVehicle', 'passenger2.terminal2.buyTicket']
+and
+	8: ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'terminal2.vehicle.departAck', 'passenger1.terminal1.buyTicket']:
+
+
+	['passenger1.terminal1.buyTicket']
+	['passenger1.terminal1.buyTicket']
+
+	Score: 3.0

@@ -1,0 +1,665 @@
+! Test file for cruiser_traces
+
+### Expected Behaviors
+
+! init, Scen1, init, Scen2
+0: engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, off, speed, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on, recordSpeed, enableControl, on, recordSpeed, enableControl, off, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff
+
+! init, Scen1, init, Scen3
+1: engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, off, speed, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on, recordSpeed, enableControl, on, recordSpeed, enableControl, off, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff
+
+! init, Scen1, init, Scen4
+2: engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, off, speed, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on, recordSpeed, enableControl, on, recordSpeed, enableControl, off, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, accelerator, disableControl, engineOff
+
+! init, Scen2, init, Scen1
+3: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, off, speed, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on, recordSpeed, enableControl, on, recordSpeed, enableControl, off, disableControl, engineOff
+
+! init, Scen2, init, Scen3
+4: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff
+
+! init, Scen2, init, Scen4
+5: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, accelerator, disableControl, engineOff
+
+! init, Scen3, init, Scen1
+6: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, off, speed, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on, recordSpeed, enableControl, on, recordSpeed, enableControl, off, disableControl, engineOff
+
+! init, Scen3, init, Scen2
+7: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff
+
+! init, Scen3, init, Scen4
+8: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, accelerator, disableControl, engineOff
+
+! init, Scen4, init, Scen1
+9: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, accelerator, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, off, speed, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on, recordSpeed, enableControl, on, recordSpeed, enableControl, off, disableControl, engineOff
+
+! init, Scen4, init, Scen2
+10: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, accelerator, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff
+
+! init, Scen4, init, Scen3
+11: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, accelerator, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff
+
+### Common Behavior 0
+
+!
+! ['engineOn', 'clearSpeed', 'engineOff']
+!
+
+0: engineOn, clearSpeed, engineOff
+4: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+24: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+33: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, engineOff
+45: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, engineOff
+53: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+62: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, engineOff
+63: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+89: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, engineOff
+90: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+117: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+126: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, engineOff
+127: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+136: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+145: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, engineOff
+178: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, engineOff
+179: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+188: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+197: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, engineOff
+200: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, engineOff
+235: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+244: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, engineOff
+245: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+254: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+263: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, engineOff
+266: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, engineOff
+267: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+276: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, engineOff
+277: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+340: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, engineOff
+341: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+350: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+359: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, engineOff
+362: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, engineOff
+363: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+372: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, engineOff
+373: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+382: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, engineOff
+383: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+461: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+470: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, engineOff
+471: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+480: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+489: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, engineOff
+492: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, engineOff
+493: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, engineOff
+
+### Common Behavior 1
+
+!
+! ['engineOn', 'speed', 'clearSpeed', 'speed']
+!
+
+1: engineOn, speed, clearSpeed, speed
+11: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+34: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+41: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+50: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+70: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+77: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+80: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+103: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+106: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+146: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+153: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+156: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+167: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+174: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+205: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+208: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+219: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+226: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+232: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+284: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+291: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+294: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+305: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+312: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+318: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+321: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+328: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+331: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+396: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+399: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+410: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+417: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+423: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+426: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+433: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+436: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+447: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, speed
+450: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, speed
+
+### Common Behavior 2
+
+!
+! ['engineOn', 'speed', 'clearSpeed', 'on']
+!
+
+2: engineOn, speed, clearSpeed, on
+12: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+35: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+42: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, on
+51: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on
+71: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+78: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, on
+81: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+104: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on
+107: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+147: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+154: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, on
+157: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+168: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+175: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, on
+206: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on
+209: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+220: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+227: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, on
+233: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on
+285: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+292: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, on
+295: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+306: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+313: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, on
+319: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on
+322: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+329: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, on
+332: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+397: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on
+400: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+411: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+418: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, on
+424: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on
+427: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+434: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, on
+437: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+448: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, on
+451: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, on
+
+### Common Behavior 3
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+!
+
+3: engineOn, clearSpeed, on, recordSpeed, enableControl, off
+20: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+46: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+52: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+79: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+99: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+105: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+113: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+155: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+163: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+201: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+207: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+215: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+228: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+234: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+293: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+301: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+314: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+320: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+330: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+392: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+398: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+406: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+419: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+425: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+435: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+443: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+449: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+457: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, off
+
+### Common Behavior 4
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+!
+
+5: engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+25: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+54: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+64: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+92: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+119: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+128: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+138: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+180: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+190: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+236: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+246: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+255: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+269: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+279: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+342: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+352: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+364: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+375: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+384: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+462: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+473: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+481: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+495: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, brake
+
+### Common Behavior 5
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+!
+
+6: engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+26: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+55: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+65: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+91: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+118: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+129: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+137: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+181: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+189: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+237: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+247: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+256: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+268: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+278: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+343: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+351: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+365: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+374: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+385: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+463: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+472: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+482: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+494: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, accelerator
+
+### Common Behavior 6
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+!
+
+7: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+27: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+57: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+67: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+93: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+120: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+130: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+140: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+182: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+192: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+239: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+248: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+258: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+271: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+281: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+345: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+354: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+366: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+377: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+387: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+464: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+474: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+484: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+496: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, off
+
+### Common Behavior 7
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+!
+
+8: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+28: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+56: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+66: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+94: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+121: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+131: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+139: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+183: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+191: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+238: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+249: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+257: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+270: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+280: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+344: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+353: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+367: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+376: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+386: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+465: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+475: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+483: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+497: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, brake
+
+### Common Behavior 8
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+!
+
+9: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+29: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+59: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+68: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+96: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+122: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+133: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+142: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+184: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+193: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+241: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+250: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+260: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+273: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+283: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+346: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+355: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+368: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+379: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+388: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+466: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+477: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+485: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+499: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, speed
+
+### Common Behavior 9
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+!
+
+10: engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+30: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+58: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+69: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+95: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+123: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+132: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+141: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+185: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+194: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+240: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+251: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+259: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+272: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+282: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+347: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+356: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+369: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+378: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+389: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+467: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+476: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+486: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+498: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, accelerator, disableControl
+
+### Common Behavior 10
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+!
+
+13: engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+21: engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+37: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+48: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+73: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+82: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+101: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+108: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+115: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+148: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+158: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+165: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+169: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+202: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+211: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+217: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+222: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+230: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+286: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+297: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+303: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+308: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+316: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+324: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+333: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+394: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+402: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+407: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+413: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+420: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+429: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+438: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+445: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+452: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, accelerator
+459: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, accelerator
+
+### Common Behavior 11
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+!
+
+14: engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+22: engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+36: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+47: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+72: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+83: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+100: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+109: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+114: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+149: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+159: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+164: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+170: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+203: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+210: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+216: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+221: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+229: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+287: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+296: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+302: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+307: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+315: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+323: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+334: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+393: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+401: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+408: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+412: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+421: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+428: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+439: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+444: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+453: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, brake
+458: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, brake
+
+### Common Behavior 12
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+!
+
+15: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+38: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+75: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+85: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+111: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+150: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+161: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+172: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+212: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+223: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+289: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+298: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+310: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+325: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+335: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+404: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+414: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+431: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+440: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+455: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, brake
+
+### Common Behavior 13
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+!
+
+16: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+39: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+74: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+84: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+110: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+151: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+160: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+171: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+213: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+224: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+288: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+299: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+309: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+326: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+336: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+403: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+415: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+430: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+441: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+454: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, setThrottle, off
+
+### Common Behavior 14
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+!
+
+17: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+40: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+76: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+86: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+112: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+152: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+162: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+173: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+214: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+225: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+290: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+300: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+311: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+327: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+337: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+405: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+416: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+432: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+442: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+456: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, speed
+
+### Common Behavior 15
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+!
+
+18: engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+32: engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, accelerator
+43: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+60: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, accelerator
+87: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+97: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+125: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, accelerator
+134: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+143: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, accelerator
+177: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+186: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+195: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, accelerator
+199: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+242: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, accelerator
+252: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+261: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, accelerator
+265: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+274: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, accelerator
+338: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+349: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+357: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, accelerator
+361: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+370: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, accelerator
+381: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+390: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+469: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, accelerator
+478: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+488: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, accelerator
+490: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, accelerator
+
+### Common Behavior 16
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+!
+
+19: engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+31: engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, brake
+44: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+61: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, brake
+88: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+98: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+124: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, brake
+135: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+144: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, brake
+176: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+187: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+196: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, brake
+198: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+243: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, brake
+253: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+262: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, brake
+264: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+275: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, brake
+339: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+348: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+358: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, brake
+360: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+371: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, brake
+380: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+391: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+468: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, brake
+479: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+487: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, speed, setThrottle, brake
+491: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, speed, enableControl, speed, setThrottle, brake
+
+### Common Behavior 17
+
+!
+! ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+!
+
+23: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+49: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+102: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+116: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+166: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+204: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+218: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+231: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+304: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+317: engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+395: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+409: engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+422: engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+446: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, speed, clearSpeed, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed
+460: engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, brake, disableControl, engineOff, engineOn, clearSpeed, on, recordSpeed, enableControl, speed, accelerator, setThrottle, disableControl, speed

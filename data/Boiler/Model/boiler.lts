@@ -1,0 +1,51 @@
+//------------------------- Boiler System --------------------------
+
+
+//------------------------------------------------------------------
+//----------------------- Components' States -----------------------
+//------------------------------------------------------------------
+
+Control = Q0,
+	Q0	= (on -> Q1),
+	Q1	= (off -> Q0
+		  |query -> Q2),
+	Q2	= (data -> Q3),
+	Q3	= (command -> Q1).
+
+Database = Q0,
+	Q0	= (pressure -> Q1),
+	Q1	= (pressure -> Q1
+		  |query -> Q2),
+	Q2	= (data -> Q0).
+
+Sensor = Q0,
+	Q0	= (on -> Q1),
+	Q1	= (pressure -> Q2),
+	Q2	= (off -> Q0
+		  |pressure -> Q2).
+
+Actuator = Q0,
+	Q0	= (command -> Q0).
+
+//------------------------------------------------------------------
+//----------------------------- Constraints ------------------------
+//------------------------------------------------------------------
+
+NegScen1 = (on -> AuxON | {off, pressure, query, data, command} -> NegScen1),
+AuxON = ({pressure, off} -> NegScen1).
+
+NegScen2 = ({on, off, pressure} -> NegScen2 | query -> Aux1),
+Aux1 = (data -> Aux2),
+Aux2 = (command -> Aux3),
+Aux3 = (pressure -> NegScen2).
+
+//------------------------------------------------------------------
+//----------------------------- Compositions -----------------------
+//------------------------------------------------------------------
+
+ ||ArchitectureModel = (Control || Database || Sensor || Actuator).
+ 
+ ||ConstrainedModel_1 = (ArchitectureModel || NegScen1).
+ ||ConstrainedModel_2 = (ArchitectureModel || NegScen2).
+
+ ||ConstrainedModel = (ArchitectureModel || NegScen1 || NegScen2).

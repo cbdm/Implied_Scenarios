@@ -1,0 +1,106 @@
+// example_model.txt
+// Author: Caio Batista
+// Description: This file explains how to format the input file for the Model Parser script to generate a LTSA-MSC's xml.
+// It specifies the Nuclear Power Plant by Alur et al., 2003.
+
+
+// All lines with '//' are comments and will be ignored
+// Blank lines, spaces, and tabs will also be removed
+
+
+
+// The title should be the first thing on your file (the output file will be
+// 'title.xml'), and should have a '!' preceding it, just like below:
+
+
+
+! Nuclear Power Plant
+
+
+
+// The second thing to add are transitions between scenarios.
+//
+// hMSCs' transitions between bMSCs are noted with '@'
+//
+// Note that 'init' is the starting point for LTSA-MSC and you should add
+// a transition from it to your own start scenario, if it's NOT EMPTY
+//
+// Because of that you can't use 'init' for your own scenario, it should be renamed
+//
+// If your 'init' scenario is empty, however, you can use LTSA's init.
+
+
+// Remember to add a transition going out from init, as LTSA will start at that state.
+@ init -> Scen 1
+@ init -> Scen 2
+
+// You could also have a transition to itself.
+@ init -> init
+
+
+
+// Next, all components should be listed before the scenarios
+// one per line, and with a '#' preceding them
+
+
+
+# P1
+# UR
+# NA
+# P2
+
+
+
+// Now the scenarios that have messages will be created
+// 
+// Each scenario's name should be preceded by a '$', and its messages
+// will follow before the next scenario or the end of the file
+//
+// Scenarios which are empty shouldn't be listed (like 'init'),
+// they'll be added automatically from the hMSCs' transitions.
+//
+
+
+// Each message follows the format:
+//
+// % from -> to : message [&]
+//
+// The optional '&' indicates that the next message
+// happens at the same time as this one.
+//
+// Messages can have letters, numbers, and underscores.
+// They can't start with numbers however.
+
+$ Scen 1
+
+% P1 -> UR : inc
+% P1 -> NA : inc
+% P2 -> UR : double
+% P2 -> NA : double
+
+
+// End of 'Scen 1' because 'Scen 2' starts.
+$ Scen 2
+
+% P2 -> UR : double
+% P2 -> NA : double
+% P1 -> UR : inc
+% P1 -> NA : inc
+
+
+// End of 'Scen 2' because all lines left are blank/comments.
+
+
+
+
+
+// Also keep in mind a component can't send and receive the same message because LTSA-MSC
+// doesn't allow it. Hence, the xml wouldn't compile if we had the message below:
+// % Component 2 -> Component 2 : ERROR
+
+
+//
+// Finally, this explanation file WORKS as an example :)
+// Just use it as the input to the script and open the XML in LTSA-MSC (it has 2 ISs).
+//
+// Hope you find this useful!

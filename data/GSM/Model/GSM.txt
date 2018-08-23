@@ -1,0 +1,217 @@
+! GSM
+
+//
+// Transitions
+//
+
+@ init -> ConnReq
+
+@ ConnReq -> CallSetupReq
+@ ConnReq -> PagingResp
+@ ConnReq -> LocUpdReq
+
+@ CallSetupReq -> Authenticate1
+@ CallSetupReq -> Identify1
+
+@ PagingResp -> Authenticate2
+@ PagingResp -> Identify2
+
+@ LocUpdReq -> Authenticate3
+@ LocUpdReq -> Identify3
+
+@ Identify1 -> Authenticate1
+@ Identify2 -> Authenticate2
+@ Identify3 -> Authenticate3
+
+@ Authenticate1 -> Accept1
+@ Authenticate1 -> Reject1
+
+@ Authenticate2 -> Accept2
+@ Authenticate2 -> Reject2
+
+@ Authenticate3 -> Accept3
+@ Authenticate3 -> Reject3
+
+@ Reject1 -> ConnReq
+@ Reject2 -> ConnReq
+@ Reject3 -> ConnReq
+
+@ Accept1 -> Encrypt1
+@ Accept1 -> MobileOrCS
+
+@ Accept2 -> Encrypt2
+@ Accept2 -> MobileTrCS
+
+@ Accept3 -> Encrypt3
+@ Accept3 -> LocationUpd
+
+@ Encrypt1 -> MobileOrCS
+@ Encrypt2 -> MobileTrCS
+@ Encrypt3 -> LocationUpd
+
+@ LocationUpd -> ConnReq
+
+@ MobileOrCS -> MobileOrCR
+@ MobileOrCS -> MobileTrCR
+
+@ MobileTrCS -> MobileOrCR
+@ MobileTrCS -> MobileTrCR
+
+@ MobileOrCR -> ConnReq
+
+@ MobileTrCR -> ConnReq
+
+//
+// Components
+//
+
+# MS
+# BSS
+# MSC
+# Network
+
+//
+// Scenarios
+//
+
+$ ConnReq
+% MS -> BSS : channelReq
+% BSS -> MS : immAssign
+
+$ CallSetupReq
+% MS -> BSS : callSetup
+% BSS -> MSC : callSetupReq
+% MSC -> Network : callSetUp
+
+$ PagingResp
+% MS -> BSS : pageResp
+% BSS -> MS : pageRspAck
+% BSS -> MSC : pageRspReq
+% MSC -> Network : procAccessReq
+
+$ LocUpdReq
+% MS -> BSS : locationUpdate
+% BSS -> MSC : locUpReq
+% MSC -> Network : locUpdArea
+
+$ Authenticate1
+% Network -> MSC : authenticate
+% MSC -> MS : authenReq
+% MS -> MSC : authenResp
+% MSC -> Network : authenComplt
+
+$ Authenticate2
+% Network -> MSC : authenticate
+% MSC -> MS : authenReq
+% MS -> MSC : authenResp
+% MSC -> Network : authenComplt
+
+$ Authenticate3
+% Network -> MSC : authenticate
+% MSC -> MS : authenReq
+% MS -> MSC : authenResp
+% MSC -> Network : authenComplt
+
+$ Identify1
+% Network -> MSC : provideImsi
+% MSC -> MS : identityReq
+% MS -> MSC : identityResp
+% MSC -> Network : imsiAck
+
+$ Identify2
+% Network -> MSC : provideImsi
+% MSC -> MS : identityReq
+% MS -> MSC : identityResp
+% MSC -> Network : imsiAck
+
+$ Identify3
+% Network -> MSC : provideImsi
+% MSC -> MS : identityReq
+% MS -> MSC : identityResp
+% MSC -> Network : imsiAck
+
+$ Accept1
+% MSC -> MS : serviceAccept
+
+$ Accept2
+% MSC -> MS : serviceAccept
+
+$ Accept3
+% MSC -> MS : serviceAccept
+
+$ Reject1
+% MSC -> MS : serviceReject
+
+$ Reject2
+% MSC -> MS : serviceReject
+
+$ Reject3
+% MSC -> MS : serviceReject
+
+$ Encrypt1
+% Network -> MSC : setCipherMode
+% MSC -> BSS : cipherModeCmnd
+% BSS -> MS : cipherMode
+% MS -> BSS : ciphModeCmplt
+% BSS -> MSC : ciphCmplt
+
+$ Encrypt2
+% Network -> MSC : setCipherMode
+% MSC -> BSS : cipherModeCmnd
+% BSS -> MS : cipherMode
+% MS -> BSS : ciphModeCmplt
+% BSS -> MSC : ciphCmplt
+
+$ Encrypt3
+% Network -> MSC : setCipherMode
+% MSC -> BSS : cipherModeCmnd
+% BSS -> MS : cipherMode
+% MS -> BSS : ciphModeCmplt
+% BSS -> MSC : ciphCmplt
+
+$ MobileOrCS
+% MSC -> BSS : assignComnd
+% BSS -> MS : assigned
+% BSS -> MS : assignCmplt
+% BSS -> MSC : assignCmpt
+% MSC -> Network : initialMsg
+% Network -> MSC : addCmpltMsg
+% MSC -> MS : alerting
+% Network -> MSC : answerMsg
+% MSC -> MS : connect
+% MS -> MSC : connectAck
+
+$ MobileTrCS
+% MSC -> BSS : callSetup
+% BSS -> MS : callSUp
+% MS -> BSS : confirm
+% BSS -> MSC : conf
+% MSC -> Network : addCmplt
+% MSC -> MS : alerting
+% MS -> BSS : alert
+% BSS -> MSC : alrt
+% MS -> MSC : conct
+% MSC -> Network : answer
+
+$ LocationUpd
+% Network -> MSC : locUpAck
+% MSC -> BSS : locUpAccepted
+% BSS -> MS : locUpAcc
+
+$ MobileOrCR
+% MS -> BSS : discon
+% BSS -> MSC : disc
+% MSC -> Network : rel
+% Network -> MSC : relCnfm
+% MSC -> MS : relse
+% MS -> BSS : rlCmplt
+% BSS -> MSC : relComplt
+
+$ MobileTrCR
+% Network -> MSC : release
+% MSC -> BSS : discMsg
+% BSS -> MS : disconnect
+% MS -> MSC : released
+% MSC -> Network : relConf
+% MSC -> BSS : relCmplt
+% BSS -> MS : releaseCmplt

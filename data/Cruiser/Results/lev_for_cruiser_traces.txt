@@ -1,0 +1,1221 @@
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 8.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']
+is 8.0

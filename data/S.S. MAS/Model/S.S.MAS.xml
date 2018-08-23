@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification>
+  <hmsc>
+
+    <bmsc name="init" x="50" y="30"/>
+    <bmsc name="MSC1" x="170" y="30"/>
+    <bmsc name="MSC2" x="50" y="130"/>
+
+    <transition>
+      <from>init</from>
+      <to>MSC1</to>
+    </transition>
+
+    <transition>
+      <from>init</from>
+      <to>MSC2</to>
+    </transition>
+
+  </hmsc>
+
+  <bmsc name="init" />
+
+  <bmsc name="MSC1">
+    <instance name="User">
+      <output timeindex="1">
+        <name>user,qh,enterQuery</name>
+        <to>QH</to>
+      </output>
+    </instance>
+    <instance name="QH">
+      <output timeindex="2">
+        <name>qh,qhaux,extractConcepts</name>
+        <to>QHaux</to>
+      </output>
+      <output timeindex="4">
+        <name>qh,cl,sendConcept</name>
+        <to>CL</to>
+      </output>
+      <output timeindex="5">
+        <name>qh,rep,sendConcept</name>
+        <to>Rep</to>
+      </output>
+      <input timeindex="1">
+        <name>user,qh,enterQuery</name>
+        <from>User</from>
+      </input>
+      <input timeindex="3">
+        <name>qhaux,qh,_extractConcepts</name>
+        <from>QHaux</from>
+      </input>
+      <input timeindex="8">
+        <name>rep,qh,returnResults</name>
+        <from>Rep</from>
+      </input>
+    </instance>
+    <instance name="QHaux">
+      <output timeindex="3">
+        <name>qhaux,qh,_extractConcepts</name>
+        <to>QH</to>
+      </output>
+      <input timeindex="2">
+        <name>qh,qhaux,extractConcepts</name>
+        <from>QH</from>
+      </input>
+    </instance>
+    <instance name="CL">
+      <output timeindex="6">
+        <name>cl,claux,noNewConcepts</name>
+        <to>CLaux</to>
+      </output>
+      <input timeindex="4">
+        <name>qh,cl,sendConcept</name>
+        <from>QH</from>
+      </input>
+      <input timeindex="7">
+        <name>claux,cl,_noNewConcepts</name>
+        <from>CLaux</from>
+      </input>
+    </instance>
+    <instance name="CLaux">
+      <output timeindex="7">
+        <name>claux,cl,_noNewConcepts</name>
+        <to>CL</to>
+      </output>
+      <input timeindex="6">
+        <name>cl,claux,noNewConcepts</name>
+        <from>CL</from>
+      </input>
+    </instance>
+    <instance name="Rep">
+      <output timeindex="8">
+        <name>rep,qh,returnResults</name>
+        <to>QH</to>
+      </output>
+      <input timeindex="5">
+        <name>qh,rep,sendConcept</name>
+        <from>QH</from>
+      </input>
+    </instance>
+    <instance name="Peer" />
+  </bmsc>
+
+  <bmsc name="MSC2">
+    <instance name="User">
+      <output timeindex="1">
+        <name>user,qh,enterQuery</name>
+        <to>QH</to>
+      </output>
+    </instance>
+    <instance name="QH">
+      <output timeindex="2">
+        <name>qh,qhaux,extractConcepts</name>
+        <to>QHaux</to>
+      </output>
+      <output timeindex="4">
+        <name>qh,cl,sendConcept</name>
+        <to>CL</to>
+      </output>
+      <output timeindex="5">
+        <name>qh,rep,sendConcept</name>
+        <to>Rep</to>
+      </output>
+      <input timeindex="1">
+        <name>user,qh,enterQuery</name>
+        <from>User</from>
+      </input>
+      <input timeindex="3">
+        <name>qhaux,qh,_extractConcepts</name>
+        <from>QHaux</from>
+      </input>
+      <input timeindex="8">
+        <name>cl,qh,newConceptsDetected</name>
+        <from>CL</from>
+      </input>
+      <input timeindex="12">
+        <name>rep,qh,returnResults</name>
+        <from>Rep</from>
+      </input>
+    </instance>
+    <instance name="QHaux">
+      <output timeindex="3">
+        <name>qhaux,qh,_extractConcepts</name>
+        <to>QH</to>
+      </output>
+      <input timeindex="2">
+        <name>qh,qhaux,extractConcepts</name>
+        <from>QH</from>
+      </input>
+    </instance>
+    <instance name="CL">
+      <output timeindex="6">
+        <name>cl,claux,newConcepts</name>
+        <to>CLaux</to>
+      </output>
+      <output timeindex="8">
+        <name>cl,qh,newConceptsDetected</name>
+        <to>QH</to>
+      </output>
+      <output timeindex="9">
+        <name>cl,peer,startLearning</name>
+        <to>Peer</to>
+      </output>
+      <output timeindex="11">
+        <name>cl,rep,updateRep</name>
+        <to>Rep</to>
+      </output>
+      <input timeindex="4">
+        <name>qh,cl,sendConcept</name>
+        <from>QH</from>
+      </input>
+      <input timeindex="7">
+        <name>claux,cl,_newConcepts</name>
+        <from>CLaux</from>
+      </input>
+      <input timeindex="10">
+        <name>peer,cl,learnConcepts</name>
+        <from>Peer</from>
+      </input>
+    </instance>
+    <instance name="CLaux">
+      <output timeindex="7">
+        <name>claux,cl,_newConcepts</name>
+        <to>CL</to>
+      </output>
+      <input timeindex="6">
+        <name>cl,claux,newConcepts</name>
+        <from>CL</from>
+      </input>
+    </instance>
+    <instance name="Rep">
+      <output timeindex="12">
+        <name>rep,qh,returnResults</name>
+        <to>QH</to>
+      </output>
+      <input timeindex="5">
+        <name>qh,rep,sendConcept</name>
+        <from>QH</from>
+      </input>
+      <input timeindex="11">
+        <name>cl,rep,updateRep</name>
+        <from>CL</from>
+      </input>
+    </instance>
+    <instance name="Peer">
+      <output timeindex="10">
+        <name>peer,cl,learnConcepts</name>
+        <to>CL</to>
+      </output>
+      <input timeindex="9">
+        <name>cl,peer,startLearning</name>
+        <from>CL</from>
+      </input>
+    </instance>
+  </bmsc>
+
+</specification>

@@ -1,0 +1,44 @@
+Process:
+	ArchitectureModel
+States:
+	25
+Transitions:
+	ArchitectureModel = Q0,
+	Q0	= (user.qh.enterQuery -> Q1),
+	Q1	= (qh.qhaux.extractConcepts -> Q2),
+	Q2	= (qhaux.qh._extractConcepts -> Q3),
+	Q3	= (qh.cl.sendConcept -> Q4),
+	Q4	= (cl.claux.newConcepts -> Q5
+		  |cl.claux.noNewConcepts -> Q19
+		  |qh.rep.sendConcept -> Q23),
+	Q5	= (claux.cl._newConcepts -> Q6
+		  |qh.rep.sendConcept -> Q17),
+	Q6	= (qh.rep.sendConcept -> Q7),
+	Q7	= (cl.qh.newConceptsDetected -> Q8
+		  |rep.qh.returnResults -> Q14),
+	Q8	= (cl.peer.startLearning -> Q9
+		  |rep.qh.returnResults -> Q16),
+	Q9	= (peer.cl.learnConcepts -> Q10
+		  |rep.qh.returnResults -> Q15),
+	Q10	= (cl.rep.updateRep -> Q11
+		  |rep.qh.returnResults -> Q14),
+	Q11	= (rep.qh.returnResults -> Q12),
+	Q12	= (endAction -> Q13),
+	Q13	= END,
+	Q14	= STOP,
+	Q15	= (peer.cl.learnConcepts -> Q14),
+	Q16	= (cl.peer.startLearning -> Q15),
+	Q17	= (claux.cl._newConcepts -> Q7
+		  |rep.qh.returnResults -> Q18),
+	Q18	= (claux.cl._newConcepts -> Q14),
+	Q19	= (claux.cl._noNewConcepts -> Q20
+		  |qh.rep.sendConcept -> Q21),
+	Q20	= (qh.rep.sendConcept -> Q11),
+	Q21	= (claux.cl._noNewConcepts -> Q11
+		  |rep.qh.returnResults -> Q22),
+	Q22	= (claux.cl._noNewConcepts -> Q12),
+	Q23	= (cl.claux.newConcepts -> Q17
+		  |cl.claux.noNewConcepts -> Q21
+		  |rep.qh.returnResults -> Q24),
+	Q24	= (cl.claux.newConcepts -> Q18
+		  |cl.claux.noNewConcepts -> Q22).

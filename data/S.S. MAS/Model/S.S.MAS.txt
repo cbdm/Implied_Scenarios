@@ -1,0 +1,56 @@
+! S.S. MAS
+
+//
+// Transitions
+//
+
+@ init -> MSC1
+@ init -> MSC2
+
+
+//
+// Components
+//
+
+
+// aux components used because LTSA-MSC doesn't accept a message to itself
+//   e.g. CL->CL : newConcepts
+
+
+# User
+# QH
+# QH aux
+# CL
+# CL aux
+# Rep
+# Peer
+
+
+//
+// Scenarios
+//
+
+$ MSC1
+% User -> QH : enterQuery
+% QH -> QHaux : extractConcepts
+% QHaux -> QH : _extractConcepts
+% QH -> CL : sendConcept
+% QH -> Rep : sendConcept
+% CL -> CLaux : noNewConcepts
+% CLaux -> CL : _noNewConcepts
+% Rep -> QH : returnResults
+
+
+$ MSC2
+% User -> QH : enterQuery
+% QH -> QHaux : extractConcepts
+% QHaux -> QH : _extractConcepts
+% QH -> CL : sendConcept
+% QH -> Rep : sendConcept
+% CL -> CLaux : newConcepts
+% CLaux -> CL : _newConcepts
+% CL -> QH : newConceptsDetected
+% CL -> Peer : startLearning
+% Peer -> CL : learnConcepts
+% CL -> Rep : updateRep
+% Rep -> QH : returnResults

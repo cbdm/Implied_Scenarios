@@ -1,0 +1,117 @@
+Levenshtein distance between
+	1: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'rep.qh.returnResults']
+and
+	2: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'rep.qh.returnResults']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'rep.qh.returnResults']
+and
+	3: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'rep.qh.returnResults']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'rep.qh.returnResults']
+and
+	4: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'rep.qh.returnResults']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'rep.qh.returnResults']
+and
+	5: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'peer.cl.learnConcepts', 'rep.qh.returnResults']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+and
+	1: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'rep.qh.returnResults']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'rep.qh.returnResults']
+and
+	3: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'rep.qh.returnResults']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'rep.qh.returnResults']
+and
+	4: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'rep.qh.returnResults']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'rep.qh.returnResults']
+and
+	5: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'peer.cl.learnConcepts', 'rep.qh.returnResults']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+and
+	2: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'rep.qh.returnResults']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'rep.qh.returnResults']
+and
+	4: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'rep.qh.returnResults']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'rep.qh.returnResults']
+and
+	5: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'peer.cl.learnConcepts', 'rep.qh.returnResults']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+and
+	3: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'rep.qh.returnResults']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'rep.qh.returnResults']
+and
+	5: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'peer.cl.learnConcepts', 'rep.qh.returnResults']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+and
+	4: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'rep.qh.returnResults']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+and
+	5: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'peer.cl.learnConcepts', 'rep.qh.returnResults']
+is 6.0

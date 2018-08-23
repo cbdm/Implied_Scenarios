@@ -1,0 +1,127 @@
+//------------------------- eB2B System --------------------------
+
+
+//------------------------------------------------------------------
+//----------------------- Components' States -----------------------
+//------------------------------------------------------------------
+
+User = Q0,
+	Q0	= (enterPwd -> Q1),
+	Q1	= (html -> Q2),
+	Q2	= (enterPwd -> Q1
+		  |search -> Q3
+		  |logout -> Q4),
+	Q3	= (html -> Q5),
+	Q4	= (html -> Q6),
+	Q5	= (orderHeader -> Q7),
+	Q6	= (endAction -> Q8),
+	Q7	= (html -> Q9),
+	Q8	= END,
+	Q9	= (back -> Q3
+		  |orderHeader -> Q7
+		  |orderDetails -> Q10),
+	Q10	= (html -> Q11),
+	Q11	= (back -> Q12
+		  |itemDetails -> Q13),
+	Q12	= (html -> Q14),
+	Q13	= (html -> Q15),
+	Q14	= (orderHeader -> Q7
+		  |orderDetails -> Q10),
+	Q15	= (back -> Q10).
+
+Servlet = Q0,
+	Q0	= (enterPwd -> Q1),
+	Q1	= (authenticate -> Q2),
+	Q2	= (failed -> Q3
+		  |verified -> Q4),
+	Q3	= (html -> Q0),
+	Q4	= (html -> Q5),
+	Q5	= (logout -> Q6
+		  |search -> Q7),
+	Q6	= (action -> Q8),
+	Q7	= (action -> Q9),
+	Q8	= (xml -> Q10),
+	Q9	= (xml -> Q11),
+	Q10	= (html -> Q12),
+	Q11	= (html -> Q13),
+	Q12	= (endAction -> Q14),
+	Q13	= (orderHeader -> Q15),
+	Q14	= END,
+	Q15	= (action -> Q16),
+	Q16	= (xml -> Q17),
+	Q17	= (html -> Q18),
+	Q18	= (back -> Q7
+		  |orderHeader -> Q15
+		  |orderDetails -> Q19),
+	Q19	= (action -> Q20),
+	Q20	= (xml -> Q21),
+	Q21	= (html -> Q22),
+	Q22	= (back -> Q23
+		  |itemDetails -> Q24),
+	Q23	= (action -> Q25),
+	Q24	= (action -> Q26),
+	Q25	= (xml -> Q27),
+	Q26	= (xml -> Q28),
+	Q27	= (html -> Q29),
+	Q28	= (html -> Q30),
+	Q29	= (orderHeader -> Q15
+		  |orderDetails -> Q19),
+	Q30	= (back -> Q19).
+
+BizLogic = Q0,
+	Q0	= (authenticate -> Q1),
+	Q1	= (query -> Q2),
+	Q2	= (data -> Q3),
+	Q3	= (failed -> Q0
+		  |verified -> Q4),
+	Q4	= (action -> Q5),
+	Q5	= (query -> Q6),
+	Q6	= (data -> Q7),
+	Q7	= (xml -> Q8),
+	Q8	= (endAction -> Q9
+		  |action -> Q10),
+	Q9	= END,
+	Q10	= (query -> Q11),
+	Q11	= (data -> Q12),
+	Q12	= (xml -> Q13),
+	Q13	= (action -> Q10).
+
+ERP = Q0,
+	Q0	= (run -> Q1),
+	Q1	= (query -> Q2),
+	Q2	= (data -> Q3),
+	Q3	= (query -> Q4),
+	Q4	= (data -> Q5),
+	Q5	= (query -> Q4
+		  |shutdown -> Q6),
+	Q6	= (endAction -> Q7),
+	Q7	= END.
+
+Admin = Q0,
+	Q0	= (run -> Q1),
+	Q1	= (shutdown -> Q2),
+	Q2	= (endAction -> Q3),
+	Q3	= END.
+
+//------------------------------------------------------------------
+//----------------------------- Constraints ------------------------
+//------------------------------------------------------------------
+
+
+// NegScen
+//
+// This constraint disallows the system to shutdown (ShutDown scenario) before the user gets an html response that they have logged out (Logout).
+
+// Allows everything but 'shutdown' until 'logout' is detected
+NegScen = ( { enterPwd, authenticate, query, data, verified, html, failed, search, action, xml, orderHeader, orderDetails, itemDetails, back, run, search } -> NegScen | logout -> Aux ),
+
+// Now that the user is logging out, wait until they get a 'html' response before actually shutting down
+Aux = ({ enterPwd, authenticate, query, data, verified, failed, search, action, xml, orderHeader, orderDetails, itemDetails, back, run, search, logout} -> Aux | html -> shutdown -> NegScen).
+
+//------------------------------------------------------------------
+//----------------------------- Compositions -----------------------
+//------------------------------------------------------------------
+
+ ||ArchitectureModel = (User || Servlet || BizLogic || ERP || Admin).
+
+ ||ConstrainedModel = (ArchitectureModel || NegScen).

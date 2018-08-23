@@ -1,0 +1,1986 @@
+Alignment of
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', '#GAP#', 'off']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', '#GAP#', 'brake']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed', 'setThrottle', 'brake']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', '#GAP#', 'setThrottle']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', '#GAP#', 'setThrottle']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', '#GAP#', 'accelerator', '#GAP#', 'disableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl']
+
+	Score: 17.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', '#GAP#', 'off']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'enableControl', 'brake']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', '#GAP#', 'brake']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'enableControl', 'brake']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'enableControl', 'accelerator']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', '#GAP#', 'accelerator']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed', 'brake']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', '#GAP#', 'brake']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', '#GAP#', 'speed']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', '#GAP#', 'speed']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', '#GAP#', 'speed']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', '#GAP#', 'accelerator']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed', 'accelerator']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', '#GAP#', 'brake']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed', 'setThrottle']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed', 'setThrottle']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed', 'setThrottle']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', '#GAP#', 'brake']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'enableControl', 'speed', 'brake']
+
+	Score: 14.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', '#GAP#', 'accelerator']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'enableControl', 'speed', 'accelerator']
+
+	Score: 14.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', '#GAP#', 'brake']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed', 'setThrottle', 'brake']
+
+	Score: 14.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed', '#GAP#', 'brake']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']
+
+	Score: 14.0
+
+--- --- --- --- ---
+
+Alignment of
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed', '#GAP#', 'setThrottle']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle']
+
+	Score: 14.0
+
+--- --- --- --- ---
+
+Alignment of
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed', '#GAP#', 'setThrottle']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle']
+
+	Score: 14.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'enableControl']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'enableControl']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'enableControl']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', '#GAP#', 'speed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed']
+
+	Score: 13.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+	['engineOn', 'clearSpeed', 'on', 'recordSpeed']
+
+	Score: 12.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', 'speed', 'clearSpeed']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'speed', 'clearSpeed', 'on']
+	['engineOn', '#GAP#', 'clearSpeed', 'on']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'clearSpeed']
+	['engineOn', 'clearSpeed']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']:
+
+
+	['engineOn', '#GAP#', 'clearSpeed']
+	['engineOn', 'speed', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['engineOn', 'clearSpeed', 'engineOff']
+and
+	2: ['engineOn', 'speed', 'clearSpeed', 'on']:
+
+
+	['engineOn', '#GAP#', 'clearSpeed']
+	['engineOn', 'speed', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	3: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'off']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	4: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'brake']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	5: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'enableControl', 'accelerator']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	6: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'off']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	7: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'brake']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	8: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'speed']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	9: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'accelerator', 'disableControl']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	10: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'accelerator']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	11: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'brake']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	12: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	13: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'setThrottle', 'off']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	14: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'brake', 'disableControl', 'speed']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	15: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'accelerator']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	16: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'speed', 'setThrottle', 'brake']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['engineOn', 'speed', 'clearSpeed', 'speed']
+and
+	17: ['engineOn', 'clearSpeed', 'on', 'recordSpeed', 'enableControl', 'speed', 'accelerator', 'setThrottle', 'disableControl', 'speed']:
+
+
+	['engineOn', 'speed', 'clearSpeed']
+	['engineOn', '#GAP#', 'clearSpeed']
+
+	Score: 4.0

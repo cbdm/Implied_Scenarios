@@ -1,0 +1,1677 @@
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 3.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+is 7.0

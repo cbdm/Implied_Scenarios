@@ -1,0 +1,957 @@
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 6.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 9.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 9.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 9.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 9.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 9.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 9.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 9.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 9.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 11.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 11.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 11.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 11.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 11.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 11.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 11.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 11.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 14.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 14.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 14.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 14.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 14.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 14.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 14.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 14.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 15.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 15.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 15.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 15.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 16.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 16.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 16.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 16.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 17.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 17.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 17.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 17.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 18.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 18.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 18.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 18.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 18.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 18.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 18.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 18.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 18.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 18.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 19.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 19.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 19.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 19.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 19.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 19.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 19.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 19.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 19.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 19.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 20.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 20.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 20.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 20.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 20.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 20.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 20.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 20.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 21.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 21.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 22.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 22.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 22.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 22.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	11: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 22.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	15: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 23.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+and
+	13: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+is 23.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+and
+	12: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+is 23.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	10: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 23.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 23.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 23.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	14: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 24.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'ms.bss.discon', 'network.msc.release']
+and
+	9: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'msc.network.answer', 'network.msc.release', 'ms.bss.discon']
+is 24.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.callSetup', 'bss.msc.callSetupReq', 'msc.network.callSetUp', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'network.msc.setCipherMode', 'msc.bss.cipherModeCmnd', 'bss.ms.cipherMode', 'ms.bss.ciphModeCmplt', 'bss.msc.ciphCmplt', 'msc.bss.assignComnd', 'bss.ms.assigned', 'bss.ms.assignCmplt', 'bss.msc.assignCmpt', 'msc.network.initialMsg', 'network.msc.addCmpltMsg', 'msc.ms.alerting', 'network.msc.answerMsg', 'msc.ms.connect', 'ms.msc.connectAck', 'network.msc.release', 'ms.bss.discon']
+and
+	8: ['ms.bss.channelReq', 'bss.ms.immAssign', 'ms.bss.pageResp', 'bss.ms.pageRspAck', 'bss.msc.pageRspReq', 'msc.network.procAccessReq', 'network.msc.provideImsi', 'msc.ms.identityReq', 'ms.msc.identityResp', 'msc.network.imsiAck', 'network.msc.authenticate', 'msc.ms.authenReq', 'ms.msc.authenResp', 'msc.network.authenComplt', 'msc.ms.serviceAccept', 'msc.bss.callSetup', 'bss.ms.callSUp', 'ms.bss.confirm', 'bss.msc.conf', 'msc.network.addCmplt', 'msc.ms.alerting', 'ms.bss.alert', 'bss.msc.alrt', 'ms.msc.conct', 'ms.bss.discon', 'msc.network.answer', 'network.msc.release']
+is 24.0

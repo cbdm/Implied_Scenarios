@@ -1,0 +1,137 @@
+! eB2B
+
+//
+// Transitions
+//
+
+@ init -> StartUp
+
+@ StartUp -> Login
+@ StartUp -> FailedLogin
+
+@ FailedLogin -> FailedLogin
+@ FailedLogin -> Login
+
+@ Login -> Criteria
+@ Login -> Logout
+
+@ Logout -> ShutDown
+
+@ Criteria -> HeaderView
+
+@ HeaderView -> Back3
+@ HeaderView -> DetailsView
+@ HeaderView -> HeaderView
+
+@ Back3 -> HeaderView
+
+@ DetailsView -> Back2
+@ DetailsView -> ItemDetails
+
+@ Back2 -> HeaderView
+@ Back2 -> DetailsView
+
+@ ItemDetails -> Back
+
+@ Back -> Back2
+@ Back -> ItemDetails
+
+//
+// Components
+//
+
+# User
+# Servlet
+# BizLogic
+# ERP
+# Admin
+
+//
+// Scenarios
+//
+
+$ Login
+% User -> Servlet : enterPwd
+% Servlet -> BizLogic : authenticate
+% BizLogic -> ERP : query
+% ERP -> BizLogic : data
+% BizLogic -> Servlet : verified
+% Servlet -> User : html
+
+$ FailedLogin
+% User -> Servlet : enterPwd
+% Servlet -> BizLogic : authenticate
+% BizLogic -> ERP : query
+% ERP -> BizLogic : data
+% BizLogic -> Servlet : failed
+% Servlet -> User : html
+
+$ Criteria
+% User -> Servlet : search
+% Servlet -> BizLogic : action
+% BizLogic -> ERP : query
+% ERP -> BizLogic : data
+% BizLogic -> Servlet : xml
+% Servlet -> User : html
+
+$ HeaderView
+% User -> Servlet : orderHeader
+% Servlet -> BizLogic : action
+% BizLogic -> ERP : query
+% ERP -> BizLogic : data
+% BizLogic -> Servlet : xml
+% Servlet -> User : html
+
+$ DetailsView
+% User -> Servlet : orderDetails
+% Servlet -> BizLogic : action
+% BizLogic -> ERP : query
+% ERP -> BizLogic : data
+% BizLogic -> Servlet : xml
+% Servlet -> User : html
+
+$ ItemDetails
+% User -> Servlet : itemDetails
+% Servlet -> BizLogic : action
+% BizLogic -> ERP : query
+% ERP -> BizLogic : data
+% BizLogic -> Servlet : xml
+% Servlet -> User : html
+
+$ Back
+% User -> Servlet : back
+% Servlet -> BizLogic : action
+% BizLogic -> ERP : query
+% ERP -> BizLogic : data
+% BizLogic -> Servlet : xml
+% Servlet -> User : html
+
+$ Back2
+% User -> Servlet : back
+% Servlet -> BizLogic : action
+% BizLogic -> ERP : query
+% ERP -> BizLogic : data
+% BizLogic -> Servlet : xml
+% Servlet -> User : html
+
+$ Back3
+% User -> Servlet : back
+% Servlet -> BizLogic : action
+% BizLogic -> ERP : query
+% ERP -> BizLogic : data
+% BizLogic -> Servlet : xml
+% Servlet -> User : html
+
+$ StartUp
+% Admin -> ERP : run
+
+$ Logout
+% User -> Servlet : logout
+% Servlet -> BizLogic : action
+% BizLogic -> ERP : query
+% ERP -> BizLogic : data
+% BizLogic -> Servlet : xml
+% Servlet -> User : html
+
+$ ShutDown
+% Admin -> ERP : shutdown

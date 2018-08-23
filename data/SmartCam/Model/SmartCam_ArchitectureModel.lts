@@ -1,0 +1,111 @@
+Process:
+	ArchitectureModel
+States:
+	79
+Transitions:
+	ArchitectureModel = Q0,
+	Q0	= (camera3.object.sees_obj -> Q1
+		  |camera2.object.sees_obj -> Q58),
+	Q1	= (camera3.camera1.ask_confidence -> Q2),
+	Q2	= (camera1.camera3.no_confidence -> Q3),
+	Q3	= (camera3.object.start_tracking -> Q4),
+	Q4	= (camera3.object.loses_obj -> Q5
+		  |camera1.object.sees_obj -> Q44),
+	Q5	= (camera4.object.sees_obj -> Q6
+		  |camera3.camera1.start_search -> Q15
+		  |camera1.object.sees_obj -> Q16),
+	Q6	= (camera4.camera2.ask_confidence -> Q7
+		  |camera3.camera1.start_search -> Q14),
+	Q7	= (camera2.camera4.no_confidence -> Q8
+		  |camera3.camera1.start_search -> Q13),
+	Q8	= (camera4.object.start_tracking -> Q9
+		  |camera3.camera1.start_search -> Q12),
+	Q9	= (camera3.camera1.start_search -> Q10),
+	Q10	= (endAction -> Q11),
+	Q11	= END,
+	Q12	= (camera4.object.start_tracking -> Q10),
+	Q13	= (camera2.camera4.no_confidence -> Q12),
+	Q14	= (camera4.camera2.ask_confidence -> Q13),
+	Q15	= (camera4.object.sees_obj -> Q14),
+	Q16	= (camera3.camera1.start_search -> Q17),
+	Q17	= (camera1.camera3.found_obj -> Q18),
+	Q18	= (camera3.camera1.ask_confidence -> Q19),
+	Q19	= (camera1.camera3.send_confidence -> Q20),
+	Q20	= (camera3.camera1.allow_tracking -> Q21),
+	Q21	= (camera1.object.start_tracking -> Q22),
+	Q22	= (camera1.object.loses_obj -> Q23),
+	Q23	= (camera4.object.sees_obj -> Q24
+		  |camera1.camera3.start_search -> Q41
+		  |camera1.camera2.start_search -> Q43),
+	Q24	= (camera4.camera2.ask_confidence -> Q25
+		  |camera2.object.sees_obj -> Q26
+		  |camera1.camera3.start_search -> Q29
+		  |camera1.camera2.start_search -> Q39),
+	Q25	= (camera2.camera4.no_confidence -> Q26
+		  |camera1.camera3.start_search -> Q28),
+	Q26	= (camera1.camera3.start_search -> Q27),
+	Q27	= STOP,
+	Q28	= (camera2.camera4.no_confidence -> Q27),
+	Q29	= (camera2.object.sees_obj -> Q27
+		  |camera4.camera2.ask_confidence -> Q28
+		  |camera1.camera2.start_search -> Q30),
+	Q30	= (camera2.object.sees_obj -> Q31),
+	Q31	= (camera2.camera1.found_obj -> Q32),
+	Q32	= (camera4.camera2.ask_confidence -> Q33
+		  |camera1.camera2.ask_confidence -> Q37),
+	Q33	= (camera2.camera4.send_confidence -> Q34),
+	Q34	= (camera1.camera2.ask_confidence -> Q35),
+	Q35	= (camera2.camera1.send_confidence -> Q36),
+	Q36	= (camera1.camera2.allow_tracking -> Q10),
+	Q37	= (camera2.camera1.send_confidence -> Q38),
+	Q38	= (camera1.camera2.allow_tracking -> Q27),
+	Q39	= (camera1.camera3.start_search -> Q30
+		  |camera2.object.sees_obj -> Q40),
+	Q40	= (camera1.camera3.start_search -> Q31),
+	Q41	= (camera4.object.sees_obj -> Q29
+		  |camera1.camera2.start_search -> Q42),
+	Q42	= (camera4.object.sees_obj -> Q30),
+	Q43	= (camera4.object.sees_obj -> Q39
+		  |camera1.camera3.start_search -> Q42),
+	Q44	= (camera3.object.loses_obj -> Q45),
+	Q45	= (camera3.camera1.start_search -> Q46),
+	Q46	= (camera1.camera3.found_obj -> Q47),
+	Q47	= (camera3.camera1.ask_confidence -> Q48),
+	Q48	= (camera1.camera3.send_confidence -> Q49),
+	Q49	= (camera3.camera1.allow_tracking -> Q50),
+	Q50	= (camera1.object.start_tracking -> Q51),
+	Q51	= (camera1.object.loses_obj -> Q52),
+	Q52	= (camera2.object.sees_obj -> Q26
+		  |camera1.camera3.start_search -> Q53
+		  |camera1.camera2.start_search -> Q56),
+	Q53	= (camera2.object.sees_obj -> Q27
+		  |camera1.camera2.start_search -> Q54),
+	Q54	= (camera2.object.sees_obj -> Q55),
+	Q55	= (camera2.camera1.found_obj -> Q34),
+	Q56	= (camera1.camera3.start_search -> Q54
+		  |camera2.object.sees_obj -> Q57),
+	Q57	= (camera1.camera3.start_search -> Q55),
+	Q58	= (camera4.object.sees_obj -> Q59
+		  |camera2.camera1.ask_confidence -> Q74),
+	Q59	= (camera2.camera1.ask_confidence -> Q60),
+	Q60	= (camera2.camera4.ask_confidence -> Q61),
+	Q61	= (camera1.camera2.no_confidence -> Q27
+		  |camera4.camera2.ask_confidence -> Q62),
+	Q62	= (camera1.camera2.no_confidence -> Q63),
+	Q63	= (camera4.camera2.send_confidence -> Q64),
+	Q64	= (camera2.camera4.send_confidence -> Q65),
+	Q65	= (camera4.camera2.allow_tracking -> Q66),
+	Q66	= (camera2.object.start_tracking -> Q67),
+	Q67	= (camera2.object.loses_obj -> Q68),
+	Q68	= (camera2.camera1.start_search -> Q69),
+	Q69	= (camera2.camera4.start_search -> Q70),
+	Q70	= (camera1.camera2.found_obj -> Q71),
+	Q71	= (camera2.camera1.ask_confidence -> Q72),
+	Q72	= (camera1.camera2.send_confidence -> Q73),
+	Q73	= (camera2.camera1.allow_tracking -> Q10),
+	Q74	= (camera4.object.sees_obj -> Q60
+		  |camera2.camera4.ask_confidence -> Q75),
+	Q75	= (camera1.camera2.no_confidence -> Q76),
+	Q76	= (camera4.camera2.no_confidence -> Q77),
+	Q77	= (camera2.object.start_tracking -> Q78),
+	Q78	= (camera1.object.sees_obj -> Q67).

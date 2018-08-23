@@ -1,0 +1,63 @@
+Process:
+	ConstrainedModel
+States:
+	49
+Transitions:
+	ConstrainedModel = Q0,
+	Q0	= (run -> Q1
+		  |enterPwd -> Q47),
+	Q1	= (enterPwd -> Q2),
+	Q2	= (authenticate -> Q3),
+	Q3	= (query -> Q4),
+	Q4	= (data -> Q5),
+	Q5	= (verified -> Q6
+		  |failed -> Q46),
+	Q6	= (html -> Q7),
+	Q7	= (logout -> Q8
+		  |search -> Q16),
+	Q8	= (action -> Q9),
+	Q9	= (query -> Q10),
+	Q10	= (data -> Q11),
+	Q11	= (xml -> Q12),
+	Q12	= (html -> Q13),
+	Q13	= (shutdown -> Q14),
+	Q14	= (endAction -> Q15),
+	Q15	= END,
+	Q16	= (action -> Q17),
+	Q17	= (query -> Q18),
+	Q18	= (data -> Q19),
+	Q19	= (xml -> Q20),
+	Q20	= (html -> Q21),
+	Q21	= (orderHeader -> Q22),
+	Q22	= (action -> Q23),
+	Q23	= (query -> Q24),
+	Q24	= (data -> Q25),
+	Q25	= (xml -> Q26),
+	Q26	= (html -> Q27),
+	Q27	= (back -> Q16
+		  |orderHeader -> Q22
+		  |orderDetails -> Q28),
+	Q28	= (action -> Q29),
+	Q29	= (query -> Q30),
+	Q30	= (data -> Q31),
+	Q31	= (xml -> Q32),
+	Q32	= (html -> Q33),
+	Q33	= (itemDetails -> Q34
+		  |back -> Q40),
+	Q34	= (action -> Q35),
+	Q35	= (query -> Q36),
+	Q36	= (data -> Q37),
+	Q37	= (xml -> Q38),
+	Q38	= (html -> Q39),
+	Q39	= (back -> Q28),
+	Q40	= (action -> Q41),
+	Q41	= (query -> Q42),
+	Q42	= (data -> Q43),
+	Q43	= (xml -> Q44),
+	Q44	= (html -> Q45),
+	Q45	= (orderHeader -> Q22
+		  |orderDetails -> Q28),
+	Q46	= (html -> Q1),
+	Q47	= (run -> Q2
+		  |authenticate -> Q48),
+	Q48	= (run -> Q3).

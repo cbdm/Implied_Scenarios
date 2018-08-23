@@ -1,0 +1,119 @@
+! SmartCam
+
+//
+// Transitions
+//
+
+@ init -> Scenario 1
+@ init -> Scenario 2
+@ init -> Scenario 3
+@ init -> Scenario 4
+@ init -> Scenario 5
+
+//
+// Components
+//
+
+# Camera 1
+# Camera 2
+# Camera 3
+# Camera 4
+# Object
+
+//
+// Scenarios
+//
+
+$ Scenario 1
+% Camera 2 -> Object : sees_obj
+% Camera 4 -> Object : sees_obj
+% Camera 2 -> Camera 1 : ask_confidence
+% Camera 2 -> Camera 4 : ask_confidence
+% Camera 4 -> Camera 2 : ask_confidence
+% Camera 1 -> Camera 2 : no_confidence
+% Camera 4 -> Camera 2 : send_confidence
+% Camera 2 -> Camera 4 : send_confidence
+% Camera 4 -> Camera 2 : allow_tracking
+% Camera 2 -> Object : start_tracking
+% Camera 2 -> Object : loses_obj
+% Camera 2 -> Camera 1 : start_search
+% Camera 2 -> Camera 4 : start_search
+% Camera 1 -> Camera 2 : found_obj
+% Camera 2 -> Camera 1 : ask_confidence
+% Camera 1 -> Camera 2 : send_confidence
+% Camera 2 -> Camera 1 : allow_tracking
+
+$ Scenario 2
+% Camera 3 -> Object : sees_obj
+% Camera 3 -> Camera 1 : ask_confidence
+% Camera 1 -> Camera 3 : no_confidence
+% Camera 3 -> Object : start_tracking
+% Camera 1 -> Object : sees_obj
+% Camera 3 -> Object : loses_obj
+% Camera 3 -> Camera 1 : start_search
+% Camera 1 -> Camera 3 : found_obj
+% Camera 3 -> Camera 1 : ask_confidence
+% Camera 1 -> Camera 3 : send_confidence
+% Camera 3 -> Camera 1 : allow_tracking
+% Camera 1 -> Object : start_tracking
+% Camera 1 -> Object : loses_obj
+% Camera 1 -> Camera 3 : start_search
+% Camera 1 -> Camera 2 : start_search
+% Camera 2 -> Object : sees_obj
+% Camera 2 -> Camera 1 : found_obj
+% Camera 1 -> Camera 2 : ask_confidence
+% Camera 2 -> Camera 1 : send_confidence
+% Camera 1 -> Camera 2 : allow_tracking
+
+$ Scenario 3
+% Camera 3 -> Object : sees_obj
+% Camera 3 -> Camera 1 : ask_confidence
+% Camera 1 -> Camera 3 : no_confidence
+% Camera 3 -> Object : start_tracking
+% Camera 3 -> Object : loses_obj
+% Camera 3 -> Camera 1 : start_search
+% Camera 4 -> Object : sees_obj
+% Camera 4 -> Camera 2 : ask_confidence
+% Camera 2 -> Camera 4 : no_confidence
+% Camera 4 -> Object : start_tracking
+
+$ Scenario 4
+% Camera 2 -> Object : sees_obj
+% Camera 2 -> Camera 1 : ask_confidence
+% Camera 2 -> Camera 4 : ask_confidence
+% Camera 1 -> Camera 2 : no_confidence
+% Camera 4 -> Camera 2 : no_confidence
+% Camera 2 -> Object : start_tracking
+% Camera 1 -> Object : sees_obj
+% Camera 2 -> Object : loses_obj
+% Camera 2 -> Camera 1 : start_search
+% Camera 2 -> Camera 4 : start_search
+% Camera 1 -> Camera 2 : found_obj
+% Camera 2 -> Camera 1 : ask_confidence
+% Camera 1 -> Camera 2 : send_confidence
+% Camera 2 -> Camera 1 : allow_tracking
+
+$ Scenario 5
+% Camera 3 -> Object : sees_obj
+% Camera 3 -> Camera 1 : ask_confidence
+% Camera 1 -> Camera 3 : no_confidence
+% Camera 3 -> Object : start_tracking
+% Camera 3 -> Object : loses_obj
+% Camera 1 -> Object : sees_obj
+% Camera 3 -> Camera 1 : start_search
+% Camera 1 -> Camera 3 : found_obj
+% Camera 3 -> Camera 1 : ask_confidence
+% Camera 1 -> Camera 3 : send_confidence
+% Camera 3 -> Camera 1 : allow_tracking
+% Camera 1 -> Object : start_tracking
+% Camera 1 -> Object : loses_obj
+% Camera 1 -> Camera 2 : start_search
+% Camera 1 -> Camera 3 : start_search
+% Camera 4 -> Object : sees_obj
+% Camera 2 -> Object : sees_obj
+% Camera 2 -> Camera 1 : found_obj
+% Camera 4 -> Camera 2 : ask_confidence
+% Camera 2 -> Camera 4 : send_confidence
+% Camera 1 -> Camera 2 : ask_confidence
+% Camera 2 -> Camera 1 : send_confidence
+% Camera 1 -> Camera 2 : allow_tracking

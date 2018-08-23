@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification>
+  <hmsc>
+
+    <bmsc name="init" x="50" y="30"/>
+    <bmsc name="Scenario1" x="170" y="30"/>
+    <bmsc name="Scenario2" x="290" y="30"/>
+    <bmsc name="Scenario3" x="50" y="130"/>
+    <bmsc name="Scenario4" x="170" y="130"/>
+    <bmsc name="Scenario5" x="290" y="130"/>
+
+    <transition>
+      <from>init</from>
+      <to>Scenario1</to>
+    </transition>
+
+    <transition>
+      <from>init</from>
+      <to>Scenario2</to>
+    </transition>
+
+    <transition>
+      <from>init</from>
+      <to>Scenario3</to>
+    </transition>
+
+    <transition>
+      <from>init</from>
+      <to>Scenario4</to>
+    </transition>
+
+    <transition>
+      <from>init</from>
+      <to>Scenario5</to>
+    </transition>
+
+  </hmsc>
+
+  <bmsc name="init" />
+
+  <bmsc name="Scenario1">
+    <instance name="Camera1">
+      <output timeindex="6">
+        <name>camera1,camera2,no_confidence</name>
+        <to>Camera2</to>
+      </output>
+      <output timeindex="14">
+        <name>camera1,camera2,found_obj</name>
+        <to>Camera2</to>
+      </output>
+      <output timeindex="16">
+        <name>camera1,camera2,send_confidence</name>
+        <to>Camera2</to>
+      </output>
+      <input timeindex="3">
+        <name>camera2,camera1,ask_confidence</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="12">
+        <name>camera2,camera1,start_search</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="15">
+        <name>camera2,camera1,ask_confidence</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="17">
+        <name>camera2,camera1,allow_tracking</name>
+        <from>Camera2</from>
+      </input>
+    </instance>
+    <instance name="Camera2">
+      <output timeindex="1">
+        <name>camera2,object,sees_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="3">
+        <name>camera2,camera1,ask_confidence</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="4">
+        <name>camera2,camera4,ask_confidence</name>
+        <to>Camera4</to>
+      </output>
+      <output timeindex="8">
+        <name>camera2,camera4,send_confidence</name>
+        <to>Camera4</to>
+      </output>
+      <output timeindex="10">
+        <name>camera2,object,start_tracking</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="11">
+        <name>camera2,object,loses_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="12">
+        <name>camera2,camera1,start_search</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="13">
+        <name>camera2,camera4,start_search</name>
+        <to>Camera4</to>
+      </output>
+      <output timeindex="15">
+        <name>camera2,camera1,ask_confidence</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="17">
+        <name>camera2,camera1,allow_tracking</name>
+        <to>Camera1</to>
+      </output>
+      <input timeindex="5">
+        <name>camera4,camera2,ask_confidence</name>
+        <from>Camera4</from>
+      </input>
+      <input timeindex="6">
+        <name>camera1,camera2,no_confidence</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="7">
+        <name>camera4,camera2,send_confidence</name>
+        <from>Camera4</from>
+      </input>
+      <input timeindex="9">
+        <name>camera4,camera2,allow_tracking</name>
+        <from>Camera4</from>
+      </input>
+      <input timeindex="14">
+        <name>camera1,camera2,found_obj</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="16">
+        <name>camera1,camera2,send_confidence</name>
+        <from>Camera1</from>
+      </input>
+    </instance>
+    <instance name="Camera3" />
+    <instance name="Camera4">
+      <output timeindex="2">
+        <name>camera4,object,sees_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="5">
+        <name>camera4,camera2,ask_confidence</name>
+        <to>Camera2</to>
+      </output>
+      <output timeindex="7">
+        <name>camera4,camera2,send_confidence</name>
+        <to>Camera2</to>
+      </output>
+      <output timeindex="9">
+        <name>camera4,camera2,allow_tracking</name>
+        <to>Camera2</to>
+      </output>
+      <input timeindex="4">
+        <name>camera2,camera4,ask_confidence</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="8">
+        <name>camera2,camera4,send_confidence</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="13">
+        <name>camera2,camera4,start_search</name>
+        <from>Camera2</from>
+      </input>
+    </instance>
+    <instance name="Object">
+      <input timeindex="1">
+        <name>camera2,object,sees_obj</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="2">
+        <name>camera4,object,sees_obj</name>
+        <from>Camera4</from>
+      </input>
+      <input timeindex="10">
+        <name>camera2,object,start_tracking</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="11">
+        <name>camera2,object,loses_obj</name>
+        <from>Camera2</from>
+      </input>
+    </instance>
+  </bmsc>
+
+  <bmsc name="Scenario2">
+    <instance name="Camera1">
+      <output timeindex="3">
+        <name>camera1,camera3,no_confidence</name>
+        <to>Camera3</to>
+      </output>
+      <output timeindex="5">
+        <name>camera1,object,sees_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="8">
+        <name>camera1,camera3,found_obj</name>
+        <to>Camera3</to>
+      </output>
+      <output timeindex="10">
+        <name>camera1,camera3,send_confidence</name>
+        <to>Camera3</to>
+      </output>
+      <output timeindex="12">
+        <name>camera1,object,start_tracking</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="13">
+        <name>camera1,object,loses_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="14">
+        <name>camera1,camera3,start_search</name>
+        <to>Camera3</to>
+      </output>
+      <output timeindex="15">
+        <name>camera1,camera2,start_search</name>
+        <to>Camera2</to>
+      </output>
+      <output timeindex="18">
+        <name>camera1,camera2,ask_confidence</name>
+        <to>Camera2</to>
+      </output>
+      <output timeindex="20">
+        <name>camera1,camera2,allow_tracking</name>
+        <to>Camera2</to>
+      </output>
+      <input timeindex="2">
+        <name>camera3,camera1,ask_confidence</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="7">
+        <name>camera3,camera1,start_search</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="9">
+        <name>camera3,camera1,ask_confidence</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="11">
+        <name>camera3,camera1,allow_tracking</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="17">
+        <name>camera2,camera1,found_obj</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="19">
+        <name>camera2,camera1,send_confidence</name>
+        <from>Camera2</from>
+      </input>
+    </instance>
+    <instance name="Camera2">
+      <output timeindex="16">
+        <name>camera2,object,sees_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="17">
+        <name>camera2,camera1,found_obj</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="19">
+        <name>camera2,camera1,send_confidence</name>
+        <to>Camera1</to>
+      </output>
+      <input timeindex="15">
+        <name>camera1,camera2,start_search</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="18">
+        <name>camera1,camera2,ask_confidence</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="20">
+        <name>camera1,camera2,allow_tracking</name>
+        <from>Camera1</from>
+      </input>
+    </instance>
+    <instance name="Camera3">
+      <output timeindex="1">
+        <name>camera3,object,sees_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="2">
+        <name>camera3,camera1,ask_confidence</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="4">
+        <name>camera3,object,start_tracking</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="6">
+        <name>camera3,object,loses_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="7">
+        <name>camera3,camera1,start_search</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="9">
+        <name>camera3,camera1,ask_confidence</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="11">
+        <name>camera3,camera1,allow_tracking</name>
+        <to>Camera1</to>
+      </output>
+      <input timeindex="3">
+        <name>camera1,camera3,no_confidence</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="8">
+        <name>camera1,camera3,found_obj</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="10">
+        <name>camera1,camera3,send_confidence</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="14">
+        <name>camera1,camera3,start_search</name>
+        <from>Camera1</from>
+      </input>
+    </instance>
+    <instance name="Camera4" />
+    <instance name="Object">
+      <input timeindex="1">
+        <name>camera3,object,sees_obj</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="4">
+        <name>camera3,object,start_tracking</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="5">
+        <name>camera1,object,sees_obj</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="6">
+        <name>camera3,object,loses_obj</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="12">
+        <name>camera1,object,start_tracking</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="13">
+        <name>camera1,object,loses_obj</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="16">
+        <name>camera2,object,sees_obj</name>
+        <from>Camera2</from>
+      </input>
+    </instance>
+  </bmsc>
+
+  <bmsc name="Scenario3">
+    <instance name="Camera1">
+      <output timeindex="3">
+        <name>camera1,camera3,no_confidence</name>
+        <to>Camera3</to>
+      </output>
+      <input timeindex="2">
+        <name>camera3,camera1,ask_confidence</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="6">
+        <name>camera3,camera1,start_search</name>
+        <from>Camera3</from>
+      </input>
+    </instance>
+    <instance name="Camera2">
+      <output timeindex="9">
+        <name>camera2,camera4,no_confidence</name>
+        <to>Camera4</to>
+      </output>
+      <input timeindex="8">
+        <name>camera4,camera2,ask_confidence</name>
+        <from>Camera4</from>
+      </input>
+    </instance>
+    <instance name="Camera3">
+      <output timeindex="1">
+        <name>camera3,object,sees_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="2">
+        <name>camera3,camera1,ask_confidence</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="4">
+        <name>camera3,object,start_tracking</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="5">
+        <name>camera3,object,loses_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="6">
+        <name>camera3,camera1,start_search</name>
+        <to>Camera1</to>
+      </output>
+      <input timeindex="3">
+        <name>camera1,camera3,no_confidence</name>
+        <from>Camera1</from>
+      </input>
+    </instance>
+    <instance name="Camera4">
+      <output timeindex="7">
+        <name>camera4,object,sees_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="8">
+        <name>camera4,camera2,ask_confidence</name>
+        <to>Camera2</to>
+      </output>
+      <output timeindex="10">
+        <name>camera4,object,start_tracking</name>
+        <to>Object</to>
+      </output>
+      <input timeindex="9">
+        <name>camera2,camera4,no_confidence</name>
+        <from>Camera2</from>
+      </input>
+    </instance>
+    <instance name="Object">
+      <input timeindex="1">
+        <name>camera3,object,sees_obj</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="4">
+        <name>camera3,object,start_tracking</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="5">
+        <name>camera3,object,loses_obj</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="7">
+        <name>camera4,object,sees_obj</name>
+        <from>Camera4</from>
+      </input>
+      <input timeindex="10">
+        <name>camera4,object,start_tracking</name>
+        <from>Camera4</from>
+      </input>
+    </instance>
+  </bmsc>
+
+  <bmsc name="Scenario4">
+    <instance name="Camera1">
+      <output timeindex="4">
+        <name>camera1,camera2,no_confidence</name>
+        <to>Camera2</to>
+      </output>
+      <output timeindex="7">
+        <name>camera1,object,sees_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="11">
+        <name>camera1,camera2,found_obj</name>
+        <to>Camera2</to>
+      </output>
+      <output timeindex="13">
+        <name>camera1,camera2,send_confidence</name>
+        <to>Camera2</to>
+      </output>
+      <input timeindex="2">
+        <name>camera2,camera1,ask_confidence</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="9">
+        <name>camera2,camera1,start_search</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="12">
+        <name>camera2,camera1,ask_confidence</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="14">
+        <name>camera2,camera1,allow_tracking</name>
+        <from>Camera2</from>
+      </input>
+    </instance>
+    <instance name="Camera2">
+      <output timeindex="1">
+        <name>camera2,object,sees_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="2">
+        <name>camera2,camera1,ask_confidence</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="3">
+        <name>camera2,camera4,ask_confidence</name>
+        <to>Camera4</to>
+      </output>
+      <output timeindex="6">
+        <name>camera2,object,start_tracking</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="8">
+        <name>camera2,object,loses_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="9">
+        <name>camera2,camera1,start_search</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="10">
+        <name>camera2,camera4,start_search</name>
+        <to>Camera4</to>
+      </output>
+      <output timeindex="12">
+        <name>camera2,camera1,ask_confidence</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="14">
+        <name>camera2,camera1,allow_tracking</name>
+        <to>Camera1</to>
+      </output>
+      <input timeindex="4">
+        <name>camera1,camera2,no_confidence</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="5">
+        <name>camera4,camera2,no_confidence</name>
+        <from>Camera4</from>
+      </input>
+      <input timeindex="11">
+        <name>camera1,camera2,found_obj</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="13">
+        <name>camera1,camera2,send_confidence</name>
+        <from>Camera1</from>
+      </input>
+    </instance>
+    <instance name="Camera3" />
+    <instance name="Camera4">
+      <output timeindex="5">
+        <name>camera4,camera2,no_confidence</name>
+        <to>Camera2</to>
+      </output>
+      <input timeindex="3">
+        <name>camera2,camera4,ask_confidence</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="10">
+        <name>camera2,camera4,start_search</name>
+        <from>Camera2</from>
+      </input>
+    </instance>
+    <instance name="Object">
+      <input timeindex="1">
+        <name>camera2,object,sees_obj</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="6">
+        <name>camera2,object,start_tracking</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="7">
+        <name>camera1,object,sees_obj</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="8">
+        <name>camera2,object,loses_obj</name>
+        <from>Camera2</from>
+      </input>
+    </instance>
+  </bmsc>
+
+  <bmsc name="Scenario5">
+    <instance name="Camera1">
+      <output timeindex="3">
+        <name>camera1,camera3,no_confidence</name>
+        <to>Camera3</to>
+      </output>
+      <output timeindex="6">
+        <name>camera1,object,sees_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="8">
+        <name>camera1,camera3,found_obj</name>
+        <to>Camera3</to>
+      </output>
+      <output timeindex="10">
+        <name>camera1,camera3,send_confidence</name>
+        <to>Camera3</to>
+      </output>
+      <output timeindex="12">
+        <name>camera1,object,start_tracking</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="13">
+        <name>camera1,object,loses_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="14">
+        <name>camera1,camera2,start_search</name>
+        <to>Camera2</to>
+      </output>
+      <output timeindex="15">
+        <name>camera1,camera3,start_search</name>
+        <to>Camera3</to>
+      </output>
+      <output timeindex="21">
+        <name>camera1,camera2,ask_confidence</name>
+        <to>Camera2</to>
+      </output>
+      <output timeindex="23">
+        <name>camera1,camera2,allow_tracking</name>
+        <to>Camera2</to>
+      </output>
+      <input timeindex="2">
+        <name>camera3,camera1,ask_confidence</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="7">
+        <name>camera3,camera1,start_search</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="9">
+        <name>camera3,camera1,ask_confidence</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="11">
+        <name>camera3,camera1,allow_tracking</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="18">
+        <name>camera2,camera1,found_obj</name>
+        <from>Camera2</from>
+      </input>
+      <input timeindex="22">
+        <name>camera2,camera1,send_confidence</name>
+        <from>Camera2</from>
+      </input>
+    </instance>
+    <instance name="Camera2">
+      <output timeindex="17">
+        <name>camera2,object,sees_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="18">
+        <name>camera2,camera1,found_obj</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="20">
+        <name>camera2,camera4,send_confidence</name>
+        <to>Camera4</to>
+      </output>
+      <output timeindex="22">
+        <name>camera2,camera1,send_confidence</name>
+        <to>Camera1</to>
+      </output>
+      <input timeindex="14">
+        <name>camera1,camera2,start_search</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="19">
+        <name>camera4,camera2,ask_confidence</name>
+        <from>Camera4</from>
+      </input>
+      <input timeindex="21">
+        <name>camera1,camera2,ask_confidence</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="23">
+        <name>camera1,camera2,allow_tracking</name>
+        <from>Camera1</from>
+      </input>
+    </instance>
+    <instance name="Camera3">
+      <output timeindex="1">
+        <name>camera3,object,sees_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="2">
+        <name>camera3,camera1,ask_confidence</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="4">
+        <name>camera3,object,start_tracking</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="5">
+        <name>camera3,object,loses_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="7">
+        <name>camera3,camera1,start_search</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="9">
+        <name>camera3,camera1,ask_confidence</name>
+        <to>Camera1</to>
+      </output>
+      <output timeindex="11">
+        <name>camera3,camera1,allow_tracking</name>
+        <to>Camera1</to>
+      </output>
+      <input timeindex="3">
+        <name>camera1,camera3,no_confidence</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="8">
+        <name>camera1,camera3,found_obj</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="10">
+        <name>camera1,camera3,send_confidence</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="15">
+        <name>camera1,camera3,start_search</name>
+        <from>Camera1</from>
+      </input>
+    </instance>
+    <instance name="Camera4">
+      <output timeindex="16">
+        <name>camera4,object,sees_obj</name>
+        <to>Object</to>
+      </output>
+      <output timeindex="19">
+        <name>camera4,camera2,ask_confidence</name>
+        <to>Camera2</to>
+      </output>
+      <input timeindex="20">
+        <name>camera2,camera4,send_confidence</name>
+        <from>Camera2</from>
+      </input>
+    </instance>
+    <instance name="Object">
+      <input timeindex="1">
+        <name>camera3,object,sees_obj</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="4">
+        <name>camera3,object,start_tracking</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="5">
+        <name>camera3,object,loses_obj</name>
+        <from>Camera3</from>
+      </input>
+      <input timeindex="6">
+        <name>camera1,object,sees_obj</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="12">
+        <name>camera1,object,start_tracking</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="13">
+        <name>camera1,object,loses_obj</name>
+        <from>Camera1</from>
+      </input>
+      <input timeindex="16">
+        <name>camera4,object,sees_obj</name>
+        <from>Camera4</from>
+      </input>
+      <input timeindex="17">
+        <name>camera2,object,sees_obj</name>
+        <from>Camera2</from>
+      </input>
+    </instance>
+  </bmsc>
+
+</specification>

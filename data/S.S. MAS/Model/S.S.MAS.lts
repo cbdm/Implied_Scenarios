@@ -1,0 +1,86 @@
+//------------------------- MAS System --------------------------
+
+
+//------------------------------------------------------------------
+//----------------------- Components' States -----------------------
+//------------------------------------------------------------------
+
+User = Q0,
+	Q0	= (user.qh.enterQuery -> Q1),
+	Q1	= (endAction -> Q2),
+	Q2	= END.
+
+QH = Q0,
+	Q0	= (user.qh.enterQuery -> Q1),
+	Q1	= (qh.qhaux.extractConcepts -> Q2),
+	Q2	= (qhaux.qh._extractConcepts -> Q3),
+	Q3	= (qh.cl.sendConcept -> Q4),
+	Q4	= (qh.rep.sendConcept -> Q5),
+	Q5	= (rep.qh.returnResults -> Q6
+		  |cl.qh.newConceptsDetected -> Q7),
+	Q6	= (endAction -> Q8),
+	Q7	= (rep.qh.returnResults -> Q6),
+	Q8	= END.
+
+QHaux = Q0,
+	Q0	= (qh.qhaux.extractConcepts -> Q1),
+	Q1	= (qhaux.qh._extractConcepts -> Q2),
+	Q2	= (endAction -> Q3),
+	Q3	= END.
+
+CL = Q0,
+	Q0	= (qh.cl.sendConcept -> Q1),
+	Q1	= (cl.claux.noNewConcepts -> Q2
+		  |cl.claux.newConcepts -> Q3),
+	Q2	= (claux.cl._noNewConcepts -> Q4),
+	Q3	= (claux.cl._newConcepts -> Q5),
+	Q4	= (endAction -> Q6),
+	Q5	= (cl.qh.newConceptsDetected -> Q7),
+	Q6	= END,
+	Q7	= (cl.peer.startLearning -> Q8),
+	Q8	= (peer.cl.learnConcepts -> Q9),
+	Q9	= (cl.rep.updateRep -> Q4).
+
+CLaux = Q0,
+	Q0	= (cl.claux.noNewConcepts -> Q1
+		  |cl.claux.newConcepts -> Q2),
+	Q1	= (claux.cl._noNewConcepts -> Q3),
+	Q2	= (claux.cl._newConcepts -> Q3),
+	Q3	= (endAction -> Q4),
+	Q4	= END.
+
+Rep = Q0,
+	Q0	= (qh.rep.sendConcept -> Q1),
+	Q1	= (rep.qh.returnResults -> Q2
+		  |cl.rep.updateRep -> Q3),
+	Q2	= (endAction -> Q4),
+	Q3	= (rep.qh.returnResults -> Q2),
+	Q4	= END.
+
+Peer = Q0,
+	Q0	= (endAction -> Q1
+		  |cl.peer.startLearning -> Q2),
+	Q1	= END,
+	Q2	= (peer.cl.learnConcepts -> Q3),
+	Q3	= (endAction -> Q1).
+
+//------------------------------------------------------------------
+//----------------------------- Constraints ------------------------
+//------------------------------------------------------------------
+
+// NegScen
+// This constraint makes sure that the results are only returned
+// if there are no new concepts or if the Repository is updated.
+
+NegScen = ({cl.rep.updateRep, cl.claux.noNewConcepts}  -> Aux | {user.qh.enterQuery,qh.qhaux.extractConcepts,qhaux.qh._extractConcepts,qh.cl.sendConcept,qh.rep.sendConcept,claux.cl._noNewConcepts,cl.claux.newConcepts,claux.cl._newConcepts,cl.qh.newConceptsDetected,cl.peer.startLearning,peer.cl.learnConcepts} -> NegScen),
+Aux = (rep.qh.returnResults -> NegScen | {user.qh.enterQuery,qh.qhaux.extractConcepts,qhaux.qh._extractConcepts,qh.cl.sendConcept,qh.rep.sendConcept,cl.claux.noNewConcepts,claux.cl._noNewConcepts,cl.claux.newConcepts,claux.cl._newConcepts,cl.qh.newConceptsDetected,cl.peer.startLearning,peer.cl.learnConcepts,cl.rep.updateRep} -> Aux).
+
+
+//------------------------------------------------------------------
+//----------------------------- Compositions -----------------------
+//------------------------------------------------------------------
+
+ ||ArchitectureModel = (User || QH || QHaux || CL || CLaux || Rep || Peer).
+
+ ||ConstrainedModel = (ArchitectureModel || NegScen).
+ 

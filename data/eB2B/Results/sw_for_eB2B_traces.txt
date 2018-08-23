@@ -1,0 +1,2727 @@
+Alignment of
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+
+	Score: 25.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+
+	Score: 25.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+
+	Score: 25.0
+
+--- --- --- --- ---
+
+Alignment of
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+
+	Score: 25.0
+
+--- --- --- --- ---
+
+Alignment of
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+
+	Score: 25.0
+
+--- --- --- --- ---
+
+Alignment of
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+
+	Score: 25.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+
+	Score: 24.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+
+	Score: 24.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+
+	Score: 24.0
+
+--- --- --- --- ---
+
+Alignment of
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+
+	Score: 24.0
+
+--- --- --- --- ---
+
+Alignment of
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+
+	Score: 24.0
+
+--- --- --- --- ---
+
+Alignment of
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+
+	Score: 24.0
+
+--- --- --- --- ---
+
+Alignment of
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+
+	Score: 24.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+
+	Score: 22.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+
+	Score: 22.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+
+	Score: 22.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+
+	Score: 22.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+
+	Score: 22.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+
+	Score: 22.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+	['run', 'enterPwd', 'authenticate', 'query', 'data']
+
+	Score: 15.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd', 'authenticate']
+	['run', 'enterPwd', 'authenticate']
+
+	Score: 9.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	14: ['run', 'enterPwd', 'authenticate', 'shutdown']:
+
+
+	['run', 'enterPwd', '#GAP#', 'shutdown']
+	['run', 'enterPwd', 'authenticate', 'shutdown']
+
+	Score: 7.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	4: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'failed', 'html', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	5: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	6: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	7: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'shutdown']
+and
+	8: ['run', 'enterPwd', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	9: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	10: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	11: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderHeader', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	12: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'search', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	13: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'verified', 'html', 'logout', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	15: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	16: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	17: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'back', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	18: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'orderDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	19: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0
+
+--- --- --- --- ---
+
+Alignment of
+	8: ['run', 'enterPwd', 'shutdown']
+and
+	20: ['run', 'enterPwd', 'authenticate', 'query', 'data', 'xml', 'html', 'itemDetails', 'action', 'shutdown']:
+
+
+	['run', 'enterPwd']
+	['run', 'enterPwd']
+
+	Score: 6.0

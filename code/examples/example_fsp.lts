@@ -1,0 +1,20 @@
+Process:
+	ArchitectureModel
+States:
+	10
+Transitions:
+	ArchitectureModel = Q0,
+	Q0	= (p2.ur.double -> Q1
+		  |p1.ur.inc -> Q8),
+	Q1	= (p2.na.double -> Q2
+		  |p1.ur.inc -> Q6),
+	Q2	= (p1.ur.inc -> Q3),
+	Q3	= (p1.na.inc -> Q4),
+	Q4	= (endAction -> Q5),
+	Q5	= END,
+	Q6	= (p2.na.double -> Q3
+		  |p1.na.inc -> Q7),
+	Q7	= (p2.na.double -> Q4),
+	Q8	= (p2.ur.double -> Q6
+		  |p1.na.inc -> Q9),
+	Q9	= (p2.ur.double -> Q7).

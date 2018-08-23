@@ -1,0 +1,24 @@
+Process:
+	ArchitectureModel
+States:
+	11
+Transitions:
+	ArchitectureModel = Q0,
+	Q0	= (on -> Q1),
+	Q1	= (pressure -> Q2),
+	Q2	= (pressure -> Q2
+		  |query -> Q3
+		  |off -> Q7),
+	Q3	= (data -> Q4),
+	Q4	= (pressure -> Q5
+		  |command -> Q6),
+	Q5	= (command -> Q2
+		  |pressure -> Q5),
+	Q6	= (off -> Q0
+		  |pressure -> Q2),
+	Q7	= (on -> Q8),
+	Q8	= (pressure -> Q2
+		  |query -> Q9),
+	Q9	= (data -> Q10),
+	Q10	= (command -> Q1
+		  |pressure -> Q5).

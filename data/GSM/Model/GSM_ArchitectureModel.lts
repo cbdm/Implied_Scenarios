@@ -1,0 +1,111 @@
+Process:
+	ArchitectureModel
+States:
+	90
+Transitions:
+	ArchitectureModel = Q0,
+	Q0	= (ms.bss.channelReq -> Q1),
+	Q1	= (bss.ms.immAssign -> Q2),
+	Q2	= (ms.bss.pageResp -> Q3
+		  |ms.bss.locationUpdate -> Q45
+		  |ms.bss.callSetup -> Q64),
+	Q3	= (bss.ms.pageRspAck -> Q4),
+	Q4	= (bss.msc.pageRspReq -> Q5),
+	Q5	= (msc.network.procAccessReq -> Q6),
+	Q6	= (network.msc.provideImsi -> Q7
+		  |network.msc.authenticate -> Q11),
+	Q7	= (msc.ms.identityReq -> Q8),
+	Q8	= (ms.msc.identityResp -> Q9),
+	Q9	= (msc.network.imsiAck -> Q10),
+	Q10	= (network.msc.authenticate -> Q11),
+	Q11	= (msc.ms.authenReq -> Q12),
+	Q12	= (ms.msc.authenResp -> Q13),
+	Q13	= (msc.network.authenComplt -> Q14),
+	Q14	= (msc.ms.serviceReject -> Q0
+		  |msc.ms.serviceAccept -> Q15),
+	Q15	= (network.msc.setCipherMode -> Q16
+		  |msc.bss.callSetup -> Q21),
+	Q16	= (msc.bss.cipherModeCmnd -> Q17),
+	Q17	= (bss.ms.cipherMode -> Q18),
+	Q18	= (ms.bss.ciphModeCmplt -> Q19),
+	Q19	= (bss.msc.ciphCmplt -> Q20),
+	Q20	= (msc.bss.callSetup -> Q21),
+	Q21	= (bss.ms.callSUp -> Q22),
+	Q22	= (ms.bss.confirm -> Q23),
+	Q23	= (bss.msc.conf -> Q24),
+	Q24	= (msc.network.addCmplt -> Q25),
+	Q25	= (msc.ms.alerting -> Q26),
+	Q26	= (ms.bss.alert -> Q27),
+	Q27	= (bss.msc.alrt -> Q28),
+	Q28	= (ms.msc.conct -> Q29),
+	Q29	= (msc.network.answer -> Q30
+		  |ms.bss.discon -> Q44),
+	Q30	= (network.msc.release -> Q31
+		  |ms.bss.discon -> Q38),
+	Q31	= (msc.bss.discMsg -> Q32
+		  |ms.bss.discon -> Q37),
+	Q32	= (bss.ms.disconnect -> Q33),
+	Q33	= (ms.msc.released -> Q34),
+	Q34	= (msc.network.relConf -> Q35),
+	Q35	= (msc.bss.relCmplt -> Q36),
+	Q36	= (bss.ms.releaseCmplt -> Q0),
+	Q37	= STOP,
+	Q38	= (network.msc.release -> Q37
+		  |bss.msc.disc -> Q39),
+	Q39	= (msc.network.rel -> Q40),
+	Q40	= (network.msc.relCnfm -> Q41),
+	Q41	= (msc.ms.relse -> Q42),
+	Q42	= (ms.bss.rlCmplt -> Q43),
+	Q43	= (bss.msc.relComplt -> Q0),
+	Q44	= (msc.network.answer -> Q38),
+	Q45	= (bss.msc.locUpReq -> Q46),
+	Q46	= (msc.network.locUpdArea -> Q47),
+	Q47	= (network.msc.provideImsi -> Q48
+		  |network.msc.authenticate -> Q52),
+	Q48	= (msc.ms.identityReq -> Q49),
+	Q49	= (ms.msc.identityResp -> Q50),
+	Q50	= (msc.network.imsiAck -> Q51),
+	Q51	= (network.msc.authenticate -> Q52),
+	Q52	= (msc.ms.authenReq -> Q53),
+	Q53	= (ms.msc.authenResp -> Q54),
+	Q54	= (msc.network.authenComplt -> Q55),
+	Q55	= (msc.ms.serviceReject -> Q0
+		  |msc.ms.serviceAccept -> Q56),
+	Q56	= (network.msc.locUpAck -> Q57
+		  |network.msc.setCipherMode -> Q59),
+	Q57	= (msc.bss.locUpAccepted -> Q58),
+	Q58	= (bss.ms.locUpAcc -> Q0),
+	Q59	= (msc.bss.cipherModeCmnd -> Q60),
+	Q60	= (bss.ms.cipherMode -> Q61),
+	Q61	= (ms.bss.ciphModeCmplt -> Q62),
+	Q62	= (bss.msc.ciphCmplt -> Q63),
+	Q63	= (network.msc.locUpAck -> Q57),
+	Q64	= (bss.msc.callSetupReq -> Q65),
+	Q65	= (msc.network.callSetUp -> Q66),
+	Q66	= (network.msc.provideImsi -> Q67
+		  |network.msc.authenticate -> Q71),
+	Q67	= (msc.ms.identityReq -> Q68),
+	Q68	= (ms.msc.identityResp -> Q69),
+	Q69	= (msc.network.imsiAck -> Q70),
+	Q70	= (network.msc.authenticate -> Q71),
+	Q71	= (msc.ms.authenReq -> Q72),
+	Q72	= (ms.msc.authenResp -> Q73),
+	Q73	= (msc.network.authenComplt -> Q74),
+	Q74	= (msc.ms.serviceReject -> Q0
+		  |msc.ms.serviceAccept -> Q75),
+	Q75	= (network.msc.setCipherMode -> Q76
+		  |msc.bss.assignComnd -> Q81),
+	Q76	= (msc.bss.cipherModeCmnd -> Q77),
+	Q77	= (bss.ms.cipherMode -> Q78),
+	Q78	= (ms.bss.ciphModeCmplt -> Q79),
+	Q79	= (bss.msc.ciphCmplt -> Q80),
+	Q80	= (msc.bss.assignComnd -> Q81),
+	Q81	= (bss.ms.assigned -> Q82),
+	Q82	= (bss.ms.assignCmplt -> Q83),
+	Q83	= (bss.msc.assignCmpt -> Q84),
+	Q84	= (msc.network.initialMsg -> Q85),
+	Q85	= (network.msc.addCmpltMsg -> Q86),
+	Q86	= (msc.ms.alerting -> Q87),
+	Q87	= (network.msc.answerMsg -> Q88),
+	Q88	= (msc.ms.connect -> Q89),
+	Q89	= (ms.msc.connectAck -> Q30).

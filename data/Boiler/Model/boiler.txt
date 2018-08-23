@@ -1,0 +1,47 @@
+! Boiler
+
+//
+// Transitions
+//
+
+@ init -> Initialise
+
+@ Initialise -> Register
+
+@ Register -> Register
+@ Register -> Analysis
+@ Register -> Terminate
+
+@ Analysis -> Register
+
+@ Terminate -> Initialise
+
+//
+// Components
+//
+
+# Sensor
+# Database
+# Control
+# Actuator
+
+//
+// Scenarios
+//
+
+$ Initialise
+% Control -> Sensor : on
+
+
+$ Register
+% Sensor -> Database : pressure
+
+
+$ Analysis
+% Control -> Database : query
+% Database -> Control : data
+% Control -> Actuator : command
+
+
+$ Terminate
+% Control -> Sensor : off

@@ -1,0 +1,285 @@
+Levenshtein distance between
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+and
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+and
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+and
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+and
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+and
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+is 1.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+and
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+and
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+and
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+and
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+and
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+is 2.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']
+is 4.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']
+is 5.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	1: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	2: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	3: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+is 7.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	4: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+is 8.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	5: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+is 8.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	6: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']
+is 8.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	7: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+is 8.0
+
+--- --- --- --- ---
+
+Levenshtein distance between
+	0: ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+and
+	8: ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']
+is 11.0

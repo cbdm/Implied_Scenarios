@@ -1,0 +1,8 @@
+ID: [ordered messages]
+
+0: [user.qh.enterQuery, qh.qhaux.extractConcepts, qhaux.qh._extractConcepts, qh.cl.sendConcept, qh.rep.sendConcept, rep.qh.returnResults, cl.claux.newConcepts]
+1: [user.qh.enterQuery, qh.qhaux.extractConcepts, qhaux.qh._extractConcepts, qh.cl.sendConcept, qh.rep.sendConcept, cl.claux.newConcepts, rep.qh.returnResults]
+2: [user.qh.enterQuery, qh.qhaux.extractConcepts, qhaux.qh._extractConcepts, qh.cl.sendConcept, qh.rep.sendConcept, cl.claux.newConcepts, claux.cl._newConcepts, rep.qh.returnResults]
+3: [user.qh.enterQuery, qh.qhaux.extractConcepts, qhaux.qh._extractConcepts, qh.cl.sendConcept, qh.rep.sendConcept, cl.claux.newConcepts, claux.cl._newConcepts, cl.qh.newConceptsDetected, rep.qh.returnResults]
+4: [user.qh.enterQuery, qh.qhaux.extractConcepts, qhaux.qh._extractConcepts, qh.cl.sendConcept, qh.rep.sendConcept, cl.claux.newConcepts, claux.cl._newConcepts, cl.qh.newConceptsDetected, cl.peer.startLearning, rep.qh.returnResults]
+5: [user.qh.enterQuery, qh.qhaux.extractConcepts, qhaux.qh._extractConcepts, qh.cl.sendConcept, qh.rep.sendConcept, cl.claux.newConcepts, claux.cl._newConcepts, cl.qh.newConceptsDetected, cl.peer.startLearning, peer.cl.learnConcepts, rep.qh.returnResults]

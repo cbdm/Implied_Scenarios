@@ -1,0 +1,60 @@
+! APTS
+
+//
+// Transitions
+//
+
+@ init -> VehicleAtTerminal
+@ init -> VehicleNotAtTerminal
+
+//
+// Components
+//
+
+# Passenger1
+# Terminal1
+# Vehicle
+# ControlCentre
+# Terminal2
+# Passenger2
+
+//
+// Scenarios
+//
+
+$ VehicleAtTerminal
+% Passenger2 -> Terminal2 : buyTicket
+% Terminal2 -> Passenger2 : displayGate
+% Passenger2 -> Vehicle : enter
+% Terminal2 -> Vehicle : setDestination
+% Vehicle -> Terminal2 : departReq
+% Terminal2 -> Vehicle : departAck
+% Vehicle -> Terminal1 : alert100
+% Vehicle -> Terminal1 : arriveReq
+% Terminal1 -> Vehicle : arriveAck
+% Vehicle -> Terminal1 : arrived
+% Passenger2 -> Vehicle : exit
+
+
+$ VehicleNotAtTerminal
+% Passenger1 -> Terminal1 : buyTicket
+% Terminal1 -> ControlCentre : requestVehicle
+% ControlCentre -> Terminal2 : orderVehicle
+% Terminal2 -> Vehicle : setDestination
+% Vehicle -> Terminal2 : departReq
+% Terminal2 -> Vehicle : departAck
+% Terminal1 -> Vehicle : alert100
+% Terminal2 -> ControlCentre : orderAck &
+% Vehicle -> Terminal1 : arriveReq
+% Terminal1 -> Vehicle : arriveAck
+% Vehicle -> Terminal1 : arrived
+% Terminal1 -> Passenger1 : displayGate
+% Passenger1 -> Vehicle : enter
+% Terminal1 -> Vehicle : setDestination
+% Vehicle -> Terminal1 : departReq
+% Terminal1 -> Vehicle : departAck
+% Vehicle -> Terminal2 : alert100
+% Vehicle -> Terminal2 : arriveReq
+% Terminal2 -> Vehicle : arriveAck
+% Vehicle -> Terminal2 : arrived
+% Passenger1 -> Vehicle : exit

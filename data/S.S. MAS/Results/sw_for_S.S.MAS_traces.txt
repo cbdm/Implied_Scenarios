@@ -1,0 +1,192 @@
+Alignment of
+	4: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'rep.qh.returnResults']
+and
+	5: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'peer.cl.learnConcepts', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', '#GAP#', 'rep.qh.returnResults']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'peer.cl.learnConcepts', 'rep.qh.returnResults']
+
+	Score: 28.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'rep.qh.returnResults']
+and
+	4: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', '#GAP#', 'rep.qh.returnResults']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'rep.qh.returnResults']
+
+	Score: 25.0
+
+--- --- --- --- ---
+
+Alignment of
+	3: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'rep.qh.returnResults']
+and
+	5: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'peer.cl.learnConcepts', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected']
+
+	Score: 24.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'rep.qh.returnResults']
+and
+	3: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', '#GAP#', 'rep.qh.returnResults']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'rep.qh.returnResults']
+
+	Score: 22.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'rep.qh.returnResults']
+and
+	4: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	2: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'rep.qh.returnResults']
+and
+	5: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'peer.cl.learnConcepts', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts']
+
+	Score: 21.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'rep.qh.returnResults']
+and
+	2: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', '#GAP#', 'rep.qh.returnResults']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'rep.qh.returnResults']
+
+	Score: 19.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'rep.qh.returnResults']
+and
+	3: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'rep.qh.returnResults']
+and
+	4: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	1: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'rep.qh.returnResults']
+and
+	5: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'peer.cl.learnConcepts', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts']
+
+	Score: 18.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+and
+	1: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', '#GAP#', 'rep.qh.returnResults']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'rep.qh.returnResults']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+and
+	2: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', '#GAP#', 'cl.claux.newConcepts']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+and
+	3: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', '#GAP#', 'cl.claux.newConcepts']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+and
+	4: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', '#GAP#', 'cl.claux.newConcepts']
+
+	Score: 16.0
+
+--- --- --- --- ---
+
+Alignment of
+	0: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+and
+	5: ['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'cl.claux.newConcepts', 'claux.cl._newConcepts', 'cl.qh.newConceptsDetected', 'cl.peer.startLearning', 'peer.cl.learnConcepts', 'rep.qh.returnResults']:
+
+
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', 'rep.qh.returnResults', 'cl.claux.newConcepts']
+	['user.qh.enterQuery', 'qh.qhaux.extractConcepts', 'qhaux.qh._extractConcepts', 'qh.cl.sendConcept', 'qh.rep.sendConcept', '#GAP#', 'cl.claux.newConcepts']
+
+	Score: 16.0

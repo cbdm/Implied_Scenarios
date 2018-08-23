@@ -1,0 +1,217 @@
+//------------------------- SmartCam System --------------------------
+
+
+//------------------------------------------------------------------
+//----------------------- Components' States -----------------------
+//------------------------------------------------------------------
+
+Camera1 = Q0,
+	Q0	= (camera3.camera1.ask_confidence -> Q1
+		  |camera2.camera1.ask_confidence -> Q2),
+	Q1	= (camera1.camera3.no_confidence -> Q3),
+	Q2	= (camera1.camera2.no_confidence -> Q4),
+	Q3	= (camera1.object.sees_obj -> Q5
+		  |camera3.camera1.start_search -> Q6),
+	Q4	= (camera1.object.sees_obj -> Q7
+		  |camera2.camera1.start_search -> Q8),
+	Q5	= (camera3.camera1.start_search -> Q9),
+	Q6	= (endAction -> Q10),
+	Q7	= (camera2.camera1.start_search -> Q8),
+	Q8	= (camera1.camera2.found_obj -> Q11),
+	Q9	= (camera1.camera3.found_obj -> Q12),
+	Q10	= END,
+	Q11	= (camera2.camera1.ask_confidence -> Q13),
+	Q12	= (camera3.camera1.ask_confidence -> Q14),
+	Q13	= (camera1.camera2.send_confidence -> Q15),
+	Q14	= (camera1.camera3.send_confidence -> Q16),
+	Q15	= (camera2.camera1.allow_tracking -> Q6),
+	Q16	= (camera3.camera1.allow_tracking -> Q17),
+	Q17	= (camera1.object.start_tracking -> Q18),
+	Q18	= (camera1.object.loses_obj -> Q19),
+	Q19	= (camera1.camera2.start_search -> Q20
+		  |camera1.camera3.start_search -> Q21),
+	Q20	= (camera1.camera3.start_search -> Q22),
+	Q21	= (camera1.camera2.start_search -> Q22),
+	Q22	= (camera2.camera1.found_obj -> Q23),
+	Q23	= (camera1.camera2.ask_confidence -> Q24),
+	Q24	= (camera2.camera1.send_confidence -> Q25),
+	Q25	= (camera1.camera2.allow_tracking -> Q6).
+
+Camera2 = Q0,
+	Q0	= (camera1.camera2.start_search -> Q1
+		  |camera2.object.sees_obj -> Q2
+		  |camera4.camera2.ask_confidence -> Q3),
+	Q1	= (camera2.object.sees_obj -> Q4),
+	Q2	= (camera2.camera1.ask_confidence -> Q5),
+	Q3	= (camera2.camera4.no_confidence -> Q6),
+	Q4	= (camera2.camera1.found_obj -> Q7),
+	Q5	= (camera2.camera4.ask_confidence -> Q8),
+	Q6	= (endAction -> Q9),
+	Q7	= (camera4.camera2.ask_confidence -> Q10
+		  |camera1.camera2.ask_confidence -> Q11),
+	Q8	= (camera4.camera2.ask_confidence -> Q12
+		  |camera1.camera2.no_confidence -> Q13),
+	Q9	= END,
+	Q10	= (camera2.camera4.send_confidence -> Q14),
+	Q11	= (camera2.camera1.send_confidence -> Q15),
+	Q12	= (camera1.camera2.no_confidence -> Q16),
+	Q13	= (camera4.camera2.no_confidence -> Q17),
+	Q14	= (camera1.camera2.ask_confidence -> Q11),
+	Q15	= (camera1.camera2.allow_tracking -> Q6),
+	Q16	= (camera4.camera2.send_confidence -> Q18),
+	Q17	= (camera2.object.start_tracking -> Q19),
+	Q18	= (camera2.camera4.send_confidence -> Q20),
+	Q19	= (camera2.object.loses_obj -> Q21),
+	Q20	= (camera4.camera2.allow_tracking -> Q17),
+	Q21	= (camera2.camera1.start_search -> Q22),
+	Q22	= (camera2.camera4.start_search -> Q23),
+	Q23	= (camera1.camera2.found_obj -> Q24),
+	Q24	= (camera2.camera1.ask_confidence -> Q25),
+	Q25	= (camera1.camera2.send_confidence -> Q26),
+	Q26	= (camera2.camera1.allow_tracking -> Q6).
+
+Camera3 = Q0,
+	Q0	= (endAction -> Q1
+		  |camera3.object.sees_obj -> Q2),
+	Q1	= END,
+	Q2	= (camera3.camera1.ask_confidence -> Q3),
+	Q3	= (camera1.camera3.no_confidence -> Q4),
+	Q4	= (camera3.object.start_tracking -> Q5),
+	Q5	= (camera3.object.loses_obj -> Q6),
+	Q6	= (camera3.camera1.start_search -> Q7),
+	Q7	= (endAction -> Q1
+		  |camera1.camera3.found_obj -> Q8),
+	Q8	= (camera3.camera1.ask_confidence -> Q9),
+	Q9	= (camera1.camera3.send_confidence -> Q10),
+	Q10	= (camera3.camera1.allow_tracking -> Q11),
+	Q11	= (camera1.camera3.start_search -> Q12),
+	Q12	= (endAction -> Q1).
+
+Camera4 = Q0,
+	Q0	= (endAction -> Q1
+		  |camera4.object.sees_obj -> Q2
+		  |camera2.camera4.ask_confidence -> Q3),
+	Q1	= END,
+	Q2	= (camera4.camera2.ask_confidence -> Q4
+		  |camera2.camera4.ask_confidence -> Q5),
+	Q3	= (camera4.camera2.no_confidence -> Q6),
+	Q4	= (camera2.camera4.send_confidence -> Q7
+		  |camera2.camera4.no_confidence -> Q8),
+	Q5	= (camera4.camera2.ask_confidence -> Q9),
+	Q6	= (camera2.camera4.start_search -> Q7),
+	Q7	= (endAction -> Q1),
+	Q8	= (camera4.object.start_tracking -> Q7),
+	Q9	= (camera4.camera2.send_confidence -> Q10),
+	Q10	= (camera2.camera4.send_confidence -> Q11),
+	Q11	= (camera4.camera2.allow_tracking -> Q6).
+
+Object = Q0,
+	Q0	= (camera3.object.sees_obj -> Q1
+		  |camera2.object.sees_obj -> Q2),
+	Q1	= (camera3.object.start_tracking -> Q3),
+	Q2	= (camera4.object.sees_obj -> Q4
+		  |camera2.object.start_tracking -> Q5),
+	Q3	= (camera1.object.sees_obj -> Q6
+		  |camera3.object.loses_obj -> Q7),
+	Q4	= (camera2.object.start_tracking -> Q8),
+	Q5	= (camera1.object.sees_obj -> Q8),
+	Q6	= (camera3.object.loses_obj -> Q9),
+	Q7	= (camera1.object.sees_obj -> Q10
+		  |camera4.object.sees_obj -> Q11),
+	Q8	= (camera2.object.loses_obj -> Q12),
+	Q9	= (camera1.object.start_tracking -> Q13),
+	Q10	= (camera1.object.start_tracking -> Q14),
+	Q11	= (camera4.object.start_tracking -> Q12),
+	Q12	= (endAction -> Q15),
+	Q13	= (camera1.object.loses_obj -> Q16),
+	Q14	= (camera1.object.loses_obj -> Q17),
+	Q15	= END,
+	Q16	= (camera2.object.sees_obj -> Q12),
+	Q17	= (camera4.object.sees_obj -> Q16).
+
+//------------------------------------------------------------------
+//----------------------------- Constraints ------------------------
+//------------------------------------------------------------------
+
+// NegScen1
+//
+// This constraint makes sure that all 'ask_confidence' messages are out before getting a response in Scenario 1.
+
+// Allows everything until camera2_sees is detected.
+NegScen1 = (camera2.object.sees_obj -> Aux1 | { camera4.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera4.camera2.ask_confidence, camera1.camera2.no_confidence, camera4.camera2.send_confidence, camera2.camera4.send_confidence, camera4.camera2.allow_tracking, camera2.object.start_tracking, camera2.object.loses_obj, camera2.camera1.start_search, camera2.camera4.start_search, camera1.camera2.found_obj, camera1.camera2.send_confidence, camera2.camera1.allow_tracking, camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera1.object.sees_obj, camera3.object.loses_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera1.camera3.start_search, camera1.camera2.start_search, camera2.camera1.found_obj, camera1.camera2.ask_confidence, camera2.camera1.send_confidence, camera1.camera2.allow_tracking, camera2.camera4.no_confidence, camera4.object.start_tracking, camera4.camera2.no_confidence } -> NegScen1),
+
+// If the pattern camera2_sees and camera4_sees is detected, then go to the next state.
+// Otherwise, returns to the initial state.
+Aux1 = (camera4.object.sees_obj -> Aux2 | { camera2.camera1.found_obj, camera2.camera1.ask_confidence } -> NegScen1),
+
+// Makes sure that all ask_confidence messages are out.
+Aux2 = (camera2.camera1.ask_confidence -> camera2.camera4.ask_confidence -> camera4.camera2.ask_confidence -> NegScen1).
+
+
+// NegScen2
+//
+// This constraint makes sure that after Camera 1 loses the object, it immediately sends 'start_search' messages before anything else happens.
+// Also guarantees that 'start_search' goes to Camera 3 first, to make Scenario 2 work.
+
+// Allows everything until Camera 1 sees the object or Camera 3 loses it.
+NegScen2 = (camera1.object.sees_obj -> Aux1 | { camera2.object.sees_obj, camera3.object.loses_obj, camera4.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera4.camera2.ask_confidence, camera1.camera2.no_confidence, camera4.camera2.send_confidence, camera2.camera4.send_confidence, camera4.camera2.allow_tracking, camera2.object.start_tracking, camera2.object.loses_obj, camera2.camera1.start_search, camera2.camera4.start_search, camera1.camera2.found_obj, camera1.camera2.send_confidence, camera2.camera1.allow_tracking, camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera3.camera1.start_search, camera1.camera3.found_obj, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera1.camera3.start_search, camera1.camera2.start_search, camera2.camera1.found_obj, camera1.camera2.ask_confidence, camera2.camera1.send_confidence, camera1.camera2.allow_tracking, camera2.camera4.no_confidence, camera4.object.start_tracking, camera4.camera2.no_confidence } -> NegScen2),
+
+// Tries to match the pattern of Scenario 2, to make sure that other positive scenarios are not disturbed.
+// If it doesn't match, goes back to the initial state to allow everything.
+Aux1 = (camera3.object.loses_obj -> Aux2 | { camera2.object.loses_obj, camera3.camera1.start_search } -> NegScen2),
+
+// Allows everything until Camera 1 loses the object.
+// When it loses, it immediately sends start_search to Cam 3 and Cam 2.
+Aux2 = ( camera1.object.loses_obj -> camera1.camera3.start_search -> camera1.camera2.start_search -> NegScen2 | { camera2.object.sees_obj, camera4.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera4.camera2.ask_confidence, camera1.camera2.no_confidence, camera4.camera2.send_confidence, camera2.camera4.send_confidence, camera4.camera2.allow_tracking, camera2.object.start_tracking, camera2.object.loses_obj, camera2.camera1.start_search, camera2.camera4.start_search, camera1.camera2.found_obj, camera1.camera2.send_confidence, camera2.camera1.allow_tracking, camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera1.object.sees_obj, camera3.object.loses_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.camera3.start_search, camera1.camera2.start_search, camera2.camera1.found_obj, camera1.camera2.ask_confidence, camera2.camera1.send_confidence, camera1.camera2.allow_tracking, camera2.camera4.no_confidence, camera4.object.start_tracking, camera4.camera2.no_confidence } -> Aux2).
+
+
+// NegScen3
+//
+// This constraint makes sure that after Camera 1 loses the object, it immediately sends 'start_search' messages before anything else happens.
+// Also guarantees that 'start_search' goes to Camera 2 first, to make Scenario 5 work.
+
+// Allows everything until Camera 1 sees the object or Camera 3 loses it.
+NegScen3 = (camera3.object.loses_obj -> Aux1 | { camera1.object.sees_obj, camera2.object.sees_obj, camera4.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera4.camera2.ask_confidence, camera1.camera2.no_confidence, camera4.camera2.send_confidence, camera2.camera4.send_confidence, camera4.camera2.allow_tracking, camera2.object.start_tracking, camera2.object.loses_obj, camera2.camera1.start_search, camera2.camera4.start_search, camera1.camera2.found_obj, camera1.camera2.send_confidence, camera2.camera1.allow_tracking, camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera3.camera1.start_search, camera1.camera3.found_obj, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera1.camera3.start_search, camera1.camera2.start_search, camera2.camera1.found_obj, camera1.camera2.ask_confidence, camera2.camera1.send_confidence, camera1.camera2.allow_tracking, camera2.camera4.no_confidence, camera4.object.start_tracking, camera4.camera2.no_confidence } -> NegScen3),
+
+// Tries to match the pattern of Scenario 5, to make sure that other positive scenarios are not disturbed.
+// If it doesn't match, goes back to the initial state to allow everything.
+Aux1 = (camera1.object.sees_obj -> Aux2 | camera3.camera1.start_search -> NegScen3),
+
+// Allows everything until Camera 1 loses the object.
+// When it loses, it immediately sends start_search to Cam 2 and Cam 3.
+Aux2 = ( camera1.object.loses_obj -> camera1.camera2.start_search -> camera1.camera3.start_search -> NegScen3 | { camera2.object.sees_obj, camera4.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera4.camera2.ask_confidence, camera1.camera2.no_confidence, camera4.camera2.send_confidence, camera2.camera4.send_confidence, camera4.camera2.allow_tracking, camera2.object.start_tracking, camera2.object.loses_obj, camera2.camera1.start_search, camera2.camera4.start_search, camera1.camera2.found_obj, camera1.camera2.send_confidence, camera2.camera1.allow_tracking, camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera1.object.sees_obj, camera3.object.loses_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.camera3.start_search, camera1.camera2.start_search, camera2.camera1.found_obj, camera1.camera2.ask_confidence, camera2.camera1.send_confidence, camera1.camera2.allow_tracking, camera2.camera4.no_confidence, camera4.object.start_tracking, camera4.camera2.no_confidence } -> Aux2).
+
+//------------------------------------------------------------------
+//----------------------------- Compositions -----------------------
+//------------------------------------------------------------------
+
+ ||ArchitectureModel = (Camera1 || Camera2 || Camera3 || Camera4 || Object).
+
+ ||ConstrainedModel_1 = (ArchitectureModel || NegScen1).
+ ||ConstrainedModel_2 = (ArchitectureModel || NegScen2).
+ ||ConstrainedModel_3 = (ArchitectureModel || NegScen3).
+
+ ||ConstrainedModel = (ArchitectureModel || NegScen1 || NegScen2 || NegScen3).
+
+
+//------------------------------------------------------------------
+//----------------------------- Notes -----------------------
+//------------------------------------------------------------------
+
+// More complex constraint that can substitute NegScen2 and NegScen3
+
+//   // NegScen2
+//   //
+//   // This constraint makes sure that after Camera 1 loses the object, it immediately sends 'start_search' messages before anything else happens.
+//   // It also keeps track of what happens first cam1.sees or cam3.loses, because of the different order of start_search between Scenario 2 (cam3 -> cam2) and Scenario 5 (cam2 -> cam3).
+//   
+//   // Allows everything until Camera 1 sees the object or Camera 3 loses it.
+//   NegScen2 = (camera1.object.sees_obj -> AuxC1 | camera3.object.loses_obj -> AuxC3 | { camera2.object.sees_obj, camera4.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera4.camera2.ask_confidence, camera1.camera2.no_confidence, camera4.camera2.send_confidence, camera2.camera4.send_confidence, camera4.camera2.allow_tracking, camera2.object.start_tracking, camera2.object.loses_obj, camera2.camera1.start_search, camera2.camera4.start_search, camera1.camera2.found_obj, camera1.camera2.send_confidence, camera2.camera1.allow_tracking, camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera3.camera1.start_search, camera1.camera3.found_obj, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera1.camera3.start_search, camera1.camera2.start_search, camera2.camera1.found_obj, camera1.camera2.ask_confidence, camera2.camera1.send_confidence, camera1.camera2.allow_tracking, camera2.camera4.no_confidence, camera4.object.start_tracking, camera4.camera2.no_confidence } -> NegScen2),
+//   
+//   // Allows everything until Camera 1 loses the object.
+//   // When it loses, it immediately sends start_search to Cam 3 and Cam 2.
+//   AuxC1 = ( camera1.object.loses_obj -> camera1.camera3.start_search -> camera1.camera2.start_search -> NegScen2 | { camera2.object.sees_obj, camera4.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera4.camera2.ask_confidence, camera1.camera2.no_confidence, camera4.camera2.send_confidence, camera2.camera4.send_confidence, camera4.camera2.allow_tracking, camera2.object.start_tracking, camera2.object.loses_obj, camera2.camera1.start_search, camera2.camera4.start_search, camera1.camera2.found_obj, camera1.camera2.send_confidence, camera2.camera1.allow_tracking, camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera1.object.sees_obj, camera3.object.loses_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.camera3.start_search, camera1.camera2.start_search, camera2.camera1.found_obj, camera1.camera2.ask_confidence, camera2.camera1.send_confidence, camera1.camera2.allow_tracking, camera2.camera4.no_confidence, camera4.object.start_tracking, camera4.camera2.no_confidence } -> AuxC1),
+//   
+//   // Allows everything until Camera 1 loses the object.
+//   // When it loses, it immediately sends start_search to Cam 2 and Cam 3.
+//   AuxC3 = ( camera1.object.loses_obj -> camera1.camera2.start_search -> camera1.camera3.start_search -> NegScen2 | { camera2.object.sees_obj, camera4.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera4.camera2.ask_confidence, camera1.camera2.no_confidence, camera4.camera2.send_confidence, camera2.camera4.send_confidence, camera4.camera2.allow_tracking, camera2.object.start_tracking, camera2.object.loses_obj, camera2.camera1.start_search, camera2.camera4.start_search, camera1.camera2.found_obj, camera1.camera2.send_confidence, camera2.camera1.allow_tracking, camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera1.object.sees_obj, camera3.object.loses_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.camera3.start_search, camera1.camera2.start_search, camera2.camera1.found_obj, camera1.camera2.ask_confidence, camera2.camera1.send_confidence, camera1.camera2.allow_tracking, camera2.camera4.no_confidence, camera4.object.start_tracking, camera4.camera2.no_confidence } -> AuxC3).

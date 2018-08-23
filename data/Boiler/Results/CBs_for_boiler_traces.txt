@@ -1,0 +1,4 @@
+Common Behaviors for boiler_traces:
+
+  0: ['on', 'query']
+  1: ['on', 'pressure', 'query', 'data', 'command', 'off']

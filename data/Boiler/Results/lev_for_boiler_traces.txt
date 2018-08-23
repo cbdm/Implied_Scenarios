@@ -1,0 +1,5 @@
+Levenshtein distance between
+	0: ['on', 'query']
+and
+	1: ['on', 'pressure', 'query', 'data', 'command', 'off']
+is 4.0

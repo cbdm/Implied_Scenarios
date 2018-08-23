@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification>
+  <hmsc>
+    <bmsc name="init" x="410" y="30" />
+    <bmsc name="VehicleAtTerminal" x="290" y="130" />
+    <bmsc name="VehicleNotAtTerminal" x="530" y="130" />
+    <transition>
+      <from>init</from>
+      <to>VehicleAtTerminal</to>
+    </transition>
+    <transition>
+      <from>init</from>
+      <to>VehicleNotAtTerminal</to>
+    </transition>
+  </hmsc>
+  <bmsc name="init" />
+  <bmsc name="VehicleAtTerminal">
+    <instance name="Terminal1">
+      <input timeindex="7">
+        <name>vehicle,terminal1,alert100</name>
+        <from>Vehicle</from>
+      </input>
+      <input timeindex="8">
+        <name>vehicle,terminal1,arriveReq</name>
+        <from>Vehicle</from>
+      </input>
+      <output timeindex="9">
+        <name>terminal1,vehicle,arriveAck</name>
+        <to>Vehicle</to>
+      </output>
+      <input timeindex="10">
+        <name>vehicle,terminal1,arrived</name>
+        <from>Vehicle</from>
+      </input>
+    </instance>
+    <instance name="Vehicle">
+      <input timeindex="3">
+        <name>passenger2,vehicle,enter</name>
+        <from>Passenger2</from>
+      </input>
+      <input timeindex="4">
+        <name>terminal2,vehicle,setDestination</name>
+        <from>Terminal2</from>
+      </input>
+      <output timeindex="5">
+        <name>vehicle,terminal2,departReq</name>
+        <to>Terminal2</to>
+      </output>
+      <input timeindex="6">
+        <name>terminal2,vehicle,departAck</name>
+        <from>Terminal2</from>
+      </input>
+      <output timeindex="7">
+        <name>vehicle,terminal1,alert100</name>
+        <to>Terminal1</to>
+      </output>
+      <output timeindex="8">
+        <name>vehicle,terminal1,arriveReq</name>
+        <to>Terminal1</to>
+      </output>
+      <input timeindex="9">
+        <name>terminal1,vehicle,arriveAck</name>
+        <from>Terminal1</from>
+      </input>
+      <output timeindex="10">
+        <name>vehicle,terminal1,arrived</name>
+        <to>Terminal1</to>
+      </output>
+      <input timeindex="11">
+        <name>passenger2,vehicle,exit</name>
+        <from>Passenger2</from>
+      </input>
+    </instance>
+    <instance name="Terminal2">
+      <input timeindex="1">
+        <name>passenger2,terminal2,buyTicket</name>
+        <from>Passenger2</from>
+      </input>
+      <output timeindex="2">
+        <name>terminal2,passenger2,displayGate</name>
+        <to>Passenger2</to>
+      </output>
+      <output timeindex="4">
+        <name>terminal2,vehicle,setDestination</name>
+        <to>Vehicle</to>
+      </output>
+      <input timeindex="5">
+        <name>vehicle,terminal2,departReq</name>
+        <from>Vehicle</from>
+      </input>
+      <output timeindex="6">
+        <name>terminal2,vehicle,departAck</name>
+        <to>Vehicle</to>
+      </output>
+    </instance>
+    <instance name="Passenger2">
+      <output timeindex="1">
+        <name>passenger2,terminal2,buyTicket</name>
+        <to>Terminal2</to>
+      </output>
+      <input timeindex="2">
+        <name>terminal2,passenger2,displayGate</name>
+        <from>Terminal2</from>
+      </input>
+      <output timeindex="3">
+        <name>passenger2,vehicle,enter</name>
+        <to>Vehicle</to>
+      </output>
+      <output timeindex="11">
+        <name>passenger2,vehicle,exit</name>
+        <to>Vehicle</to>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="VehicleNotAtTerminal">
+    <instance name="Passenger1">
+      <output timeindex="1">
+        <name>passenger1,terminal1,buyTicket</name>
+        <to>Terminal1</to>
+      </output>
+      <input timeindex="11">
+        <name>terminal1,passenger1,displayGate</name>
+        <from>Terminal1</from>
+      </input>
+      <output timeindex="12">
+        <name>passenger1,vehicle,enter</name>
+        <to>Vehicle</to>
+      </output>
+      <output timeindex="20">
+        <name>passenger1,vehicle,exit</name>
+        <to>Vehicle</to>
+      </output>
+    </instance>
+    <instance name="Terminal1">
+      <input timeindex="1">
+        <name>passenger1,terminal1,buyTicket</name>
+        <from>Passenger1</from>
+      </input>
+      <output timeindex="2">
+        <name>terminal1,controlcentre,requestVehicle</name>
+        <to>ControlCentre</to>
+      </output>
+      <output timeindex="7">
+        <name>terminal1,vehicle,alert100</name>
+        <to>Vehicle</to>
+      </output>
+      <input timeindex="8">
+        <name>vehicle,terminal1,arriveReq</name>
+        <from>Vehicle</from>
+      </input>
+      <output timeindex="9">
+        <name>terminal1,vehicle,arriveAck</name>
+        <to>Vehicle</to>
+      </output>
+      <input timeindex="10">
+        <name>vehicle,terminal1,arrived</name>
+        <from>Vehicle</from>
+      </input>
+      <output timeindex="11">
+        <name>terminal1,passenger1,displayGate</name>
+        <to>Passenger1</to>
+      </output>
+      <output timeindex="13">
+        <name>terminal1,vehicle,setDestination</name>
+        <to>Vehicle</to>
+      </output>
+      <input timeindex="14">
+        <name>vehicle,terminal1,departReq</name>
+        <from>Vehicle</from>
+      </input>
+      <output timeindex="15">
+        <name>terminal1,vehicle,departAck</name>
+        <to>Vehicle</to>
+      </output>
+    </instance>
+    <instance name="Vehicle">
+      <input timeindex="4">
+        <name>terminal2,vehicle,setDestination</name>
+        <from>Terminal2</from>
+      </input>
+      <output timeindex="5">
+        <name>vehicle,terminal2,departReq</name>
+        <to>Terminal2</to>
+      </output>
+      <input timeindex="6">
+        <name>terminal2,vehicle,departAck</name>
+        <from>Terminal2</from>
+      </input>
+      <input timeindex="7">
+        <name>terminal1,vehicle,alert100</name>
+        <from>Terminal1</from>
+      </input>
+      <output timeindex="8">
+        <name>vehicle,terminal1,arriveReq</name>
+        <to>Terminal1</to>
+      </output>
+      <input timeindex="9">
+        <name>terminal1,vehicle,arriveAck</name>
+        <from>Terminal1</from>
+      </input>
+      <output timeindex="10">
+        <name>vehicle,terminal1,arrived</name>
+        <to>Terminal1</to>
+      </output>
+      <input timeindex="12">
+        <name>passenger1,vehicle,enter</name>
+        <from>Passenger1</from>
+      </input>
+      <input timeindex="13">
+        <name>terminal1,vehicle,setDestination</name>
+        <from>Terminal1</from>
+      </input>
+      <output timeindex="14">
+        <name>vehicle,terminal1,departReq</name>
+        <to>Terminal1</to>
+      </output>
+      <input timeindex="15">
+        <name>terminal1,vehicle,departAck</name>
+        <from>Terminal1</from>
+      </input>
+      <output timeindex="16">
+        <name>vehicle,terminal2,alert100</name>
+        <to>Terminal2</to>
+      </output>
+      <output timeindex="17">
+        <name>vehicle,terminal2,arriveReq</name>
+        <to>Terminal2</to>
+      </output>
+      <input timeindex="18">
+        <name>terminal2,vehicle,arriveAck</name>
+        <from>Terminal2</from>
+      </input>
+      <output timeindex="19">
+        <name>vehicle,terminal2,arrived</name>
+        <to>Terminal2</to>
+      </output>
+      <input timeindex="20">
+        <name>passenger1,vehicle,exit</name>
+        <from>Passenger1</from>
+      </input>
+    </instance>
+    <instance name="ControlCentre">
+      <input timeindex="2">
+        <name>terminal1,controlcentre,requestVehicle</name>
+        <from>Terminal1</from>
+      </input>
+      <output timeindex="3">
+        <name>controlcentre,terminal2,orderVehicle</name>
+        <to>Terminal2</to>
+      </output>
+      <input timeindex="8">
+        <name>terminal2,controlcentre,orderAck</name>
+        <from>Terminal2</from>
+      </input>
+    </instance>
+    <instance name="Terminal2">
+      <input timeindex="3">
+        <name>controlcentre,terminal2,orderVehicle</name>
+        <from>ControlCentre</from>
+      </input>
+      <output timeindex="4">
+        <name>terminal2,vehicle,setDestination</name>
+        <to>Vehicle</to>
+      </output>
+      <input timeindex="5">
+        <name>vehicle,terminal2,departReq</name>
+        <from>Vehicle</from>
+      </input>
+      <output timeindex="6">
+        <name>terminal2,vehicle,departAck</name>
+        <to>Vehicle</to>
+      </output>
+      <input timeindex="16">
+        <name>vehicle,terminal2,alert100</name>
+        <from>Vehicle</from>
+      </input>
+      <output timeindex="8">
+        <name>terminal2,controlcentre,orderAck</name>
+        <to>ControlCentre</to>
+      </output>
+      <input timeindex="17">
+        <name>vehicle,terminal2,arriveReq</name>
+        <from>Vehicle</from>
+      </input>
+      <output timeindex="18">
+        <name>terminal2,vehicle,arriveAck</name>
+        <to>Vehicle</to>
+      </output>
+      <input timeindex="19">
+        <name>vehicle,terminal2,arrived</name>
+        <from>Vehicle</from>
+      </input>
+    </instance>
+  </bmsc>
+</specification>
+

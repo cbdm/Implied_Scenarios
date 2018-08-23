@@ -1,0 +1,58 @@
+Process:
+	ConstrainedModel
+States:
+	42
+Transitions:
+	ConstrainedModel = Q0,
+	Q0	= (passenger2.terminal2.buyTicket -> Q1
+		  |passenger1.terminal1.buyTicket -> Q13),
+	Q1	= (terminal2.passenger2.displayGate -> Q2),
+	Q2	= (passenger2.vehicle.enter -> Q3),
+	Q3	= (terminal2.vehicle.setDestination -> Q4),
+	Q4	= (vehicle.terminal2.departReq -> Q5),
+	Q5	= (terminal2.vehicle.departAck -> Q6),
+	Q6	= (vehicle.terminal1.alert100 -> Q7),
+	Q7	= (vehicle.terminal1.arriveReq -> Q8),
+	Q8	= (terminal1.vehicle.arriveAck -> Q9),
+	Q9	= (vehicle.terminal1.arrived -> Q10),
+	Q10	= (passenger2.vehicle.exit -> Q11),
+	Q11	= (endAction -> Q12),
+	Q12	= END,
+	Q13	= (terminal1.controlcentre.requestVehicle -> Q14),
+	Q14	= (controlcentre.terminal2.orderVehicle -> Q15),
+	Q15	= (terminal2.vehicle.setDestination -> Q16),
+	Q16	= (vehicle.terminal2.departReq -> Q17),
+	Q17	= (terminal2.vehicle.departAck -> Q18),
+	Q18	= (terminal2.controlcentre.orderAck -> Q19
+		  |terminal1.vehicle.alert100 -> Q33),
+	Q19	= (terminal1.vehicle.alert100 -> Q20),
+	Q20	= (vehicle.terminal1.arriveReq -> Q21),
+	Q21	= (terminal1.vehicle.arriveAck -> Q22),
+	Q22	= (vehicle.terminal1.arrived -> Q23),
+	Q23	= (terminal1.passenger1.displayGate -> Q24),
+	Q24	= (passenger1.vehicle.enter -> Q25),
+	Q25	= (terminal1.vehicle.setDestination -> Q26),
+	Q26	= (vehicle.terminal1.departReq -> Q27),
+	Q27	= (terminal1.vehicle.departAck -> Q28),
+	Q28	= (vehicle.terminal2.alert100 -> Q29),
+	Q29	= (vehicle.terminal2.arriveReq -> Q30),
+	Q30	= (terminal2.vehicle.arriveAck -> Q31),
+	Q31	= (vehicle.terminal2.arrived -> Q32),
+	Q32	= (passenger1.vehicle.exit -> Q11),
+	Q33	= (terminal2.controlcentre.orderAck -> Q20
+		  |vehicle.terminal1.arriveReq -> Q34),
+	Q34	= (terminal2.controlcentre.orderAck -> Q21
+		  |terminal1.vehicle.arriveAck -> Q35),
+	Q35	= (terminal2.controlcentre.orderAck -> Q22
+		  |vehicle.terminal1.arrived -> Q36),
+	Q36	= (terminal2.controlcentre.orderAck -> Q23
+		  |terminal1.passenger1.displayGate -> Q37),
+	Q37	= (terminal2.controlcentre.orderAck -> Q24
+		  |passenger1.vehicle.enter -> Q38),
+	Q38	= (terminal2.controlcentre.orderAck -> Q25
+		  |terminal1.vehicle.setDestination -> Q39),
+	Q39	= (terminal2.controlcentre.orderAck -> Q26
+		  |vehicle.terminal1.departReq -> Q40),
+	Q40	= (terminal2.controlcentre.orderAck -> Q27
+		  |terminal1.vehicle.departAck -> Q41),
+	Q41	= (terminal2.controlcentre.orderAck -> Q28).

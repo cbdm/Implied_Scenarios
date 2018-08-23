@@ -1,0 +1,81 @@
+! Test file for apts_traces
+
+### Expected Behaviors
+
+! init, VehicleAtTerminal
+0: passenger2.terminal2.buyTicket, terminal2.passenger2.displayGate, passenger2.vehicle.enter, terminal2.vehicle.setDestination, vehicle.terminal2.departReq, terminal2.vehicle.departAck, vehicle.terminal1.alert100, vehicle.terminal1.arriveReq, terminal1.vehicle.arriveAck, vehicle.terminal1.arrived, passenger2.vehicle.exit
+
+! init, VehicleNotAtTerminal
+1: passenger1.terminal1.buyTicket, terminal1.controlcentre.requestVehicle, controlcentre.terminal2.orderVehicle, terminal2.vehicle.setDestination, vehicle.terminal2.departReq, terminal2.vehicle.departAck, terminal1.vehicle.alert100, terminal2.controlcentre.orderAck, vehicle.terminal1.arriveReq, terminal1.vehicle.arriveAck, vehicle.terminal1.arrived, terminal1.passenger1.displayGate, passenger1.vehicle.enter, terminal1.vehicle.setDestination, vehicle.terminal1.departReq, terminal1.vehicle.departAck, vehicle.terminal2.alert100, vehicle.terminal2.arriveReq, terminal2.vehicle.arriveAck, vehicle.terminal2.arrived, passenger1.vehicle.exit
+
+### Common Behavior 0
+
+!
+! ['passenger2.terminal2.buyTicket', 'passenger1.terminal1.buyTicket']
+!
+
+0: passenger2.terminal2.buyTicket, passenger1.terminal1.buyTicket
+
+### Common Behavior 1
+
+!
+! ['passenger1.terminal1.buyTicket', 'passenger2.terminal2.buyTicket']
+!
+
+1: passenger1.terminal1.buyTicket, passenger2.terminal2.buyTicket
+
+### Common Behavior 2
+
+!
+! ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'terminal2.vehicle.setDestination']
+!
+
+2: passenger2.terminal2.buyTicket, terminal2.passenger2.displayGate, terminal2.vehicle.setDestination
+
+### Common Behavior 3
+
+!
+! ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger1.terminal1.buyTicket']
+!
+
+3: passenger2.terminal2.buyTicket, terminal2.passenger2.displayGate, passenger1.terminal1.buyTicket
+
+### Common Behavior 4
+
+!
+! ['passenger1.terminal1.buyTicket', 'terminal1.controlcentre.requestVehicle', 'passenger2.terminal2.buyTicket']
+!
+
+4: passenger1.terminal1.buyTicket, terminal1.controlcentre.requestVehicle, passenger2.terminal2.buyTicket
+
+### Common Behavior 5
+
+!
+! ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'passenger1.terminal1.buyTicket']
+!
+
+5: passenger2.terminal2.buyTicket, terminal2.passenger2.displayGate, passenger2.vehicle.enter, passenger1.terminal1.buyTicket
+
+### Common Behavior 6
+
+!
+! ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'passenger1.terminal1.buyTicket']
+!
+
+6: passenger2.terminal2.buyTicket, terminal2.passenger2.displayGate, passenger2.vehicle.enter, terminal2.vehicle.setDestination, passenger1.terminal1.buyTicket
+
+### Common Behavior 7
+
+!
+! ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'passenger1.terminal1.buyTicket']
+!
+
+7: passenger2.terminal2.buyTicket, terminal2.passenger2.displayGate, passenger2.vehicle.enter, terminal2.vehicle.setDestination, vehicle.terminal2.departReq, passenger1.terminal1.buyTicket
+
+### Common Behavior 8
+
+!
+! ['passenger2.terminal2.buyTicket', 'terminal2.passenger2.displayGate', 'passenger2.vehicle.enter', 'terminal2.vehicle.setDestination', 'vehicle.terminal2.departReq', 'terminal2.vehicle.departAck', 'passenger1.terminal1.buyTicket']
+!
+
+8: passenger2.terminal2.buyTicket, terminal2.passenger2.displayGate, passenger2.vehicle.enter, terminal2.vehicle.setDestination, vehicle.terminal2.departReq, terminal2.vehicle.departAck, passenger1.terminal1.buyTicket

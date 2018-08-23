@@ -1,0 +1,40 @@
+Process:
+	ConstrainedArchitectureModel
+States:
+	30
+Transitions:
+	ConstrainedArchitectureModel = Q0,
+	Q0	= (engineOn -> Q1),
+	Q1	= (clearSpeed -> Q2
+		  |speed -> Q29),
+	Q2	= (on -> Q3),
+	Q3	= (recordSpeed -> Q4),
+	Q4	= (enableControl -> Q5
+		  |speed -> Q10),
+	Q5	= (brake -> Q6
+		  |speed -> Q8),
+	Q6	= (disableControl -> Q7),
+	Q7	= (engineOff -> Q0),
+	Q8	= (setThrottle -> Q9),
+	Q9	= (accelerator -> Q6),
+	Q10	= (enableControl -> Q11),
+	Q11	= (speed -> Q12),
+	Q12	= (setThrottle -> Q13
+		  |off -> Q28),
+	Q13	= (off -> Q14),
+	Q14	= (speed -> Q15),
+	Q15	= (setThrottle -> Q16),
+	Q16	= (disableControl -> Q17),
+	Q17	= (engineOff -> Q18),
+	Q18	= (engineOn -> Q19),
+	Q19	= (speed -> Q20),
+	Q20	= (clearSpeed -> Q21),
+	Q21	= (on -> Q22),
+	Q22	= (recordSpeed -> Q23),
+	Q23	= (enableControl -> Q24),
+	Q24	= (on -> Q25),
+	Q25	= (recordSpeed -> Q26),
+	Q26	= (enableControl -> Q27),
+	Q27	= (off -> Q6),
+	Q28	= (setThrottle -> Q14),
+	Q29	= (clearSpeed -> Q7).

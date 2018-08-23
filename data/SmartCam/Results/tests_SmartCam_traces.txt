@@ -1,0 +1,90 @@
+! Test file for SmartCam_traces
+
+### Expected Behaviors
+
+! init, Scenario1
+0: camera2.object.sees_obj, camera4.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera4.camera2.ask_confidence, camera1.camera2.no_confidence, camera4.camera2.send_confidence, camera2.camera4.send_confidence, camera4.camera2.allow_tracking, camera2.object.start_tracking, camera2.object.loses_obj, camera2.camera1.start_search, camera2.camera4.start_search, camera1.camera2.found_obj, camera2.camera1.ask_confidence, camera1.camera2.send_confidence, camera2.camera1.allow_tracking
+
+! init, Scenario2
+1: camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera1.object.sees_obj, camera3.object.loses_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera3.camera1.ask_confidence, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera1.camera3.start_search, camera1.camera2.start_search, camera2.object.sees_obj, camera2.camera1.found_obj, camera1.camera2.ask_confidence, camera2.camera1.send_confidence, camera1.camera2.allow_tracking
+
+! init, Scenario3
+2: camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera3.object.loses_obj, camera3.camera1.start_search, camera4.object.sees_obj, camera4.camera2.ask_confidence, camera2.camera4.no_confidence, camera4.object.start_tracking
+
+! init, Scenario4
+3: camera2.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera1.camera2.no_confidence, camera4.camera2.no_confidence, camera2.object.start_tracking, camera1.object.sees_obj, camera2.object.loses_obj, camera2.camera1.start_search, camera2.camera4.start_search, camera1.camera2.found_obj, camera2.camera1.ask_confidence, camera1.camera2.send_confidence, camera2.camera1.allow_tracking
+
+! init, Scenario5
+4: camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera3.object.loses_obj, camera1.object.sees_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera3.camera1.ask_confidence, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera1.camera2.start_search, camera1.camera3.start_search, camera4.object.sees_obj, camera2.object.sees_obj, camera2.camera1.found_obj, camera4.camera2.ask_confidence, camera2.camera4.send_confidence, camera1.camera2.ask_confidence, camera2.camera1.send_confidence, camera1.camera2.allow_tracking
+
+### Common Behavior 0
+
+!
+! ['camera2.object.sees_obj', 'camera4.object.sees_obj', 'camera2.camera1.ask_confidence', 'camera2.camera4.ask_confidence', 'camera1.camera2.no_confidence']
+!
+
+0: camera2.object.sees_obj, camera4.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera1.camera2.no_confidence
+
+### Common Behavior 1
+
+!
+! ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search']
+!
+
+1: camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera3.object.loses_obj, camera1.object.sees_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera3.camera1.ask_confidence, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera1.camera3.start_search
+
+### Common Behavior 2
+
+!
+! ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera2.object.sees_obj']
+!
+
+2: camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera1.object.sees_obj, camera3.object.loses_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera3.camera1.ask_confidence, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera2.object.sees_obj
+
+### Common Behavior 3
+
+!
+! ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera2.start_search']
+!
+
+3: camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera1.object.sees_obj, camera3.object.loses_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera3.camera1.ask_confidence, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera1.camera2.start_search
+
+### Common Behavior 4
+
+!
+! ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera4.camera2.ask_confidence']
+!
+
+4: camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera3.object.loses_obj, camera1.object.sees_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera3.camera1.ask_confidence, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera4.object.sees_obj, camera4.camera2.ask_confidence
+
+### Common Behavior 5
+
+!
+! ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera3.start_search']
+!
+
+5: camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera3.object.loses_obj, camera1.object.sees_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera3.camera1.ask_confidence, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera4.object.sees_obj, camera1.camera3.start_search
+
+### Common Behavior 6
+
+!
+! ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera2.object.sees_obj']
+!
+
+6: camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera3.object.loses_obj, camera1.object.sees_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera3.camera1.ask_confidence, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera4.object.sees_obj, camera2.object.sees_obj
+
+### Common Behavior 7
+
+!
+! ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera1.camera3.start_search', 'camera2.object.sees_obj']
+!
+
+7: camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera1.object.sees_obj, camera3.object.loses_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera3.camera1.ask_confidence, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera1.camera3.start_search, camera2.object.sees_obj
+
+### Common Behavior 8
+
+!
+! ['camera3.object.sees_obj', 'camera3.camera1.ask_confidence', 'camera1.camera3.send_confidence', 'camera3.camera1.allow_tracking', 'camera1.object.start_tracking', 'camera1.object.loses_obj', 'camera4.object.sees_obj', 'camera1.camera2.start_search', 'camera1.camera3.start_search', 'camera2.object.sees_obj', 'camera2.camera1.found_obj', 'camera1.camera2.ask_confidence']
+!
+
+8: camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera3.object.loses_obj, camera1.object.sees_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera3.camera1.ask_confidence, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera4.object.sees_obj, camera1.camera2.start_search, camera1.camera3.start_search, camera2.object.sees_obj, camera2.camera1.found_obj, camera1.camera2.ask_confidence

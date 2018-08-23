@@ -1,0 +1,150 @@
+//------------------------- Cruiser System -------------------------
+
+//------------------------------------------------------------------
+//----------------------- Components' States -----------------------
+//------------------------------------------------------------------
+
+InputSpeed = Q0,
+    Q0  = (engineOn -> Q1),
+    Q1  = (engineOff -> Q0
+          |speed -> Q2),
+    Q2  = (engineOff -> Q0
+          |speed -> Q3),
+    Q3  = (speed -> Q4),
+    Q4  = (engineOff -> Q5),
+    Q5  = (engineOn -> Q6),
+    Q6  = (speed -> Q7),
+    Q7  = (engineOff -> Q0).
+
+SensorScan = Q0,
+    Q0  = (on -> Q1),
+    Q1  = ({accelerator, brake} -> Q0
+          |off -> Q2),
+    Q2  = (on -> Q3),
+    Q3  = (on -> Q4),
+    Q4  = (off -> Q0).
+
+CruisController = Q0,
+    Q0  = (engineOn -> Q1),
+    Q1  = (clearSpeed -> Q2),
+    Q2  = (engineOff -> Q0
+          |on -> Q3),
+    Q3  = (recordSpeed -> Q4),
+    Q4  = (enableControl -> Q5),
+    Q5  = ({accelerator, brake} -> Q6
+          |off -> Q7),
+    Q6  = (disableControl -> Q8),
+    Q7  = (disableControl -> Q9),
+    Q8  = (engineOff -> Q0),
+    Q9  = (engineOff -> Q10),
+    Q10 = (engineOn -> Q11),
+    Q11 = (clearSpeed -> Q12),
+    Q12 = (on -> Q13),
+    Q13 = (recordSpeed -> Q14),
+    Q14 = (enableControl -> Q15),
+    Q15 = (on -> Q16),
+    Q16 = (recordSpeed -> Q17),
+    Q17 = (enableControl -> Q18),
+    Q18 = (off -> Q6).
+
+SpeedController = Q0,
+    Q0  = (clearSpeed -> Q1
+          |speed -> Q2),
+    Q1  = (recordSpeed -> Q3),
+    Q2  = (clearSpeed -> Q0),
+    Q3  = (speed -> Q4
+          |enableControl -> Q5),
+    Q4  = (enableControl -> Q6),
+    Q5  = (disableControl -> Q0
+          |speed -> Q7),
+    Q6  = (speed -> Q8),
+    Q7  = (setThrottle -> Q9),
+    Q8  = (setThrottle -> Q10),
+    Q9  = (disableControl -> Q0),
+    Q10 = (speed -> Q11),
+    Q11 = (setThrottle -> Q12),
+    Q12 = (disableControl -> Q13),
+    Q13 = (speed -> Q14),
+    Q14 = (clearSpeed -> Q15),
+    Q15 = (recordSpeed -> Q16),
+    Q16 = (enableControl -> Q17),
+    Q17 = (recordSpeed -> Q18),
+    Q18 = (enableControl -> Q9).
+
+Throttle = Q0,
+    Q0  = (setThrottle -> Q0).
+
+//------------------------------------------------------------------
+//----------------------------- Constraints ------------------------
+//------------------------------------------------------------------
+
+  // Constraint that treats occurences of 'off' and 'brake' in unwanted places
+  NegScen1 = ({accelerator, clearSpeed, disableControl, engineOff, engineOn, on, recordSpeed, setThrottle} -> NegScen1 | enableControl -> AuxEnable | speed -> AuxSpeed1), // Allows everything (but 'brake' and 'off') until a 'speed' or 'enableControl' is reached
+  AuxEnable = ({brake, off, on} -> NegScen1 | speed -> setThrottle -> NegScen1), // Força o brake após o enableControl e limita as possibilidades para o off
+  AuxSpeed1 = ({clearSpeed, setThrottle} -> NegScen1 | enableControl -> speed -> AuxSpeed2), // Deixa livre todas as alternativas do speed e passa para outro estago pra tratar o off
+  AuxSpeed2 = (off -> NegScen1 | setThrottle -> off -> NegScen1). // Limita as possibilidades para o off
+
+
+  // Constrains the options after 'enableControl'
+  NegScen2 = ({accelerator, brake, clearSpeed, engineOff, engineOn, off, on, recordSpeed, setThrottle, speed} -> NegScen2 | enableControl -> AuxEnable | disableControl -> AuxDisable),
+  AuxEnable = (brake -> disableControl -> engineOff -> NegScen2 | on -> recordSpeed -> enableControl -> off -> NegScen2 | speed -> NegScen2),
+  AuxDisable = (engineOff -> NegScen2).
+
+  // Constrains what can happen after 'engineOn'
+  NegScen3 = ({accelerator, brake, clearSpeed, disableControl, enableControl, engineOff, off, on, recordSpeed, speed} -> NegScen3 | engineOn -> Aux1 | setThrottle -> Aux2),
+  Aux1 = (clearSpeed -> on -> NegScen3 | speed -> clearSpeed -> engineOff -> NegScen3), // Limits the options for a regular system start
+  Aux2 = ({accelerator, off, speed} -> NegScen3 | disableControl -> Aux3), // Trying to match engine restart in Scenario #1
+  Aux3 = (engineOff -> engineOn -> speed -> clearSpeed -> on -> NegScen3). // Limits to the only option for a in-scenario restart (Scenario #1)
+
+//------------------------------------------------------------------
+//----------------------------- Compositions -----------------------
+//------------------------------------------------------------------
+
+ ||ArchitectureModel = (InputSpeed || SensorScan || CruisController || SpeedController || Throttle).
+
+ ||ConstrainedModel_1 = (ArchitectureModel || NegScen1).
+ ||ConstrainedModel_2 = (ArchitectureModel || NegScen2).
+ ||ConstrainedModel_3 = (ArchitectureModel || NegScen3).
+
+ ||ConstrainedModel = (ArchitectureModel || NegScen1 || NegScen2 || NegScen3).
+
+
+//------------------------------------------------------------------
+//----------------------------- Notes ------------------------------
+//------------------------------------------------------------------
+
+//// All messages in alphabetical order:
+//// {accelerator, brake, clearSpeed, disableControl, enableControl, engineOff, engineOn, off, on, recordSpeed, setThrottle, speed}
+
+//// Composing NegScens 1, 2, and 3 removes 14 Common Behaviors: {1, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17}
+
+//// Removes Common Behaviors {6, 8, 10, 11, 12, 15, 17} (which were already removed)
+    ////
+    //// NegScen4 = ({accelerator, brake, clearSpeed, disableControl, engineOff, engineOn, on, recordSpeed} -> NegScen4 | enableControl -> AuxEnable | setThrottle -> AuxSet | speed -> AuxSpeed),
+    //// AuxEnable = ({brake, off, on} -> NegScen4 | speed -> AuxSpeed),
+    //// AuxSet = ({accelerator, disableControl, off} -> NegScen4 | speed -> AuxSpeed),
+    //// AuxSpeed = ({clearSpeed, enableControl, off} -> NegScen4 | setThrottle -> AuxSet).
+
+
+//// Removes Common Behaviors {4, 5, 6, 8, 10, 11, 12, 15, 17} (keeps both 1.1 and 1.2)
+	////
+	//// NegScen4 = ({accelerator, brake, clearSpeed, disableControl, engineOff, engineOn, on, recordSpeed} -> NegScen4 | enableControl -> AuxEnable | setThrottle -> AuxSet | speed -> AuxSpeed),
+	//// AuxEnable = ({brake, off, on} -> NegScen4 | speed -> AuxSpeed),
+	//// AuxSet = ({accelerator, disableControl, off} -> NegScen4 | speed -> AuxSpeed),
+	//// AuxSpeed = ({clearSpeed, off} -> NegScen4 | setThrottle -> AuxSet | enableControl -> speed -> AuxSpeed).
+
+//// Removes Common Behaviors {3, 5, 7, 8, 11, 17} (keeps only 1.2)
+	//// NegScen1 = (setThrottle -> Aux | {brake, clearSpeed, disableControl, enableControl, engineOff, engineOn, off, on, recordSpeed, speed} -> NegScen1),
+	//// Aux = ({accelerator, disableControl, off, speed} -> NegScen1).
+
+
+//// Alternative to the above NegScen1: Removes Common Behaviors {3, 5, 7, 8, 11, 17} (keeps only 1.2)
+    ////
+    //// AlternateNegScen1 = (setThrottle -> Aux),
+    //// Aux = ({accelerator, off} -> AlternateNegScen1).
+
+
+//// Old NegScen2
+//// Removes Common Behaviors {5, 6, 8, 10, 12, 15} (keeps both 1.1 and 1.2)
+    //// NegScen2 = (enableControl -> Aux | {accelerator, clearSpeed, disableControl, engineOff, engineOn, off, on, recordSpeed, setThrottle, speed} -> NegScen2),
+    //// Aux = ({brake, off, on, speed} -> NegScen2).

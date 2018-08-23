@@ -1,0 +1,87 @@
+! Cruiser
+
+//
+// Transitions
+//
+
+@ init -> Scen1
+@ init -> Scen2
+@ init -> Scen3
+@ init -> Scen4
+
+@ Scen1 -> init
+@ Scen2 -> init
+@ Scen3 -> init
+@ Scen4 -> init
+
+//
+// Components
+//
+
+# SensorScan
+# InputSpeed
+# CruisController
+# SpeedController
+# Throttle
+
+//
+// Scenarios
+//
+
+$ Scen1
+% InputSpeed -> CruisController : engineOn
+% CruisController -> SpeedController : clearSpeed
+% CruisController -> SensorScan : on
+% CruisController -> SpeedController : recordSpeed
+% SpeedController -> InputSpeed : speed
+% CruisController -> SpeedController : enableControl
+% SpeedController -> InputSpeed : speed
+% SpeedController -> Throttle : setThrottle &
+% CruisController -> SensorScan : off
+% SpeedController -> InputSpeed : speed
+% SpeedController -> Throttle : setThrottle
+% CruisController -> SpeedController : disableControl
+% InputSpeed -> CruisController : engineOff
+% InputSpeed -> CruisController : engineOn
+% SpeedController -> InputSpeed : speed
+% CruisController -> SpeedController : clearSpeed
+% CruisController -> SensorScan : on
+% CruisController -> SpeedController : recordSpeed
+% CruisController -> SpeedController : enableControl
+% CruisController -> SensorScan : on
+% CruisController -> SpeedController : recordSpeed
+% CruisController -> SpeedController : enableControl
+% CruisController -> SensorScan : off
+% CruisController -> SpeedController : disableControl
+% InputSpeed -> CruisController : engineOff
+
+
+$ Scen2
+% InputSpeed -> CruisController : engineOn
+% SpeedController -> InputSpeed : speed
+% CruisController -> SpeedController : clearSpeed
+% InputSpeed -> CruisController : engineOff
+
+
+$ Scen3
+% InputSpeed -> CruisController : engineOn
+% CruisController -> SpeedController : clearSpeed
+% CruisController -> SensorScan : on
+% CruisController -> SpeedController : recordSpeed
+% CruisController -> SpeedController : enableControl
+% CruisController -> SensorScan : brake
+% CruisController -> SpeedController : disableControl
+% InputSpeed -> CruisController : engineOff
+
+
+$ Scen4
+% InputSpeed -> CruisController : engineOn
+% CruisController -> SpeedController : clearSpeed
+% CruisController -> SensorScan : on
+% CruisController -> SpeedController : recordSpeed
+% CruisController -> SpeedController : enableControl
+% SpeedController -> InputSpeed : speed
+% SpeedController -> Throttle : setThrottle
+% CruisController -> SensorScan : accelerator
+% CruisController -> SpeedController : disableControl
+% InputSpeed -> CruisController : engineOff
