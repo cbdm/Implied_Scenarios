@@ -1,0 +1,109 @@
+Process:
+	ArchitectureModel
+States:
+	73
+Transitions:
+	ArchitectureModel = Q0,
+	Q0	= ( (0.5) passenger1.terminal1.buyTicket -> Q1
+		  | (0.5) passenger2.terminal2.buyTicket -> Q59),
+	Q1	= ( (0.7) terminal1.controlcentre.requestVehicle -> Q2
+		  | (0.3) passenger2.terminal2.buyTicket -> Q50),
+	Q2	= ( (0.6666666666666666) controlcentre.terminal2.orderVehicle -> Q3
+		  | (0.3333333333333333) passenger2.terminal2.buyTicket -> Q32),
+	Q3	= ( (1.0) terminal2.vehicle.setDestination -> Q4),
+	Q4	= ( (1.0) vehicle.terminal2.departReq -> Q5),
+	Q5	= ( (1.0) terminal2.vehicle.departAck -> Q6),
+	Q6	= ( (0.5) terminal2.controlcentre.orderAck -> Q7
+		  | (0.5) terminal1.vehicle.alert100 -> Q23),
+	Q7	= ( (1.0) terminal1.vehicle.alert100 -> Q8),
+	Q8	= ( (1.0) vehicle.terminal1.arriveReq -> Q9),
+	Q9	= ( (1.0) terminal1.vehicle.arriveAck -> Q10),
+	Q10	= ( (1.0) vehicle.terminal1.arrived -> Q11),
+	Q11	= ( (1.0) terminal1.passenger1.displayGate -> Q12),
+	Q12	= ( (1.0) passenger1.vehicle.enter -> Q13),
+	Q13	= ( (1.0) terminal1.vehicle.setDestination -> Q14),
+	Q14	= ( (1.0) vehicle.terminal1.departReq -> Q15),
+	Q15	= ( (1.0) terminal1.vehicle.departAck -> Q16),
+	Q16	= ( (1.0) vehicle.terminal2.alert100 -> Q17),
+	Q17	= ( (1.0) vehicle.terminal2.arriveReq -> Q18),
+	Q18	= ( (1.0) terminal2.vehicle.arriveAck -> Q19),
+	Q19	= ( (1.0) vehicle.terminal2.arrived -> Q20),
+	Q20	= ( (1.0) passenger1.vehicle.exit -> Q21),
+	Q21	= ( (1.0) endAction -> Q22),
+	Q22	= STOP,
+	Q23	= ( (0.5) terminal2.controlcentre.orderAck -> Q8
+		  | (0.5) vehicle.terminal1.arriveReq -> Q24),
+	Q24	= ( (0.5) terminal2.controlcentre.orderAck -> Q9
+		  | (0.5) terminal1.vehicle.arriveAck -> Q25),
+	Q25	= ( (0.5) terminal2.controlcentre.orderAck -> Q10
+		  | (0.5) vehicle.terminal1.arrived -> Q26),
+	Q26	= ( (0.5) terminal2.controlcentre.orderAck -> Q11
+		  | (0.5) terminal1.passenger1.displayGate -> Q27),
+	Q27	= ( (0.5) terminal2.controlcentre.orderAck -> Q12
+		  | (0.5) passenger1.vehicle.enter -> Q28),
+	Q28	= ( (0.5) terminal2.controlcentre.orderAck -> Q13
+		  | (0.5) terminal1.vehicle.setDestination -> Q29),
+	Q29	= ( (0.5) terminal2.controlcentre.orderAck -> Q14
+		  | (0.5) vehicle.terminal1.departReq -> Q30),
+	Q30	= ( (0.5) terminal2.controlcentre.orderAck -> Q15
+		  | (0.5) terminal1.vehicle.departAck -> Q31),
+	Q31	= ( (1.0) terminal2.controlcentre.orderAck -> Q16),
+	Q32	= ( (1.0) terminal2.passenger2.displayGate -> Q33),
+	Q33	= ( (0.5) terminal2.vehicle.setDestination -> Q34
+		  | (0.5) passenger2.vehicle.enter -> Q46),
+	Q34	= ( (1.0) vehicle.terminal2.departReq -> Q35),
+	Q35	= ( (1.0) terminal2.vehicle.departAck -> Q36),
+	Q36	= ( (1.0) terminal1.vehicle.alert100 -> Q37),
+	Q37	= ( (1.0) vehicle.terminal1.arriveReq -> Q38),
+	Q38	= ( (1.0) terminal1.vehicle.arriveAck -> Q39),
+	Q39	= ( (1.0) vehicle.terminal1.arrived -> Q40),
+	Q40	= ( (1.0) terminal1.passenger1.displayGate -> Q41),
+	Q41	= ( (1.0) passenger1.vehicle.enter -> Q42),
+	Q42	= ( (1.0) terminal1.vehicle.setDestination -> Q43),
+	Q43	= ( (1.0) vehicle.terminal1.departReq -> Q44),
+	Q44	= ( (1.0) terminal1.vehicle.departAck -> Q45),
+	Q45	= ERROR,
+	Q46	= ( (1.0) terminal2.vehicle.setDestination -> Q47),
+	Q47	= ( (1.0) vehicle.terminal2.departReq -> Q48),
+	Q48	= ( (1.0) terminal2.vehicle.departAck -> Q49),
+	Q49	= ERROR,
+	Q50	= ( (0.25) terminal1.controlcentre.requestVehicle -> Q32
+		  | (0.75) terminal2.passenger2.displayGate -> Q51),
+	Q51	= ( (0.25) terminal1.controlcentre.requestVehicle -> Q33
+		  | (0.375) terminal2.vehicle.setDestination -> Q52
+		  | (0.375) passenger2.vehicle.enter -> Q55),
+	Q52	= ( (0.25) terminal1.controlcentre.requestVehicle -> Q34
+		  | (0.75) vehicle.terminal2.departReq -> Q53),
+	Q53	= ( (0.25) terminal1.controlcentre.requestVehicle -> Q35
+		  | (0.75) terminal2.vehicle.departAck -> Q54),
+	Q54	= ( (1.0) terminal1.controlcentre.requestVehicle -> Q36),
+	Q55	= ( (0.25) terminal1.controlcentre.requestVehicle -> Q46
+		  | (0.75) terminal2.vehicle.setDestination -> Q56),
+	Q56	= ( (0.25) terminal1.controlcentre.requestVehicle -> Q47
+		  | (0.75) vehicle.terminal2.departReq -> Q57),
+	Q57	= ( (0.25) terminal1.controlcentre.requestVehicle -> Q48
+		  | (0.75) terminal2.vehicle.departAck -> Q58),
+	Q58	= ( (1.0) terminal1.controlcentre.requestVehicle -> Q49),
+	Q59	= ( (0.125) passenger1.terminal1.buyTicket -> Q50
+		  | (0.875) terminal2.passenger2.displayGate -> Q60),
+	Q60	= ( (0.125) passenger1.terminal1.buyTicket -> Q51
+		  | (0.4375) terminal2.vehicle.setDestination -> Q61
+		  | (0.4375) passenger2.vehicle.enter -> Q64),
+	Q61	= ( (0.125) passenger1.terminal1.buyTicket -> Q52
+		  | (0.875) vehicle.terminal2.departReq -> Q62),
+	Q62	= ( (0.125) passenger1.terminal1.buyTicket -> Q53
+		  | (0.875) terminal2.vehicle.departAck -> Q63),
+	Q63	= ( (1.0) passenger1.terminal1.buyTicket -> Q54),
+	Q64	= ( (0.125) passenger1.terminal1.buyTicket -> Q55
+		  | (0.875) terminal2.vehicle.setDestination -> Q65),
+	Q65	= ( (0.125) passenger1.terminal1.buyTicket -> Q56
+		  | (0.875) vehicle.terminal2.departReq -> Q66),
+	Q66	= ( (0.125) passenger1.terminal1.buyTicket -> Q57
+		  | (0.875) terminal2.vehicle.departAck -> Q67),
+	Q67	= ( (0.3333333333333333) passenger1.terminal1.buyTicket -> Q58
+		  | (0.6666666666666666) vehicle.terminal1.alert100 -> Q68),
+	Q68	= ( (1.0) vehicle.terminal1.arriveReq -> Q69),
+	Q69	= ( (1.0) terminal1.vehicle.arriveAck -> Q70),
+	Q70	= ( (1.0) vehicle.terminal1.arrived -> Q71),
+	Q71	= ( (1.0) passenger2.vehicle.exit -> Q72),
+	Q72	= ( (1.0) endAction -> Q22).

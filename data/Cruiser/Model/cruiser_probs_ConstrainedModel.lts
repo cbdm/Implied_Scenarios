@@ -1,0 +1,103 @@
+Process:
+	ConstrainedModel
+States:
+	76
+Transitions:
+	ConstrainedModel = Q0,
+	Q0	= ( (0.9890109890110026) end -> Q1
+		  | (0.010989010989011167) engineOn -> Q3),
+	Q1	= ( (1.0) endAction -> Q2),
+	Q2	= STOP,
+	Q3	= ( (0.20000000000000004) speed -> Q4
+		  | (0.7999999999999999) clearSpeed -> Q75),
+	Q4	= ( (1.0) clearSpeed -> Q5),
+	Q5	= ( (1.0) engineOff -> Q6),
+	Q6	= ( (0.9890109890110026) end -> Q7
+		  | (0.010989010989011163) engineOn -> Q8),
+	Q7	= ( (1.0) endAction -> Q2),
+	Q8	= ( (0.20000000000000004) speed -> Q4
+		  | (0.7999999999999999) clearSpeed -> Q9),
+	Q9	= ( (1.0) on -> Q10),
+	Q10	= ( (1.0) recordSpeed -> Q11),
+	Q11	= ( (0.2727272727272727) speed -> Q12
+		  | (0.7272727272727273) enableControl -> Q72),
+	Q12	= ( (1.0) enableControl -> Q13),
+	Q13	= ( (1.0) speed -> Q14),
+	Q14	= ( (0.11764705882352942) off -> Q15
+		  | (0.8823529411764707) setThrottle -> Q70),
+	Q15	= ( (1.0) setThrottle -> Q16),
+	Q16	= ( (1.0) speed -> Q17),
+	Q17	= ( (1.0) setThrottle -> Q18),
+	Q18	= ( (1.0) disableControl -> Q19),
+	Q19	= ( (1.0) engineOff -> Q20),
+	Q20	= ( (1.0) engineOn -> Q21),
+	Q21	= ( (1.0) speed -> Q22),
+	Q22	= ( (1.0) clearSpeed -> Q23),
+	Q23	= ( (1.0) on -> Q24),
+	Q24	= ( (1.0) recordSpeed -> Q25),
+	Q25	= ( (1.0) enableControl -> Q26),
+	Q26	= ( (1.0) on -> Q27),
+	Q27	= ( (1.0) recordSpeed -> Q28),
+	Q28	= ( (1.0) enableControl -> Q29),
+	Q29	= ( (1.0) off -> Q30),
+	Q30	= ( (1.0) disableControl -> Q31),
+	Q31	= ( (1.0) engineOff -> Q32),
+	Q32	= ( (0.9890109890110026) end -> Q33
+		  | (0.010989010989011167) engineOn -> Q34),
+	Q33	= ( (1.0) endAction -> Q2),
+	Q34	= ( (0.20000000000000004) speed -> Q35
+		  | (0.7999999999999999) clearSpeed -> Q41),
+	Q35	= ( (1.0) clearSpeed -> Q36),
+	Q36	= ( (1.0) engineOff -> Q37),
+	Q37	= ( (0.9890109890110026) end -> Q38
+		  | (0.010989010989011163) engineOn -> Q39),
+	Q38	= ( (1.0) endAction -> Q2),
+	Q39	= ( (0.20000000000000004) speed -> Q35
+		  | (0.7999999999999999) clearSpeed -> Q40),
+	Q40	= ( (1.0) on -> Q10),
+	Q41	= ( (1.0) on -> Q42),
+	Q42	= ( (1.0) recordSpeed -> Q43),
+	Q43	= ( (0.2727272727272727) speed -> Q12
+		  | (0.7272727272727273) enableControl -> Q44),
+	Q44	= ( (0.8035714285714286) speed -> Q45
+		  | (0.19642857142857142) brake -> Q58),
+	Q45	= ( (1.0) setThrottle -> Q46),
+	Q46	= ( (1.0) accelerator -> Q47),
+	Q47	= ( (1.0) disableControl -> Q48),
+	Q48	= ( (1.0) engineOff -> Q49),
+	Q49	= ( (0.9890109890110026) end -> Q50
+		  | (0.010989010989011163) engineOn -> Q51),
+	Q50	= ( (1.0) endAction -> Q2),
+	Q51	= ( (0.20000000000000004) speed -> Q52
+		  | (0.7999999999999999) clearSpeed -> Q57),
+	Q52	= ( (1.0) clearSpeed -> Q53),
+	Q53	= ( (1.0) engineOff -> Q54),
+	Q54	= ( (0.9890109890110026) end -> Q55
+		  | (0.010989010989011163) engineOn -> Q56),
+	Q55	= ( (1.0) endAction -> Q2),
+	Q56	= ( (0.20000000000000004) speed -> Q52
+		  | (0.7999999999999999) clearSpeed -> Q57),
+	Q57	= ( (1.0) on -> Q10),
+	Q58	= ( (1.0) disableControl -> Q59),
+	Q59	= ( (1.0) engineOff -> Q60),
+	Q60	= ( (0.9890109890110026) end -> Q61
+		  | (0.010989010989011167) engineOn -> Q62),
+	Q61	= ( (1.0) endAction -> Q2),
+	Q62	= ( (0.20000000000000004) speed -> Q63
+		  | (0.7999999999999999) clearSpeed -> Q69),
+	Q63	= ( (1.0) clearSpeed -> Q64),
+	Q64	= ( (1.0) engineOff -> Q65),
+	Q65	= ( (0.9890109890110026) end -> Q66
+		  | (0.010989010989011163) engineOn -> Q67),
+	Q66	= ( (1.0) endAction -> Q2),
+	Q67	= ( (0.20000000000000004) speed -> Q63
+		  | (0.7999999999999999) clearSpeed -> Q68),
+	Q68	= ( (1.0) on -> Q10),
+	Q69	= ( (1.0) on -> Q42),
+	Q70	= ( (1.0) off -> Q71),
+	Q71	= ( (1.0) speed -> Q17),
+	Q72	= ( (0.8035714285714286) speed -> Q45
+		  | (0.19642857142857142) brake -> Q73),
+	Q73	= ( (1.0) disableControl -> Q74),
+	Q74	= ( (1.0) engineOff -> Q60),
+	Q75	= ( (1.0) on -> Q42).

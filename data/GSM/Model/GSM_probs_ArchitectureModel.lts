@@ -1,0 +1,219 @@
+Process:
+	ArchitectureModel
+States:
+	176
+Transitions:
+	ArchitectureModel = Q0,
+	Q0	= ( (1.0) ms.bss.channelReq -> Q1),
+	Q1	= ( (1.0) bss.ms.immAssign -> Q2),
+	Q2	= ( (0.25) ms.bss.callSetup -> Q3
+		  | (0.25) ms.bss.locationUpdate -> Q170
+		  | (0.25) msc.bss.finish -> Q172
+		  | (0.25) ms.bss.pageResp -> Q173),
+	Q3	= ( (1.0) bss.msc.callSetupReq -> Q4),
+	Q4	= ( (1.0) msc.network.callSetUp -> Q5),
+	Q5	= ( (0.5) network.msc.provideImsi -> Q6
+		  | (0.5) network.msc.authenticate -> Q169),
+	Q6	= ( (1.0) msc.ms.identityReq -> Q7),
+	Q7	= ( (1.0) ms.msc.identityResp -> Q8),
+	Q8	= ( (1.0) msc.network.imsiAck -> Q9),
+	Q9	= ( (1.0) network.msc.authenticate -> Q10),
+	Q10	= ( (1.0) msc.ms.authenReq -> Q11),
+	Q11	= ( (1.0) ms.msc.authenResp -> Q12),
+	Q12	= ( (1.0) msc.network.authenComplt -> Q13),
+	Q13	= ( (0.5) msc.ms.serviceReject -> Q14
+		  | (0.5) msc.ms.serviceAccept -> Q145),
+	Q14	= ( (1.0) ms.bss.channelReq -> Q15),
+	Q15	= ( (1.0) bss.ms.immAssign -> Q16),
+	Q16	= ( (0.25) ms.bss.callSetup -> Q17
+		  | (0.25) ms.bss.locationUpdate -> Q19
+		  | (0.25) msc.bss.finish -> Q141
+		  | (0.25) ms.bss.pageResp -> Q142),
+	Q17	= ( (1.0) bss.msc.callSetupReq -> Q18),
+	Q18	= ( (1.0) msc.network.callSetUp -> Q5),
+	Q19	= ( (1.0) bss.msc.locUpReq -> Q20),
+	Q20	= ( (1.0) msc.network.locUpdArea -> Q21),
+	Q21	= ( (0.5) network.msc.provideImsi -> Q22
+		  | (0.5) network.msc.authenticate -> Q140),
+	Q22	= ( (1.0) msc.ms.identityReq -> Q23),
+	Q23	= ( (1.0) ms.msc.identityResp -> Q24),
+	Q24	= ( (1.0) msc.network.imsiAck -> Q25),
+	Q25	= ( (1.0) network.msc.authenticate -> Q26),
+	Q26	= ( (1.0) msc.ms.authenReq -> Q27),
+	Q27	= ( (1.0) ms.msc.authenResp -> Q28),
+	Q28	= ( (1.0) msc.network.authenComplt -> Q29),
+	Q29	= ( (0.5) msc.ms.serviceReject -> Q30
+		  | (0.5) msc.ms.serviceAccept -> Q119),
+	Q30	= ( (1.0) ms.bss.channelReq -> Q31),
+	Q31	= ( (1.0) bss.ms.immAssign -> Q32),
+	Q32	= ( (0.25) ms.bss.callSetup -> Q33
+		  | (0.25) ms.bss.locationUpdate -> Q35
+		  | (0.25) msc.bss.finish -> Q37
+		  | (0.25) ms.bss.pageResp -> Q39),
+	Q33	= ( (1.0) bss.msc.callSetupReq -> Q34),
+	Q34	= ( (1.0) msc.network.callSetUp -> Q5),
+	Q35	= ( (1.0) bss.msc.locUpReq -> Q36),
+	Q36	= ( (1.0) msc.network.locUpdArea -> Q21),
+	Q37	= ( (1.0) endAction -> Q38),
+	Q38	= STOP,
+	Q39	= ( (1.0) bss.ms.pageRspAck -> Q40),
+	Q40	= ( (1.0) bss.msc.pageRspReq -> Q41),
+	Q41	= ( (1.0) msc.network.procAccessReq -> Q42),
+	Q42	= ( (0.5) network.msc.provideImsi -> Q43
+		  | (0.5) network.msc.authenticate -> Q118),
+	Q43	= ( (1.0) msc.ms.identityReq -> Q44),
+	Q44	= ( (1.0) ms.msc.identityResp -> Q45),
+	Q45	= ( (1.0) msc.network.imsiAck -> Q46),
+	Q46	= ( (1.0) network.msc.authenticate -> Q47),
+	Q47	= ( (1.0) msc.ms.authenReq -> Q48),
+	Q48	= ( (1.0) ms.msc.authenResp -> Q49),
+	Q49	= ( (1.0) msc.network.authenComplt -> Q50),
+	Q50	= ( (0.5) msc.ms.serviceReject -> Q51
+		  | (0.5) msc.ms.serviceAccept -> Q62),
+	Q51	= ( (1.0) ms.bss.channelReq -> Q52),
+	Q52	= ( (1.0) bss.ms.immAssign -> Q53),
+	Q53	= ( (0.25) ms.bss.callSetup -> Q54
+		  | (0.25) ms.bss.locationUpdate -> Q56
+		  | (0.25) msc.bss.finish -> Q58
+		  | (0.25) ms.bss.pageResp -> Q59),
+	Q54	= ( (1.0) bss.msc.callSetupReq -> Q55),
+	Q55	= ( (1.0) msc.network.callSetUp -> Q5),
+	Q56	= ( (1.0) bss.msc.locUpReq -> Q57),
+	Q57	= ( (1.0) msc.network.locUpdArea -> Q21),
+	Q58	= ( (1.0) endAction -> Q38),
+	Q59	= ( (1.0) bss.ms.pageRspAck -> Q60),
+	Q60	= ( (1.0) bss.msc.pageRspReq -> Q61),
+	Q61	= ( (1.0) msc.network.procAccessReq -> Q42),
+	Q62	= ( (0.5) network.msc.setCipherMode -> Q63
+		  | (0.5) msc.bss.callSetup -> Q114),
+	Q63	= ( (1.0) msc.bss.cipherModeCmnd -> Q64),
+	Q64	= ( (1.0) bss.ms.cipherMode -> Q65),
+	Q65	= ( (1.0) ms.bss.ciphModeCmplt -> Q66),
+	Q66	= ( (1.0) bss.msc.ciphCmplt -> Q67),
+	Q67	= ( (1.0) msc.bss.callSetup -> Q68),
+	Q68	= ( (1.0) bss.ms.callSUp -> Q69),
+	Q69	= ( (1.0) ms.bss.confirm -> Q70),
+	Q70	= ( (1.0) bss.msc.conf -> Q71),
+	Q71	= ( (1.0) msc.network.addCmplt -> Q72),
+	Q72	= ( (1.0) msc.ms.alerting -> Q73),
+	Q73	= ( (1.0) ms.bss.alert -> Q74),
+	Q74	= ( (1.0) bss.msc.alrt -> Q75),
+	Q75	= ( (1.0) ms.msc.conct -> Q76),
+	Q76	= ( (0.125) ms.bss.discon -> Q77
+		  | (0.875) msc.network.answer -> Q96),
+	Q77	= ( (1.0) msc.network.answer -> Q78),
+	Q78	= ( (0.3333333333333333) network.msc.release -> Q79
+		  | (0.6666666666666666) bss.msc.disc -> Q80),
+	Q79	= ERROR,
+	Q80	= ( (1.0) msc.network.rel -> Q81),
+	Q81	= ( (1.0) network.msc.relCnfm -> Q82),
+	Q82	= ( (1.0) msc.ms.relse -> Q83),
+	Q83	= ( (1.0) ms.bss.rlCmplt -> Q84),
+	Q84	= ( (1.0) bss.msc.relComplt -> Q85),
+	Q85	= ( (1.0) ms.bss.channelReq -> Q86),
+	Q86	= ( (1.0) bss.ms.immAssign -> Q87),
+	Q87	= ( (0.25) ms.bss.callSetup -> Q88
+		  | (0.25) ms.bss.locationUpdate -> Q90
+		  | (0.25) msc.bss.finish -> Q92
+		  | (0.25) ms.bss.pageResp -> Q93),
+	Q88	= ( (1.0) bss.msc.callSetupReq -> Q89),
+	Q89	= ( (1.0) msc.network.callSetUp -> Q5),
+	Q90	= ( (1.0) bss.msc.locUpReq -> Q91),
+	Q91	= ( (1.0) msc.network.locUpdArea -> Q21),
+	Q92	= ( (1.0) endAction -> Q38),
+	Q93	= ( (1.0) bss.ms.pageRspAck -> Q94),
+	Q94	= ( (1.0) bss.msc.pageRspReq -> Q95),
+	Q95	= ( (1.0) msc.network.procAccessReq -> Q42),
+	Q96	= ( (0.5) ms.bss.discon -> Q78
+		  | (0.5) network.msc.release -> Q97),
+	Q97	= ( (0.3333333333333333) ms.bss.discon -> Q79
+		  | (0.6666666666666666) msc.bss.discMsg -> Q98),
+	Q98	= ( (1.0) bss.ms.disconnect -> Q99),
+	Q99	= ( (1.0) ms.msc.released -> Q100),
+	Q100	= ( (1.0) msc.network.relConf -> Q101),
+	Q101	= ( (1.0) msc.bss.relCmplt -> Q102),
+	Q102	= ( (1.0) bss.ms.releaseCmplt -> Q103),
+	Q103	= ( (1.0) ms.bss.channelReq -> Q104),
+	Q104	= ( (1.0) bss.ms.immAssign -> Q105),
+	Q105	= ( (0.25) ms.bss.callSetup -> Q106
+		  | (0.25) ms.bss.locationUpdate -> Q108
+		  | (0.25) msc.bss.finish -> Q110
+		  | (0.25) ms.bss.pageResp -> Q111),
+	Q106	= ( (1.0) bss.msc.callSetupReq -> Q107),
+	Q107	= ( (1.0) msc.network.callSetUp -> Q5),
+	Q108	= ( (1.0) bss.msc.locUpReq -> Q109),
+	Q109	= ( (1.0) msc.network.locUpdArea -> Q21),
+	Q110	= ( (1.0) endAction -> Q38),
+	Q111	= ( (1.0) bss.ms.pageRspAck -> Q112),
+	Q112	= ( (1.0) bss.msc.pageRspReq -> Q113),
+	Q113	= ( (1.0) msc.network.procAccessReq -> Q42),
+	Q114	= ( (1.0) bss.ms.callSUp -> Q115),
+	Q115	= ( (1.0) ms.bss.confirm -> Q116),
+	Q116	= ( (1.0) bss.msc.conf -> Q117),
+	Q117	= ( (1.0) msc.network.addCmplt -> Q72),
+	Q118	= ( (1.0) msc.ms.authenReq -> Q48),
+	Q119	= ( (0.5) network.msc.setCipherMode -> Q120
+		  | (0.5) network.msc.locUpAck -> Q138),
+	Q120	= ( (1.0) msc.bss.cipherModeCmnd -> Q121),
+	Q121	= ( (1.0) bss.ms.cipherMode -> Q122),
+	Q122	= ( (1.0) ms.bss.ciphModeCmplt -> Q123),
+	Q123	= ( (1.0) bss.msc.ciphCmplt -> Q124),
+	Q124	= ( (1.0) network.msc.locUpAck -> Q125),
+	Q125	= ( (1.0) msc.bss.locUpAccepted -> Q126),
+	Q126	= ( (1.0) bss.ms.locUpAcc -> Q127),
+	Q127	= ( (1.0) ms.bss.channelReq -> Q128),
+	Q128	= ( (1.0) bss.ms.immAssign -> Q129),
+	Q129	= ( (0.25) ms.bss.callSetup -> Q130
+		  | (0.25) ms.bss.locationUpdate -> Q132
+		  | (0.25) msc.bss.finish -> Q134
+		  | (0.25) ms.bss.pageResp -> Q135),
+	Q130	= ( (1.0) bss.msc.callSetupReq -> Q131),
+	Q131	= ( (1.0) msc.network.callSetUp -> Q5),
+	Q132	= ( (1.0) bss.msc.locUpReq -> Q133),
+	Q133	= ( (1.0) msc.network.locUpdArea -> Q21),
+	Q134	= ( (1.0) endAction -> Q38),
+	Q135	= ( (1.0) bss.ms.pageRspAck -> Q136),
+	Q136	= ( (1.0) bss.msc.pageRspReq -> Q137),
+	Q137	= ( (1.0) msc.network.procAccessReq -> Q42),
+	Q138	= ( (1.0) msc.bss.locUpAccepted -> Q139),
+	Q139	= ( (1.0) bss.ms.locUpAcc -> Q127),
+	Q140	= ( (1.0) msc.ms.authenReq -> Q27),
+	Q141	= ( (1.0) endAction -> Q38),
+	Q142	= ( (1.0) bss.ms.pageRspAck -> Q143),
+	Q143	= ( (1.0) bss.msc.pageRspReq -> Q144),
+	Q144	= ( (1.0) msc.network.procAccessReq -> Q42),
+	Q145	= ( (0.5) msc.bss.assignComnd -> Q146
+		  | (0.5) network.msc.setCipherMode -> Q160),
+	Q146	= ( (1.0) bss.ms.assigned -> Q147),
+	Q147	= ( (1.0) bss.ms.assignCmplt -> Q148),
+	Q148	= ( (1.0) bss.msc.assignCmpt -> Q149),
+	Q149	= ( (1.0) msc.network.initialMsg -> Q150),
+	Q150	= ( (1.0) network.msc.addCmpltMsg -> Q151),
+	Q151	= ( (1.0) msc.ms.alerting -> Q152),
+	Q152	= ( (1.0) network.msc.answerMsg -> Q153),
+	Q153	= ( (1.0) msc.ms.connect -> Q154),
+	Q154	= ( (1.0) ms.msc.connectAck -> Q155),
+	Q155	= ( (0.5) ms.bss.discon -> Q156
+		  | (0.5) network.msc.release -> Q158),
+	Q156	= ( (0.3333333333333333) network.msc.release -> Q79
+		  | (0.6666666666666666) bss.msc.disc -> Q157),
+	Q157	= ( (1.0) msc.network.rel -> Q81),
+	Q158	= ( (0.3333333333333333) ms.bss.discon -> Q79
+		  | (0.6666666666666666) msc.bss.discMsg -> Q159),
+	Q159	= ( (1.0) bss.ms.disconnect -> Q99),
+	Q160	= ( (1.0) msc.bss.cipherModeCmnd -> Q161),
+	Q161	= ( (1.0) bss.ms.cipherMode -> Q162),
+	Q162	= ( (1.0) ms.bss.ciphModeCmplt -> Q163),
+	Q163	= ( (1.0) bss.msc.ciphCmplt -> Q164),
+	Q164	= ( (1.0) msc.bss.assignComnd -> Q165),
+	Q165	= ( (1.0) bss.ms.assigned -> Q166),
+	Q166	= ( (1.0) bss.ms.assignCmplt -> Q167),
+	Q167	= ( (1.0) bss.msc.assignCmpt -> Q168),
+	Q168	= ( (1.0) msc.network.initialMsg -> Q150),
+	Q169	= ( (1.0) msc.ms.authenReq -> Q11),
+	Q170	= ( (1.0) bss.msc.locUpReq -> Q171),
+	Q171	= ( (1.0) msc.network.locUpdArea -> Q21),
+	Q172	= ( (1.0) endAction -> Q38),
+	Q173	= ( (1.0) bss.ms.pageRspAck -> Q174),
+	Q174	= ( (1.0) bss.msc.pageRspReq -> Q175),
+	Q175	= ( (1.0) msc.network.procAccessReq -> Q42).

@@ -1,0 +1,147 @@
+//------------------------- APTS System --------------------------
+
+
+//--------------------- PROBABILISTIC MODEL ------------------------
+
+//------------------------------------------------------------------
+//----------------------- Components' States -----------------------
+//------------------------------------------------------------------
+
+Vehicle = Q0,
+	Q0	= ( (0.5) passenger2.vehicle.enter -> Q1
+		  | (0.5) terminal2.vehicle.setDestination -> Q2),
+	Q1	= ( (1.0) terminal2.vehicle.setDestination -> Q3),
+	Q2	= ( (1.0) vehicle.terminal2.departReq -> Q4),
+	Q3	= ( (1.0) vehicle.terminal2.departReq -> Q5),
+	Q4	= ( (1.0) terminal2.vehicle.departAck -> Q6),
+	Q5	= ( (1.0) terminal2.vehicle.departAck -> Q7),
+	Q6	= ( (1.0) terminal1.vehicle.alert100 -> Q8),
+	Q7	= ( (1.0) vehicle.terminal1.alert100 -> Q9),
+	Q8	= ( (1.0) vehicle.terminal1.arriveReq -> Q10),
+	Q9	= ( (1.0) vehicle.terminal1.arriveReq -> Q11),
+	Q10	= ( (1.0) terminal1.vehicle.arriveAck -> Q12),
+	Q11	= ( (1.0) terminal1.vehicle.arriveAck -> Q13),
+	Q12	= ( (1.0) vehicle.terminal1.arrived -> Q14),
+	Q13	= ( (1.0) vehicle.terminal1.arrived -> Q15),
+	Q14	= ( (1.0) passenger1.vehicle.enter -> Q16),
+	Q15	= ( (1.0) passenger2.vehicle.exit -> Q17),
+	Q16	= ( (1.0) terminal1.vehicle.setDestination -> Q18),
+	Q17	= ( (1.0) endAction -> Q19),
+	Q18	= ( (1.0) vehicle.terminal1.departReq -> Q20),
+	Q19	= STOP,
+	Q20	= ( (1.0) terminal1.vehicle.departAck -> Q21),
+	Q21	= ( (1.0) vehicle.terminal2.alert100 -> Q22),
+	Q22	= ( (1.0) vehicle.terminal2.arriveReq -> Q23),
+	Q23	= ( (1.0) terminal2.vehicle.arriveAck -> Q24),
+	Q24	= ( (1.0) vehicle.terminal2.arrived -> Q25),
+	Q25	= ( (1.0) passenger1.vehicle.exit -> Q26),
+	Q26	= ( (1.0) endAction -> Q19).
+
+Passenger2 = Q0,
+	Q0	= ( (0.5) endAction -> Q1
+		  | (0.5) passenger2.terminal2.buyTicket -> Q2),
+	Q1	= STOP,
+	Q2	= ( (1.0) terminal2.passenger2.displayGate -> Q3),
+	Q3	= ( (1.0) passenger2.vehicle.enter -> Q4),
+	Q4	= ( (1.0) passenger2.vehicle.exit -> Q5),
+	Q5	= ( (1.0) endAction -> Q1).
+
+Terminal1 = Q0,
+	Q0	= ( (0.5) vehicle.terminal1.alert100 -> Q1
+		  | (0.5) passenger1.terminal1.buyTicket -> Q2),
+	Q1	= ( (1.0) vehicle.terminal1.arriveReq -> Q3),
+	Q2	= ( (1.0) terminal1.controlcentre.requestVehicle -> Q4),
+	Q3	= ( (1.0) terminal1.vehicle.arriveAck -> Q5),
+	Q4	= ( (1.0) terminal1.vehicle.alert100 -> Q6),
+	Q5	= ( (1.0) vehicle.terminal1.arrived -> Q7),
+	Q6	= ( (1.0) vehicle.terminal1.arriveReq -> Q8),
+	Q7	= ( (1.0) endAction -> Q9),
+	Q8	= ( (1.0) terminal1.vehicle.arriveAck -> Q10),
+	Q9	= STOP,
+	Q10	= ( (1.0) vehicle.terminal1.arrived -> Q11),
+	Q11	= ( (1.0) terminal1.passenger1.displayGate -> Q12),
+	Q12	= ( (1.0) terminal1.vehicle.setDestination -> Q13),
+	Q13	= ( (1.0) vehicle.terminal1.departReq -> Q14),
+	Q14	= ( (1.0) terminal1.vehicle.departAck -> Q15),
+	Q15	= ( (1.0) endAction -> Q9).
+
+Terminal2 = Q0,
+	Q0	= ( (0.5) passenger2.terminal2.buyTicket -> Q1
+		  | (0.5) controlcentre.terminal2.orderVehicle -> Q2),
+	Q1	= ( (1.0) terminal2.passenger2.displayGate -> Q3),
+	Q2	= ( (1.0) terminal2.vehicle.setDestination -> Q4),
+	Q3	= ( (1.0) terminal2.vehicle.setDestination -> Q5),
+	Q4	= ( (1.0) vehicle.terminal2.departReq -> Q6),
+	Q5	= ( (1.0) vehicle.terminal2.departReq -> Q7),
+	Q6	= ( (1.0) terminal2.vehicle.departAck -> Q8),
+	Q7	= ( (1.0) terminal2.vehicle.departAck -> Q9),
+	Q8	= ( (1.0) terminal2.controlcentre.orderAck -> Q10),
+	Q9	= ( (1.0) endAction -> Q11),
+	Q10	= ( (1.0) vehicle.terminal2.alert100 -> Q12),
+	Q11	= STOP,
+	Q12	= ( (1.0) vehicle.terminal2.arriveReq -> Q13),
+	Q13	= ( (1.0) terminal2.vehicle.arriveAck -> Q14),
+	Q14	= ( (1.0) vehicle.terminal2.arrived -> Q15),
+	Q15	= ( (1.0) endAction -> Q11).
+
+Passenger1 = Q0,
+	Q0	= ( (0.5) endAction -> Q1
+		  | (0.5) passenger1.terminal1.buyTicket -> Q2),
+	Q1	= STOP,
+	Q2	= ( (1.0) terminal1.passenger1.displayGate -> Q3),
+	Q3	= ( (1.0) passenger1.vehicle.enter -> Q4),
+	Q4	= ( (1.0) passenger1.vehicle.exit -> Q5),
+	Q5	= ( (1.0) endAction -> Q1).
+
+ControlCentre = Q0,
+	Q0	= ( (0.5) endAction -> Q1
+		  | (0.5) terminal1.controlcentre.requestVehicle -> Q2),
+	Q1	= STOP,
+	Q2	= ( (1.0) controlcentre.terminal2.orderVehicle -> Q3),
+	Q3	= ( (1.0) terminal2.controlcentre.orderAck -> Q4),
+	Q4	= ( (1.0) endAction -> Q1).
+
+//------------------------------------------------------------------
+//----------------------------- Constraints ------------------------
+//------------------------------------------------------------------
+
+// NegScen1
+// This constraint makes sure that if Passenger2 buys a ticket, Passenger1 can't buy one
+
+// Allows everything until Passenger2 buys a ticket, then changes to next state
+NegScen1 = ({vehicle.terminal2.alert100, terminal1.controlcentre.requestVehicle, passenger1.vehicle.exit, vehicle.terminal2.arriveReq, vehicle.terminal2.arrived, terminal2.vehicle.setDestination, terminal1.passenger1.displayGate, terminal2.passenger2.displayGate, controlcentre.terminal2.orderVehicle, passenger1.vehicle.enter, terminal1.vehicle.departAck, vehicle.terminal1.arriveReq, terminal2.controlcentre.orderAck, vehicle.terminal1.departReq, terminal1.vehicle.alert100, passenger1.terminal1.buyTicket, terminal1.vehicle.setDestination, passenger2.vehicle.enter, terminal2.vehicle.arriveAck} -> NegScen1 | passenger2.terminal2.buyTicket -> Aux),
+// Allows everything but Passenger1 buying a ticket
+Aux = ({vehicle.terminal2.alert100, terminal1.controlcentre.requestVehicle, passenger1.vehicle.exit, vehicle.terminal2.arriveReq, vehicle.terminal2.arrived, terminal2.vehicle.setDestination, terminal1.passenger1.displayGate, terminal2.passenger2.displayGate, controlcentre.terminal2.orderVehicle, passenger1.vehicle.enter, terminal1.vehicle.departAck, passenger2.terminal2.buyTicket, vehicle.terminal1.arriveReq, terminal2.controlcentre.orderAck, vehicle.terminal1.departReq, terminal1.vehicle.alert100, terminal1.vehicle.setDestination, passenger2.vehicle.enter, terminal2.vehicle.arriveAck} -> Aux).
+
+
+// NegScen2
+// This constraint makes sure that if Passenger1 buys a ticket, Passenger2 can't buy one
+
+// Allows everything until Passenger1 buys a ticket, then changes to next state
+NegScen2 = ({vehicle.terminal2.alert100, terminal1.controlcentre.requestVehicle, passenger1.vehicle.exit, vehicle.terminal2.arriveReq, vehicle.terminal2.arrived, terminal2.vehicle.setDestination, terminal1.passenger1.displayGate, terminal2.passenger2.displayGate, controlcentre.terminal2.orderVehicle, passenger1.vehicle.enter, terminal1.vehicle.departAck, vehicle.terminal1.arriveReq, terminal2.controlcentre.orderAck, vehicle.terminal1.departReq, terminal1.vehicle.alert100, passenger2.terminal2.buyTicket, terminal1.vehicle.setDestination, passenger2.vehicle.enter, terminal2.vehicle.arriveAck} -> NegScen2 | passenger1.terminal1.buyTicket -> Aux),
+// Allows everything but Passenger2 buying a ticket
+Aux = ({vehicle.terminal2.alert100, terminal1.controlcentre.requestVehicle, passenger1.vehicle.exit, vehicle.terminal2.arriveReq, vehicle.terminal2.arrived, terminal2.vehicle.setDestination, terminal1.passenger1.displayGate, terminal2.passenger2.displayGate, controlcentre.terminal2.orderVehicle, passenger1.vehicle.enter, terminal1.vehicle.departAck, passenger1.terminal1.buyTicket, vehicle.terminal1.arriveReq, terminal2.controlcentre.orderAck, vehicle.terminal1.departReq, terminal1.vehicle.alert100, terminal1.vehicle.setDestination, passenger2.vehicle.enter, terminal2.vehicle.arriveAck} -> Aux).
+
+
+// NegScen3
+// This constraint makes sure that you can only set a destination if either:
+//    i) the vehicle is ordered; OR
+//   ii) the passenger has entered. 
+
+// Waits for either a order or a passenger to enter
+NegScen3 = ({passenger1.vehicle.enter, passenger2.vehicle.enter, controlcentre.terminal2.orderVehicle} -> Aux),
+// Allows to set the destination
+Aux = ({terminal1.vehicle.setDestination, terminal2.vehicle.setDestination} -> NegScen3).
+
+//------------------------------------------------------------------
+//----------------------------- Compositions -----------------------
+//------------------------------------------------------------------
+
+ ||ArchitectureModel = (Passenger1 || Terminal1 || Vehicle || ControlCentre || Terminal2 || Passenger2).
+
+ ||ConstrainedModel_1 = (ArchitectureModel || NegScen1).
+ ||ConstrainedModel_2 = (ArchitectureModel || NegScen2).
+ ||ConstrainedModel_3 = (ArchitectureModel || NegScen3).
+
+ ||ConstrainedModel = (ArchitectureModel || NegScen1 || NegScen2 || NegScen3).
+

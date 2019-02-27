@@ -1,0 +1,150 @@
+Process:
+	ArchitectureModel
+States:
+	117
+Transitions:
+	ArchitectureModel = Q0,
+	Q0	= ( (0.6676557863501484) camera3.object.sees_obj -> Q1
+		  | (0.3323442136498515) camera2.object.sees_obj -> Q86),
+	Q1	= ( (1.0) camera3.camera1.ask_confidence -> Q2),
+	Q2	= ( (1.0) camera1.camera3.no_confidence -> Q3),
+	Q3	= ( (1.0) camera3.object.start_tracking -> Q4),
+	Q4	= ( (0.25) camera1.object.sees_obj -> Q5
+		  | (0.7500000000000001) camera3.object.loses_obj -> Q32),
+	Q5	= ( (1.0) camera3.object.loses_obj -> Q6),
+	Q6	= ( (1.0) camera3.camera1.start_search -> Q7),
+	Q7	= ( (1.0) camera1.camera3.found_obj -> Q8),
+	Q8	= ( (1.0) camera3.camera1.ask_confidence -> Q9),
+	Q9	= ( (1.0) camera1.camera3.send_confidence -> Q10),
+	Q10	= ( (1.0) camera3.camera1.allow_tracking -> Q11),
+	Q11	= ( (1.0) camera1.object.start_tracking -> Q12),
+	Q12	= ( (1.0) camera1.object.loses_obj -> Q13),
+	Q13	= ( (0.2222222222222222) camera1.camera2.start_search -> Q14
+		  | (0.3333333333333333) camera2.object.sees_obj -> Q23
+		  | (0.4444444444444445) camera1.camera3.start_search -> Q25),
+	Q14	= ( (0.5) camera2.object.sees_obj -> Q15
+		  | (0.5) camera1.camera3.start_search -> Q22),
+	Q15	= ( (1.0) camera1.camera3.start_search -> Q16),
+	Q16	= ( (1.0) camera2.camera1.found_obj -> Q17),
+	Q17	= ( (1.0) camera1.camera2.ask_confidence -> Q18),
+	Q18	= ( (1.0) camera2.camera1.send_confidence -> Q19),
+	Q19	= ( (1.0) camera1.camera2.allow_tracking -> Q20),
+	Q20	= ( (1.0) endAction -> Q21),
+	Q21	= STOP,
+	Q22	= ( (1.0) camera2.object.sees_obj -> Q16),
+	Q23	= ( (1.0) camera1.camera3.start_search -> Q24),
+	Q24	= ERROR,
+	Q25	= ( (0.49999999999999994) camera2.object.sees_obj -> Q24
+		  | (0.49999999999999994) camera1.camera2.start_search -> Q26),
+	Q26	= ( (1.0) camera2.object.sees_obj -> Q27),
+	Q27	= ( (1.0) camera2.camera1.found_obj -> Q28),
+	Q28	= ( (1.0) camera1.camera2.ask_confidence -> Q29),
+	Q29	= ( (1.0) camera2.camera1.send_confidence -> Q30),
+	Q30	= ( (1.0) camera1.camera2.allow_tracking -> Q31),
+	Q31	= ( (1.0) endAction -> Q21),
+	Q32	= ( (0.28846153846153844) camera4.object.sees_obj -> Q33
+		  | (0.3269230769230768) camera3.camera1.start_search -> Q41
+		  | (0.38461538461538464) camera1.object.sees_obj -> Q42),
+	Q33	= ( (0.2631578947368421) camera4.camera2.ask_confidence -> Q34
+		  | (0.7368421052631577) camera3.camera1.start_search -> Q40),
+	Q34	= ( (0.625) camera2.camera4.no_confidence -> Q35
+		  | (0.375) camera3.camera1.start_search -> Q39),
+	Q35	= ( (0.16666666666666666) camera3.camera1.start_search -> Q36
+		  | (0.8333333333333333) camera4.object.start_tracking -> Q38),
+	Q36	= ( (1.0) camera4.object.start_tracking -> Q37),
+	Q37	= ( (1.0) endAction -> Q21),
+	Q38	= ( (1.0) camera3.camera1.start_search -> Q37),
+	Q39	= ( (1.0) camera2.camera4.no_confidence -> Q36),
+	Q40	= ( (1.0) camera4.camera2.ask_confidence -> Q39),
+	Q41	= ( (1.0) camera4.object.sees_obj -> Q40),
+	Q42	= ( (1.0) camera3.camera1.start_search -> Q43),
+	Q43	= ( (1.0) camera1.camera3.found_obj -> Q44),
+	Q44	= ( (1.0) camera3.camera1.ask_confidence -> Q45),
+	Q45	= ( (1.0) camera1.camera3.send_confidence -> Q46),
+	Q46	= ( (1.0) camera3.camera1.allow_tracking -> Q47),
+	Q47	= ( (1.0) camera1.object.start_tracking -> Q48),
+	Q48	= ( (1.0) camera1.object.loses_obj -> Q49),
+	Q49	= ( (0.4431818181818182) camera4.object.sees_obj -> Q50
+		  | (0.1590909090909091) camera1.camera2.start_search -> Q82
+		  | (0.39772727272727276) camera1.camera3.start_search -> Q84),
+	Q50	= ( (0.20689655172413796) camera1.camera2.start_search -> Q51
+		  | (0.10344827586206898) camera4.camera2.ask_confidence -> Q64
+		  | (0.3103448275862069) camera2.object.sees_obj -> Q68
+		  | (0.37931034482758624) camera1.camera3.start_search -> Q70),
+	Q51	= ( (0.5) camera2.object.sees_obj -> Q52
+		  | (0.5) camera1.camera3.start_search -> Q63),
+	Q52	= ( (1.0) camera1.camera3.start_search -> Q53),
+	Q53	= ( (1.0) camera2.camera1.found_obj -> Q54),
+	Q54	= ( (0.6000000000000001) camera1.camera2.ask_confidence -> Q55
+		  | (0.4) camera4.camera2.ask_confidence -> Q58),
+	Q55	= ( (1.0) camera2.camera1.send_confidence -> Q56),
+	Q56	= ( (1.0) camera1.camera2.allow_tracking -> Q57),
+	Q57	= ERROR,
+	Q58	= ( (1.0) camera2.camera4.send_confidence -> Q59),
+	Q59	= ( (1.0) camera1.camera2.ask_confidence -> Q60),
+	Q60	= ( (1.0) camera2.camera1.send_confidence -> Q61),
+	Q61	= ( (1.0) camera1.camera2.allow_tracking -> Q62),
+	Q62	= ( (1.0) endAction -> Q21),
+	Q63	= ( (1.0) camera2.object.sees_obj -> Q53),
+	Q64	= ( (0.5) camera2.camera4.no_confidence -> Q65
+		  | (0.5) camera1.camera3.start_search -> Q67),
+	Q65	= ( (1.0) camera1.camera3.start_search -> Q66),
+	Q66	= ERROR,
+	Q67	= ( (1.0) camera2.camera4.no_confidence -> Q66),
+	Q68	= ( (1.0) camera1.camera3.start_search -> Q69),
+	Q69	= ERROR,
+	Q70	= ( (0.14285714285714285) camera4.camera2.ask_confidence -> Q67
+		  | (0.4285714285714286) camera2.object.sees_obj -> Q69
+		  | (0.4285714285714286) camera1.camera2.start_search -> Q71),
+	Q71	= ( (1.0) camera2.object.sees_obj -> Q72),
+	Q72	= ( (1.0) camera2.camera1.found_obj -> Q73),
+	Q73	= ( (0.6000000000000001) camera1.camera2.ask_confidence -> Q74
+		  | (0.4) camera4.camera2.ask_confidence -> Q77),
+	Q74	= ( (1.0) camera2.camera1.send_confidence -> Q75),
+	Q75	= ( (1.0) camera1.camera2.allow_tracking -> Q76),
+	Q76	= ERROR,
+	Q77	= ( (1.0) camera2.camera4.send_confidence -> Q78),
+	Q78	= ( (1.0) camera1.camera2.ask_confidence -> Q79),
+	Q79	= ( (1.0) camera2.camera1.send_confidence -> Q80),
+	Q80	= ( (1.0) camera1.camera2.allow_tracking -> Q81),
+	Q81	= ( (1.0) endAction -> Q21),
+	Q82	= ( (0.30000000000000004) camera4.object.sees_obj -> Q51
+		  | (0.7) camera1.camera3.start_search -> Q83),
+	Q83	= ( (1.0) camera4.object.sees_obj -> Q63),
+	Q84	= ( (0.631578947368421) camera4.object.sees_obj -> Q70
+		  | (0.36842105263157887) camera1.camera2.start_search -> Q85),
+	Q85	= ( (1.0) camera4.object.sees_obj -> Q71),
+	Q86	= ( (0.38216560509554137) camera4.object.sees_obj -> Q87
+		  | (0.6178343949044586) camera2.camera1.ask_confidence -> Q104),
+	Q87	= ( (1.0) camera2.camera1.ask_confidence -> Q88),
+	Q88	= ( (1.0) camera2.camera4.ask_confidence -> Q89),
+	Q89	= ( (0.5) camera1.camera2.no_confidence -> Q90
+		  | (0.5) camera4.camera2.ask_confidence -> Q91),
+	Q90	= ERROR,
+	Q91	= ( (1.0) camera1.camera2.no_confidence -> Q92),
+	Q92	= ( (1.0) camera4.camera2.send_confidence -> Q93),
+	Q93	= ( (1.0) camera2.camera4.send_confidence -> Q94),
+	Q94	= ( (1.0) camera4.camera2.allow_tracking -> Q95),
+	Q95	= ( (1.0) camera2.object.start_tracking -> Q96),
+	Q96	= ( (1.0) camera2.object.loses_obj -> Q97),
+	Q97	= ( (1.0) camera2.camera1.start_search -> Q98),
+	Q98	= ( (1.0) camera2.camera4.start_search -> Q99),
+	Q99	= ( (1.0) camera1.camera2.found_obj -> Q100),
+	Q100	= ( (1.0) camera2.camera1.ask_confidence -> Q101),
+	Q101	= ( (1.0) camera1.camera2.send_confidence -> Q102),
+	Q102	= ( (1.0) camera2.camera1.allow_tracking -> Q103),
+	Q103	= ( (1.0) endAction -> Q21),
+	Q104	= ( (0.6) camera4.object.sees_obj -> Q88
+		  | (0.3999999999999999) camera2.camera4.ask_confidence -> Q105),
+	Q105	= ( (1.0) camera1.camera2.no_confidence -> Q106),
+	Q106	= ( (1.0) camera4.camera2.no_confidence -> Q107),
+	Q107	= ( (1.0) camera2.object.start_tracking -> Q108),
+	Q108	= ( (1.0) camera1.object.sees_obj -> Q109),
+	Q109	= ( (1.0) camera2.object.loses_obj -> Q110),
+	Q110	= ( (1.0) camera2.camera1.start_search -> Q111),
+	Q111	= ( (1.0) camera2.camera4.start_search -> Q112),
+	Q112	= ( (1.0) camera1.camera2.found_obj -> Q113),
+	Q113	= ( (1.0) camera2.camera1.ask_confidence -> Q114),
+	Q114	= ( (1.0) camera1.camera2.send_confidence -> Q115),
+	Q115	= ( (1.0) camera2.camera1.allow_tracking -> Q116),
+	Q116	= ( (1.0) endAction -> Q21).

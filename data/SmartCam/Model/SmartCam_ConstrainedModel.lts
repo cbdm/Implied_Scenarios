@@ -1,7 +1,7 @@
 Process:
 	ConstrainedModel
 States:
-	67
+	65
 Transitions:
 	ConstrainedModel = Q0,
 	Q0	= (camera3.object.sees_obj -> Q1
@@ -69,12 +69,8 @@ Transitions:
 	Q57	= (camera2.camera1.ask_confidence -> Q58),
 	Q58	= (camera1.camera2.send_confidence -> Q59),
 	Q59	= (camera2.camera1.allow_tracking -> Q10),
-	Q60	= (camera4.object.sees_obj -> Q61
-		  |camera2.camera4.ask_confidence -> Q63),
-	Q61	= (camera2.camera4.ask_confidence -> Q62),
-	Q62	= (camera1.camera2.no_confidence -> Q31
-		  |camera4.camera2.ask_confidence -> Q48),
-	Q63	= (camera1.camera2.no_confidence -> Q64),
-	Q64	= (camera4.camera2.no_confidence -> Q65),
-	Q65	= (camera2.object.start_tracking -> Q66),
-	Q66	= (camera1.object.sees_obj -> Q53).
+	Q60	= (camera2.camera4.ask_confidence -> Q61),
+	Q61	= (camera1.camera2.no_confidence -> Q62),
+	Q62	= (camera4.camera2.no_confidence -> Q63),
+	Q63	= (camera2.object.start_tracking -> Q64),
+	Q64	= (camera1.object.sees_obj -> Q53).

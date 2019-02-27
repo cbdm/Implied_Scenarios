@@ -1,0 +1,154 @@
+//------------------------- eB2B System --------------------------
+
+//--------------------- PROBABILISTIC MODEL ------------------------
+
+//------------------------------------------------------------------
+//----------------------- Components' States -----------------------
+//------------------------------------------------------------------
+
+User = Q0,
+	Q0	= ( (1.0) enterPwd -> Q1),
+	Q1	= ( (1.0) html -> Q2),
+	Q2	= ( (0.5) enterPwd -> Q1
+		  | (0.25) logout -> Q3
+		  | (0.25) search -> Q4),
+	Q3	= ( (1.0) html -> Q5),
+	Q4	= ( (1.0) html -> Q6),
+	Q5	= ( (1.0) endAction -> Q7),
+	Q6	= ( (1.0) orderHeader -> Q8),
+	Q7	= STOP,
+	Q8	= ( (1.0) html -> Q9),
+	Q9	= ( (0.25) orderHeader -> Q8
+		  | (0.25) finish -> Q10
+		  | (0.25) back -> Q11
+		  | (0.25) orderDetails -> Q12),
+	Q10	= ( (1.0) endAction -> Q7),
+	Q11	= ( (1.0) html -> Q13),
+	Q12	= ( (1.0) html -> Q14),
+	Q13	= ( (1.0) orderHeader -> Q8),
+	Q14	= ( (0.5) back -> Q15
+		  | (0.5) itemDetails -> Q16),
+	Q15	= ( (1.0) html -> Q17),
+	Q16	= ( (1.0) html -> Q18),
+	Q17	= ( (0.5) orderHeader -> Q8
+		  | (0.5) orderDetails -> Q12),
+	Q18	= ( (1.0) back -> Q19),
+	Q19	= ( (1.0) html -> Q20),
+	Q20	= ( (0.5) back -> Q15
+		  | (0.5) itemDetails -> Q16).
+
+
+Servlet = Q0,
+	Q0	= ( (1.0) enterPwd -> Q1),
+	Q1	= ( (1.0) authenticate -> Q2),
+	Q2	= ( (0.5) failed -> Q3
+		  | (0.5) verified -> Q4),
+	Q3	= ( (1.0) html -> Q5),
+	Q4	= ( (1.0) html -> Q6),
+	Q5	= ( (1.0) enterPwd -> Q1),
+	Q6	= ( (0.5) search -> Q7
+		  | (0.5) logout -> Q8),
+	Q7	= ( (1.0) action -> Q9),
+	Q8	= ( (1.0) action -> Q10),
+	Q9	= ( (1.0) xml -> Q11),
+	Q10	= ( (1.0) xml -> Q12),
+	Q11	= ( (1.0) html -> Q13),
+	Q12	= ( (1.0) html -> Q14),
+	Q13	= ( (1.0) orderHeader -> Q15),
+	Q14	= ( (1.0) endAction -> Q16),
+	Q15	= ( (1.0) action -> Q17),
+	Q16	= STOP,
+	Q17	= ( (1.0) xml -> Q18),
+	Q18	= ( (1.0) html -> Q19),
+	Q19	= ( (0.25) orderHeader -> Q15
+		  | (0.25) endAction -> Q16
+		  | (0.25) back -> Q20
+		  | (0.25) orderDetails -> Q21),
+	Q20	= ( (1.0) action -> Q22),
+	Q21	= ( (1.0) action -> Q23),
+	Q22	= ( (1.0) xml -> Q24),
+	Q23	= ( (1.0) xml -> Q25),
+	Q24	= ( (1.0) html -> Q26),
+	Q25	= ( (1.0) html -> Q27),
+	Q26	= ( (1.0) orderHeader -> Q15),
+	Q27	= ( (0.5) itemDetails -> Q28
+		  | (0.5) back -> Q29),
+	Q28	= ( (1.0) action -> Q30),
+	Q29	= ( (1.0) action -> Q31),
+	Q30	= ( (1.0) xml -> Q32),
+	Q31	= ( (1.0) xml -> Q33),
+	Q32	= ( (1.0) html -> Q34),
+	Q33	= ( (1.0) html -> Q35),
+	Q34	= ( (1.0) back -> Q36),
+	Q35	= ( (0.5) orderHeader -> Q15
+		  | (0.5) orderDetails -> Q21),
+	Q36	= ( (1.0) action -> Q37),
+	Q37	= ( (1.0) xml -> Q38),
+	Q38	= ( (1.0) html -> Q39),
+	Q39	= ( (0.5) itemDetails -> Q28
+		  | (0.5) back -> Q29).
+
+
+Admin = Q0,
+	Q0	= ( (1.0) run -> Q1),
+	Q1	= ( (0.5) shutdown -> Q2
+		  | (0.5) finish -> Q3),
+	Q2	= ( (1.0) endAction -> Q4),
+	Q3	= ( (1.0) shutdown -> Q2),
+	Q4	= STOP.
+
+
+ERP = Q0,
+	Q0	= ( (1.0) run -> Q1),
+	Q1	= ( (1.0) query -> Q2),
+	Q2	= ( (1.0) data -> Q3),
+	Q3	= ( (1.0) query -> Q4),
+	Q4	= ( (1.0) data -> Q5),
+	Q5	= ( (0.75) query -> Q6
+		  | (0.25) shutdown -> Q7),
+	Q6	= ( (1.0) data -> Q8),
+	Q7	= ( (1.0) endAction -> Q9),
+	Q8	= ( (0.25) shutdown -> Q7
+		  | (0.7499999999999999) query -> Q6),
+	Q9	= STOP.
+
+
+BizLogic = Q0,
+	Q0	= ( (1.0) authenticate -> Q1),
+	Q1	= ( (1.0) query -> Q2),
+	Q2	= ( (1.0) data -> Q3),
+	Q3	= ( (0.5) failed -> Q4
+		  | (0.5) verified -> Q5),
+	Q4	= ( (1.0) authenticate -> Q1),
+	Q5	= ( (1.0) action -> Q6),
+	Q6	= ( (1.0) query -> Q7),
+	Q7	= ( (1.0) data -> Q8),
+	Q8	= ( (1.0) xml -> Q9),
+	Q9	= ( (0.5) endAction -> Q10
+		  | (0.5) action -> Q6),
+	Q10	= STOP.
+
+
+//------------------------------------------------------------------
+//----------------------------- Constraints ------------------------
+//------------------------------------------------------------------
+
+
+// NegScen
+//
+// This constraint disallows the system to shutdown (ShutDown scenario) before the user gets an html response that they have logged out (Logout).
+
+// Allows everything but 'shutdown' until 'logout' is detected
+NegScen = ( { enterPwd, authenticate, query, data, verified, html, failed, search, action, xml, orderHeader, orderDetails, itemDetails, back, run, search } -> NegScen | logout -> Aux | finish -> ShutDown ),
+
+// Now that the user is logging out, wait until they get a 'html' response before actually shutting down
+Aux = ({ enterPwd, authenticate, query, data, verified, failed, search, action, xml, orderHeader, orderDetails, itemDetails, back, run, search, logout} -> Aux | html -> ShutDown),
+
+ShutDown = (shutdown -> endAction -> STOP).
+//------------------------------------------------------------------
+//----------------------------- Compositions -----------------------
+//------------------------------------------------------------------
+
+ ||ArchitectureModel = (User || Servlet || BizLogic || ERP || Admin).
+
+ ||ConstrainedModel = (ArchitectureModel || NegScen).

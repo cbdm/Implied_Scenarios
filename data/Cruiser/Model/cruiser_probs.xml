@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification>
+  <hmsc>
+    <bmsc name="init" x="50" y="30" />
+    <bmsc name="SCen1" x="50" y="130" />
+    <transition>
+      <from>init</from>
+      <to>SCen1</to>
+    </transition>
+    <transition>
+      <from>SCen1</from>
+      <to>init</to>
+    </transition>
+    <bmsc name="Scen2" x="170" y="130" />
+    <transition>
+      <from>init</from>
+      <to>Scen2</to>
+    </transition>
+    <transition>
+      <from>Scen2</from>
+      <to>init</to>
+    </transition>
+    <bmsc name="Scen3" x="290" y="130" />
+    <transition>
+      <from>init</from>
+      <to>Scen3</to>
+    </transition>
+    <transition>
+      <from>Scen3</from>
+      <to>init</to>
+    </transition>
+    <bmsc name="Scen4" x="410" y="130" />
+    <transition>
+      <from>init</from>
+      <to>Scen4</to>
+    </transition>
+    <transition>
+      <from>Scen4</from>
+      <to>init</to>
+    </transition>
+    <bmsc name="END" x="290" y="30" />
+    <transition>
+      <from>init</from>
+      <to>END</to>
+    </transition>
+  </hmsc>
+  <bmsc name="init" />
+  <bmsc name="SCen1">
+    <instance name="SensorScan">
+      <input timeindex="3">
+        <name>on</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="8">
+        <name>off</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="16">
+        <name>on</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="19">
+        <name>on</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="22">
+        <name>off</name>
+        <from>CruisController</from>
+      </input>
+    </instance>
+    <instance name="InputSpeed">
+      <output timeindex="1">
+        <name>engineOn</name>
+        <to>CruisController</to>
+      </output>
+      <input timeindex="5">
+        <name>speed</name>
+        <from>SpeedController</from>
+      </input>
+      <input timeindex="7">
+        <name>speed</name>
+        <from>SpeedController</from>
+      </input>
+      <input timeindex="9">
+        <name>speed</name>
+        <from>SpeedController</from>
+      </input>
+      <output timeindex="12">
+        <name>engineOff</name>
+        <to>CruisController</to>
+      </output>
+      <output timeindex="13">
+        <name>engineOn</name>
+        <to>CruisController</to>
+      </output>
+      <input timeindex="14">
+        <name>speed</name>
+        <from>SpeedController</from>
+      </input>
+      <output timeindex="24">
+        <name>engineOff</name>
+        <to>CruisController</to>
+      </output>
+    </instance>
+    <instance name="CruisController">
+      <input timeindex="1">
+        <name>engineOn</name>
+        <from>InputSpeed</from>
+      </input>
+      <output timeindex="2">
+        <name>clearSpeed</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="3">
+        <name>on</name>
+        <to>SensorScan</to>
+      </output>
+      <output timeindex="4">
+        <name>recordSpeed</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="6">
+        <name>enableControl</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="8">
+        <name>off</name>
+        <to>SensorScan</to>
+      </output>
+      <output timeindex="11">
+        <name>disableControl</name>
+        <to>SpeedController</to>
+      </output>
+      <input timeindex="12">
+        <name>engineOff</name>
+        <from>InputSpeed</from>
+      </input>
+      <input timeindex="13">
+        <name>engineOn</name>
+        <from>InputSpeed</from>
+      </input>
+      <output timeindex="15">
+        <name>clearSpeed</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="16">
+        <name>on</name>
+        <to>SensorScan</to>
+      </output>
+      <output timeindex="17">
+        <name>recordSpeed</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="18">
+        <name>enableControl</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="19">
+        <name>on</name>
+        <to>SensorScan</to>
+      </output>
+      <output timeindex="20">
+        <name>recordSpeed</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="21">
+        <name>enableControl</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="22">
+        <name>off</name>
+        <to>SensorScan</to>
+      </output>
+      <output timeindex="23">
+        <name>disableControl</name>
+        <to>SpeedController</to>
+      </output>
+      <input timeindex="24">
+        <name>engineOff</name>
+        <from>InputSpeed</from>
+      </input>
+    </instance>
+    <instance name="SpeedController">
+      <input timeindex="2">
+        <name>clearSpeed</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="4">
+        <name>recordSpeed</name>
+        <from>CruisController</from>
+      </input>
+      <output timeindex="5">
+        <name>speed</name>
+        <to>InputSpeed</to>
+      </output>
+      <input timeindex="6">
+        <name>enableControl</name>
+        <from>CruisController</from>
+      </input>
+      <output timeindex="7">
+        <name>speed</name>
+        <to>InputSpeed</to>
+      </output>
+      <output timeindex="8">
+        <name>setThrottle</name>
+        <to>Throttle</to>
+      </output>
+      <output timeindex="9">
+        <name>speed</name>
+        <to>InputSpeed</to>
+      </output>
+      <output timeindex="10">
+        <name>setThrottle</name>
+        <to>Throttle</to>
+      </output>
+      <input timeindex="11">
+        <name>disableControl</name>
+        <from>CruisController</from>
+      </input>
+      <output timeindex="14">
+        <name>speed</name>
+        <to>InputSpeed</to>
+      </output>
+      <input timeindex="15">
+        <name>clearSpeed</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="17">
+        <name>recordSpeed</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="18">
+        <name>enableControl</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="20">
+        <name>recordSpeed</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="21">
+        <name>enableControl</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="23">
+        <name>disableControl</name>
+        <from>CruisController</from>
+      </input>
+    </instance>
+    <instance name="Throttle">
+      <input timeindex="8">
+        <name>setThrottle</name>
+        <from>SpeedController</from>
+      </input>
+      <input timeindex="10">
+        <name>setThrottle</name>
+        <from>SpeedController</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="Scen2">
+    <instance name="SensorScan" />
+    <instance name="InputSpeed">
+      <output timeindex="1">
+        <name>engineOn</name>
+        <to>CruisController</to>
+      </output>
+      <input timeindex="2">
+        <name>speed</name>
+        <from>SpeedController</from>
+      </input>
+      <output timeindex="4">
+        <name>engineOff</name>
+        <to>CruisController</to>
+      </output>
+    </instance>
+    <instance name="CruisController">
+      <input timeindex="1">
+        <name>engineOn</name>
+        <from>InputSpeed</from>
+      </input>
+      <output timeindex="3">
+        <name>clearSpeed</name>
+        <to>SpeedController</to>
+      </output>
+      <input timeindex="4">
+        <name>engineOff</name>
+        <from>InputSpeed</from>
+      </input>
+    </instance>
+    <instance name="SpeedController">
+      <output timeindex="2">
+        <name>speed</name>
+        <to>InputSpeed</to>
+      </output>
+      <input timeindex="3">
+        <name>clearSpeed</name>
+        <from>CruisController</from>
+      </input>
+    </instance>
+    <instance name="Throttle" />
+  </bmsc>
+  <bmsc name="Scen3">
+    <instance name="SensorScan">
+      <input timeindex="3">
+        <name>on</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="6">
+        <name>brake</name>
+        <from>CruisController</from>
+      </input>
+    </instance>
+    <instance name="InputSpeed">
+      <output timeindex="1">
+        <name>engineOn</name>
+        <to>CruisController</to>
+      </output>
+      <output timeindex="8">
+        <name>engineOff</name>
+        <to>CruisController</to>
+      </output>
+    </instance>
+    <instance name="CruisController">
+      <input timeindex="1">
+        <name>engineOn</name>
+        <from>InputSpeed</from>
+      </input>
+      <output timeindex="2">
+        <name>clearSpeed</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="3">
+        <name>on</name>
+        <to>SensorScan</to>
+      </output>
+      <output timeindex="4">
+        <name>recordSpeed</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="5">
+        <name>enableControl</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="6">
+        <name>brake</name>
+        <to>SensorScan</to>
+      </output>
+      <output timeindex="7">
+        <name>disableControl</name>
+        <to>SpeedController</to>
+      </output>
+      <input timeindex="8">
+        <name>engineOff</name>
+        <from>InputSpeed</from>
+      </input>
+    </instance>
+    <instance name="SpeedController">
+      <input timeindex="2">
+        <name>clearSpeed</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="4">
+        <name>recordSpeed</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="5">
+        <name>enableControl</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="7">
+        <name>disableControl</name>
+        <from>CruisController</from>
+      </input>
+    </instance>
+    <instance name="Throttle" />
+  </bmsc>
+  <bmsc name="Scen4">
+    <instance name="SensorScan">
+      <input timeindex="3">
+        <name>on</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="8">
+        <name>accelerator</name>
+        <from>CruisController</from>
+      </input>
+    </instance>
+    <instance name="InputSpeed">
+      <output timeindex="1">
+        <name>engineOn</name>
+        <to>CruisController</to>
+      </output>
+      <input timeindex="6">
+        <name>speed</name>
+        <from>SpeedController</from>
+      </input>
+      <output timeindex="10">
+        <name>engineOff</name>
+        <to>CruisController</to>
+      </output>
+    </instance>
+    <instance name="CruisController">
+      <input timeindex="1">
+        <name>engineOn</name>
+        <from>InputSpeed</from>
+      </input>
+      <output timeindex="2">
+        <name>clearSpeed</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="3">
+        <name>on</name>
+        <to>SensorScan</to>
+      </output>
+      <output timeindex="4">
+        <name>recordSpeed</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="5">
+        <name>enableControl</name>
+        <to>SpeedController</to>
+      </output>
+      <output timeindex="8">
+        <name>accelerator</name>
+        <to>SensorScan</to>
+      </output>
+      <output timeindex="9">
+        <name>disableControl</name>
+        <to>SpeedController</to>
+      </output>
+      <input timeindex="10">
+        <name>engineOff</name>
+        <from>InputSpeed</from>
+      </input>
+    </instance>
+    <instance name="SpeedController">
+      <input timeindex="2">
+        <name>clearSpeed</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="4">
+        <name>recordSpeed</name>
+        <from>CruisController</from>
+      </input>
+      <input timeindex="5">
+        <name>enableControl</name>
+        <from>CruisController</from>
+      </input>
+      <output timeindex="6">
+        <name>speed</name>
+        <to>InputSpeed</to>
+      </output>
+      <output timeindex="7">
+        <name>setThrottle</name>
+        <to>Throttle</to>
+      </output>
+      <input timeindex="9">
+        <name>disableControl</name>
+        <from>CruisController</from>
+      </input>
+    </instance>
+    <instance name="Throttle">
+      <input timeindex="7">
+        <name>setThrottle</name>
+        <from>SpeedController</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="END">
+    <instance name="SensorScan" />
+    <instance name="InputSpeed">
+      <input timeindex="1">
+        <from>CruisController</from>
+        <name>end</name>
+      </input>
+    </instance>
+    <instance name="CruisController">
+      <output timeindex="1">
+        <to>InputSpeed</to>
+        <name>end</name>
+      </output>
+    </instance>
+    <instance name="SpeedController" />
+    <instance name="Throttle" />
+  </bmsc>
+</specification>
+

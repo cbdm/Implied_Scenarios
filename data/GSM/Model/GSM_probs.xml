@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification>
+  <hmsc weighted="true">
+    <bmsc name="init" x="50" y="30" />
+    <bmsc name="ConnReq" x="290" y="30" />
+    <bmsc name="CallSetupReq" x="50" y="130" />
+    <bmsc name="PagingResp" x="410" y="130" />
+    <bmsc name="LocUpdReq" x="770" y="130" />
+    <bmsc name="Authenticate1" x="170" y="230" />
+    <bmsc name="Identify1" x="50" y="230" />
+    <bmsc name="Authenticate2" x="530" y="230" />
+    <bmsc name="Identify2" x="410" y="230" />
+    <bmsc name="Authenticate3" x="890" y="230" />
+    <bmsc name="Identify3" x="770" y="230" />
+    <bmsc name="Accept1" x="50" y="330" />
+    <bmsc name="Reject1" x="170" y="330" />
+    <bmsc name="Accept2" x="530" y="330" />
+    <bmsc name="Reject2" x="410" y="330" />
+    <bmsc name="Accept3" x="890" y="330" />
+    <bmsc name="Reject3" x="770" y="330" />
+    <bmsc name="Encrypt1" x="50" y="430" />
+    <bmsc name="MobileOrCS" x="170" y="430" />
+    <bmsc name="Encrypt2" x="410" y="430" />
+    <bmsc name="MobileTrCS" x="530" y="430" />
+    <bmsc name="Encrypt3" x="890" y="430" />
+    <bmsc name="LocationUpd" x="770" y="430" />
+    <bmsc name="MobileOrCR" x="290" y="630" />
+    <bmsc name="MobileTrCR" x="410" y="630" />
+    <transition>
+      <from>init</from>
+      <to>ConnReq</to>
+    </transition>
+    <transition>
+      <from>ConnReq</from>
+      <to>CallSetupReq</to>
+    </transition>
+    <transition>
+      <from>ConnReq</from>
+      <to>PagingResp</to>
+    </transition>
+    <transition>
+      <from>ConnReq</from>
+      <to>LocUpdReq</to>
+    </transition>
+    <transition>
+      <from>CallSetupReq</from>
+      <to>Authenticate1</to>
+    </transition>
+    <transition>
+      <from>CallSetupReq</from>
+      <to>Identify1</to>
+    </transition>
+    <transition>
+      <from>PagingResp</from>
+      <to>Authenticate2</to>
+    </transition>
+    <transition>
+      <from>PagingResp</from>
+      <to>Identify2</to>
+    </transition>
+    <transition>
+      <from>LocUpdReq</from>
+      <to>Authenticate3</to>
+    </transition>
+    <transition>
+      <from>LocUpdReq</from>
+      <to>Identify3</to>
+    </transition>
+    <transition>
+      <from>Identify1</from>
+      <to>Authenticate1</to>
+    </transition>
+    <transition>
+      <from>Identify2</from>
+      <to>Authenticate2</to>
+    </transition>
+    <transition>
+      <from>Identify3</from>
+      <to>Authenticate3</to>
+    </transition>
+    <transition>
+      <from>Authenticate1</from>
+      <to>Accept1</to>
+    </transition>
+    <transition>
+      <from>Authenticate1</from>
+      <to>Reject1</to>
+    </transition>
+    <transition>
+      <from>Authenticate2</from>
+      <to>Accept2</to>
+    </transition>
+    <transition>
+      <from>Authenticate2</from>
+      <to>Reject2</to>
+    </transition>
+    <transition>
+      <from>Authenticate3</from>
+      <to>Accept3</to>
+    </transition>
+    <transition>
+      <from>Authenticate3</from>
+      <to>Reject3</to>
+    </transition>
+    <transition>
+      <from>Reject1</from>
+      <to>ConnReq</to>
+    </transition>
+    <transition>
+      <from>Reject2</from>
+      <to>ConnReq</to>
+    </transition>
+    <transition>
+      <from>Reject3</from>
+      <to>ConnReq</to>
+    </transition>
+    <transition>
+      <from>Accept1</from>
+      <to>Encrypt1</to>
+    </transition>
+    <transition>
+      <from>Accept1</from>
+      <to>MobileOrCS</to>
+    </transition>
+    <transition>
+      <from>Accept2</from>
+      <to>Encrypt2</to>
+    </transition>
+    <transition>
+      <from>Accept2</from>
+      <to>MobileTrCS</to>
+    </transition>
+    <transition>
+      <from>Accept3</from>
+      <to>Encrypt3</to>
+    </transition>
+    <transition>
+      <from>Accept3</from>
+      <to>LocationUpd</to>
+    </transition>
+    <transition>
+      <from>Encrypt1</from>
+      <to>MobileOrCS</to>
+    </transition>
+    <transition>
+      <from>Encrypt2</from>
+      <to>MobileTrCS</to>
+    </transition>
+    <transition>
+      <from>Encrypt3</from>
+      <to>LocationUpd</to>
+    </transition>
+    <transition>
+      <from>LocationUpd</from>
+      <to>ConnReq</to>
+    </transition>
+    <transition>
+      <from>MobileOrCS</from>
+      <to>MobileOrCR</to>
+    </transition>
+    <transition>
+      <from>MobileOrCS</from>
+      <to>MobileTrCR</to>
+    </transition>
+    <transition>
+      <from>MobileTrCS</from>
+      <to>MobileOrCR</to>
+    </transition>
+    <transition>
+      <from>MobileTrCS</from>
+      <to>MobileTrCR</to>
+    </transition>
+    <transition>
+      <from>MobileOrCR</from>
+      <to>ConnReq</to>
+    </transition>
+    <transition>
+      <from>MobileTrCR</from>
+      <to>ConnReq</to>
+    </transition>
+    <bmsc name="END" x="530" y="30" />
+    <transition weight="1">
+      <from>ConnReq</from>
+      <to>END</to>
+    </transition>
+  </hmsc>
+  <bmsc name="init" />
+  <bmsc name="ConnReq">
+    <instance name="MS">
+      <output timeindex="1">
+        <name>ms,bss,channelReq</name>
+        <to>BSS</to>
+      </output>
+      <input timeindex="2">
+        <name>bss,ms,immAssign</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="BSS">
+      <output timeindex="2">
+        <name>bss,ms,immAssign</name>
+        <to>MS</to>
+      </output>
+      <input timeindex="1">
+        <name>ms,bss,channelReq</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="MSC" />
+    <instance name="Network" />
+  </bmsc>
+  <bmsc name="CallSetupReq">
+    <instance name="MS">
+      <output timeindex="1">
+        <name>ms,bss,callSetup</name>
+        <to>BSS</to>
+      </output>
+    </instance>
+    <instance name="BSS">
+      <output timeindex="2">
+        <name>bss,msc,callSetupReq</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="1">
+        <name>ms,bss,callSetup</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="MSC">
+      <output timeindex="3">
+        <name>msc,network,callSetUp</name>
+        <to>Network</to>
+      </output>
+      <input timeindex="2">
+        <name>bss,msc,callSetupReq</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <input timeindex="3">
+        <name>msc,network,callSetUp</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="PagingResp">
+    <instance name="MS">
+      <output timeindex="1">
+        <name>ms,bss,pageResp</name>
+        <to>BSS</to>
+      </output>
+      <input timeindex="2">
+        <name>bss,ms,pageRspAck</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="BSS">
+      <output timeindex="2">
+        <name>bss,ms,pageRspAck</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="3">
+        <name>bss,msc,pageRspReq</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="1">
+        <name>ms,bss,pageResp</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="MSC">
+      <output timeindex="4">
+        <name>msc,network,procAccessReq</name>
+        <to>Network</to>
+      </output>
+      <input timeindex="3">
+        <name>bss,msc,pageRspReq</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <input timeindex="4">
+        <name>msc,network,procAccessReq</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="LocUpdReq">
+    <instance name="MS">
+      <output timeindex="1">
+        <name>ms,bss,locationUpdate</name>
+        <to>BSS</to>
+      </output>
+    </instance>
+    <instance name="BSS">
+      <output timeindex="2">
+        <name>bss,msc,locUpReq</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="1">
+        <name>ms,bss,locationUpdate</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="MSC">
+      <output timeindex="3">
+        <name>msc,network,locUpdArea</name>
+        <to>Network</to>
+      </output>
+      <input timeindex="2">
+        <name>bss,msc,locUpReq</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <input timeindex="3">
+        <name>msc,network,locUpdArea</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="Authenticate1">
+    <instance name="MS">
+      <output timeindex="3">
+        <name>ms,msc,authenResp</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="2">
+        <name>msc,ms,authenReq</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS" />
+    <instance name="MSC">
+      <output timeindex="2">
+        <name>msc,ms,authenReq</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="4">
+        <name>msc,network,authenComplt</name>
+        <to>Network</to>
+      </output>
+      <input timeindex="1">
+        <name>network,msc,authenticate</name>
+        <from>Network</from>
+      </input>
+      <input timeindex="3">
+        <name>ms,msc,authenResp</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <output timeindex="1">
+        <name>network,msc,authenticate</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="4">
+        <name>msc,network,authenComplt</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="Authenticate2">
+    <instance name="MS">
+      <output timeindex="3">
+        <name>ms,msc,authenResp</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="2">
+        <name>msc,ms,authenReq</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS" />
+    <instance name="MSC">
+      <output timeindex="2">
+        <name>msc,ms,authenReq</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="4">
+        <name>msc,network,authenComplt</name>
+        <to>Network</to>
+      </output>
+      <input timeindex="1">
+        <name>network,msc,authenticate</name>
+        <from>Network</from>
+      </input>
+      <input timeindex="3">
+        <name>ms,msc,authenResp</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <output timeindex="1">
+        <name>network,msc,authenticate</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="4">
+        <name>msc,network,authenComplt</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="Authenticate3">
+    <instance name="MS">
+      <output timeindex="3">
+        <name>ms,msc,authenResp</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="2">
+        <name>msc,ms,authenReq</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS" />
+    <instance name="MSC">
+      <output timeindex="2">
+        <name>msc,ms,authenReq</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="4">
+        <name>msc,network,authenComplt</name>
+        <to>Network</to>
+      </output>
+      <input timeindex="1">
+        <name>network,msc,authenticate</name>
+        <from>Network</from>
+      </input>
+      <input timeindex="3">
+        <name>ms,msc,authenResp</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <output timeindex="1">
+        <name>network,msc,authenticate</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="4">
+        <name>msc,network,authenComplt</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="Identify1">
+    <instance name="MS">
+      <output timeindex="3">
+        <name>ms,msc,identityResp</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="2">
+        <name>msc,ms,identityReq</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS" />
+    <instance name="MSC">
+      <output timeindex="2">
+        <name>msc,ms,identityReq</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="4">
+        <name>msc,network,imsiAck</name>
+        <to>Network</to>
+      </output>
+      <input timeindex="1">
+        <name>network,msc,provideImsi</name>
+        <from>Network</from>
+      </input>
+      <input timeindex="3">
+        <name>ms,msc,identityResp</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <output timeindex="1">
+        <name>network,msc,provideImsi</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="4">
+        <name>msc,network,imsiAck</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="Identify2">
+    <instance name="MS">
+      <output timeindex="3">
+        <name>ms,msc,identityResp</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="2">
+        <name>msc,ms,identityReq</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS" />
+    <instance name="MSC">
+      <output timeindex="2">
+        <name>msc,ms,identityReq</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="4">
+        <name>msc,network,imsiAck</name>
+        <to>Network</to>
+      </output>
+      <input timeindex="1">
+        <name>network,msc,provideImsi</name>
+        <from>Network</from>
+      </input>
+      <input timeindex="3">
+        <name>ms,msc,identityResp</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <output timeindex="1">
+        <name>network,msc,provideImsi</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="4">
+        <name>msc,network,imsiAck</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="Identify3">
+    <instance name="MS">
+      <output timeindex="3">
+        <name>ms,msc,identityResp</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="2">
+        <name>msc,ms,identityReq</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS" />
+    <instance name="MSC">
+      <output timeindex="2">
+        <name>msc,ms,identityReq</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="4">
+        <name>msc,network,imsiAck</name>
+        <to>Network</to>
+      </output>
+      <input timeindex="1">
+        <name>network,msc,provideImsi</name>
+        <from>Network</from>
+      </input>
+      <input timeindex="3">
+        <name>ms,msc,identityResp</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <output timeindex="1">
+        <name>network,msc,provideImsi</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="4">
+        <name>msc,network,imsiAck</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="Accept1">
+    <instance name="MS">
+      <input timeindex="1">
+        <name>msc,ms,serviceAccept</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS" />
+    <instance name="MSC">
+      <output timeindex="1">
+        <name>msc,ms,serviceAccept</name>
+        <to>MS</to>
+      </output>
+    </instance>
+    <instance name="Network" />
+  </bmsc>
+  <bmsc name="Accept2">
+    <instance name="MS">
+      <input timeindex="1">
+        <name>msc,ms,serviceAccept</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS" />
+    <instance name="MSC">
+      <output timeindex="1">
+        <name>msc,ms,serviceAccept</name>
+        <to>MS</to>
+      </output>
+    </instance>
+    <instance name="Network" />
+  </bmsc>
+  <bmsc name="Accept3">
+    <instance name="MS">
+      <input timeindex="1">
+        <name>msc,ms,serviceAccept</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS" />
+    <instance name="MSC">
+      <output timeindex="1">
+        <name>msc,ms,serviceAccept</name>
+        <to>MS</to>
+      </output>
+    </instance>
+    <instance name="Network" />
+  </bmsc>
+  <bmsc name="Reject1">
+    <instance name="MS">
+      <input timeindex="1">
+        <name>msc,ms,serviceReject</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS" />
+    <instance name="MSC">
+      <output timeindex="1">
+        <name>msc,ms,serviceReject</name>
+        <to>MS</to>
+      </output>
+    </instance>
+    <instance name="Network" />
+  </bmsc>
+  <bmsc name="Reject2">
+    <instance name="MS">
+      <input timeindex="1">
+        <name>msc,ms,serviceReject</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS" />
+    <instance name="MSC">
+      <output timeindex="1">
+        <name>msc,ms,serviceReject</name>
+        <to>MS</to>
+      </output>
+    </instance>
+    <instance name="Network" />
+  </bmsc>
+  <bmsc name="Reject3">
+    <instance name="MS">
+      <input timeindex="1">
+        <name>msc,ms,serviceReject</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS" />
+    <instance name="MSC">
+      <output timeindex="1">
+        <name>msc,ms,serviceReject</name>
+        <to>MS</to>
+      </output>
+    </instance>
+    <instance name="Network" />
+  </bmsc>
+  <bmsc name="Encrypt1">
+    <instance name="MS">
+      <output timeindex="4">
+        <name>ms,bss,ciphModeCmplt</name>
+        <to>BSS</to>
+      </output>
+      <input timeindex="3">
+        <name>bss,ms,cipherMode</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="BSS">
+      <output timeindex="3">
+        <name>bss,ms,cipherMode</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="5">
+        <name>bss,msc,ciphCmplt</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="2">
+        <name>msc,bss,cipherModeCmnd</name>
+        <from>MSC</from>
+      </input>
+      <input timeindex="4">
+        <name>ms,bss,ciphModeCmplt</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="MSC">
+      <output timeindex="2">
+        <name>msc,bss,cipherModeCmnd</name>
+        <to>BSS</to>
+      </output>
+      <input timeindex="1">
+        <name>network,msc,setCipherMode</name>
+        <from>Network</from>
+      </input>
+      <input timeindex="5">
+        <name>bss,msc,ciphCmplt</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <output timeindex="1">
+        <name>network,msc,setCipherMode</name>
+        <to>MSC</to>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="Encrypt2">
+    <instance name="MS">
+      <output timeindex="4">
+        <name>ms,bss,ciphModeCmplt</name>
+        <to>BSS</to>
+      </output>
+      <input timeindex="3">
+        <name>bss,ms,cipherMode</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="BSS">
+      <output timeindex="3">
+        <name>bss,ms,cipherMode</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="5">
+        <name>bss,msc,ciphCmplt</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="2">
+        <name>msc,bss,cipherModeCmnd</name>
+        <from>MSC</from>
+      </input>
+      <input timeindex="4">
+        <name>ms,bss,ciphModeCmplt</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="MSC">
+      <output timeindex="2">
+        <name>msc,bss,cipherModeCmnd</name>
+        <to>BSS</to>
+      </output>
+      <input timeindex="1">
+        <name>network,msc,setCipherMode</name>
+        <from>Network</from>
+      </input>
+      <input timeindex="5">
+        <name>bss,msc,ciphCmplt</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <output timeindex="1">
+        <name>network,msc,setCipherMode</name>
+        <to>MSC</to>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="Encrypt3">
+    <instance name="MS">
+      <output timeindex="4">
+        <name>ms,bss,ciphModeCmplt</name>
+        <to>BSS</to>
+      </output>
+      <input timeindex="3">
+        <name>bss,ms,cipherMode</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="BSS">
+      <output timeindex="3">
+        <name>bss,ms,cipherMode</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="5">
+        <name>bss,msc,ciphCmplt</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="2">
+        <name>msc,bss,cipherModeCmnd</name>
+        <from>MSC</from>
+      </input>
+      <input timeindex="4">
+        <name>ms,bss,ciphModeCmplt</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="MSC">
+      <output timeindex="2">
+        <name>msc,bss,cipherModeCmnd</name>
+        <to>BSS</to>
+      </output>
+      <input timeindex="1">
+        <name>network,msc,setCipherMode</name>
+        <from>Network</from>
+      </input>
+      <input timeindex="5">
+        <name>bss,msc,ciphCmplt</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <output timeindex="1">
+        <name>network,msc,setCipherMode</name>
+        <to>MSC</to>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="MobileOrCS">
+    <instance name="MS">
+      <output timeindex="10">
+        <name>ms,msc,connectAck</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="2">
+        <name>bss,ms,assigned</name>
+        <from>BSS</from>
+      </input>
+      <input timeindex="3">
+        <name>bss,ms,assignCmplt</name>
+        <from>BSS</from>
+      </input>
+      <input timeindex="7">
+        <name>msc,ms,alerting</name>
+        <from>MSC</from>
+      </input>
+      <input timeindex="9">
+        <name>msc,ms,connect</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS">
+      <output timeindex="2">
+        <name>bss,ms,assigned</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="3">
+        <name>bss,ms,assignCmplt</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="4">
+        <name>bss,msc,assignCmpt</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="1">
+        <name>msc,bss,assignComnd</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="MSC">
+      <output timeindex="1">
+        <name>msc,bss,assignComnd</name>
+        <to>BSS</to>
+      </output>
+      <output timeindex="5">
+        <name>msc,network,initialMsg</name>
+        <to>Network</to>
+      </output>
+      <output timeindex="7">
+        <name>msc,ms,alerting</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="9">
+        <name>msc,ms,connect</name>
+        <to>MS</to>
+      </output>
+      <input timeindex="4">
+        <name>bss,msc,assignCmpt</name>
+        <from>BSS</from>
+      </input>
+      <input timeindex="6">
+        <name>network,msc,addCmpltMsg</name>
+        <from>Network</from>
+      </input>
+      <input timeindex="8">
+        <name>network,msc,answerMsg</name>
+        <from>Network</from>
+      </input>
+      <input timeindex="10">
+        <name>ms,msc,connectAck</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <output timeindex="6">
+        <name>network,msc,addCmpltMsg</name>
+        <to>MSC</to>
+      </output>
+      <output timeindex="8">
+        <name>network,msc,answerMsg</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="5">
+        <name>msc,network,initialMsg</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="MobileTrCS">
+    <instance name="MS">
+      <output timeindex="3">
+        <name>ms,bss,confirm</name>
+        <to>BSS</to>
+      </output>
+      <output timeindex="7">
+        <name>ms,bss,alert</name>
+        <to>BSS</to>
+      </output>
+      <output timeindex="9">
+        <name>ms,msc,conct</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="2">
+        <name>bss,ms,callSUp</name>
+        <from>BSS</from>
+      </input>
+      <input timeindex="6">
+        <name>msc,ms,alerting</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS">
+      <output timeindex="2">
+        <name>bss,ms,callSUp</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="4">
+        <name>bss,msc,conf</name>
+        <to>MSC</to>
+      </output>
+      <output timeindex="8">
+        <name>bss,msc,alrt</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="1">
+        <name>msc,bss,callSetup</name>
+        <from>MSC</from>
+      </input>
+      <input timeindex="3">
+        <name>ms,bss,confirm</name>
+        <from>MS</from>
+      </input>
+      <input timeindex="7">
+        <name>ms,bss,alert</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="MSC">
+      <output timeindex="1">
+        <name>msc,bss,callSetup</name>
+        <to>BSS</to>
+      </output>
+      <output timeindex="5">
+        <name>msc,network,addCmplt</name>
+        <to>Network</to>
+      </output>
+      <output timeindex="6">
+        <name>msc,ms,alerting</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="10">
+        <name>msc,network,answer</name>
+        <to>Network</to>
+      </output>
+      <input timeindex="4">
+        <name>bss,msc,conf</name>
+        <from>BSS</from>
+      </input>
+      <input timeindex="8">
+        <name>bss,msc,alrt</name>
+        <from>BSS</from>
+      </input>
+      <input timeindex="9">
+        <name>ms,msc,conct</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <input timeindex="5">
+        <name>msc,network,addCmplt</name>
+        <from>MSC</from>
+      </input>
+      <input timeindex="10">
+        <name>msc,network,answer</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="LocationUpd">
+    <instance name="MS">
+      <input timeindex="3">
+        <name>bss,ms,locUpAcc</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="BSS">
+      <output timeindex="3">
+        <name>bss,ms,locUpAcc</name>
+        <to>MS</to>
+      </output>
+      <input timeindex="2">
+        <name>msc,bss,locUpAccepted</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="MSC">
+      <output timeindex="2">
+        <name>msc,bss,locUpAccepted</name>
+        <to>BSS</to>
+      </output>
+      <input timeindex="1">
+        <name>network,msc,locUpAck</name>
+        <from>Network</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <output timeindex="1">
+        <name>network,msc,locUpAck</name>
+        <to>MSC</to>
+      </output>
+    </instance>
+  </bmsc>
+  <bmsc name="MobileOrCR">
+    <instance name="MS">
+      <output timeindex="1">
+        <name>ms,bss,discon</name>
+        <to>BSS</to>
+      </output>
+      <output timeindex="6">
+        <name>ms,bss,rlCmplt</name>
+        <to>BSS</to>
+      </output>
+      <input timeindex="5">
+        <name>msc,ms,relse</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="BSS">
+      <output timeindex="2">
+        <name>bss,msc,disc</name>
+        <to>MSC</to>
+      </output>
+      <output timeindex="7">
+        <name>bss,msc,relComplt</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="1">
+        <name>ms,bss,discon</name>
+        <from>MS</from>
+      </input>
+      <input timeindex="6">
+        <name>ms,bss,rlCmplt</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="MSC">
+      <output timeindex="3">
+        <name>msc,network,rel</name>
+        <to>Network</to>
+      </output>
+      <output timeindex="5">
+        <name>msc,ms,relse</name>
+        <to>MS</to>
+      </output>
+      <input timeindex="2">
+        <name>bss,msc,disc</name>
+        <from>BSS</from>
+      </input>
+      <input timeindex="4">
+        <name>network,msc,relCnfm</name>
+        <from>Network</from>
+      </input>
+      <input timeindex="7">
+        <name>bss,msc,relComplt</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <output timeindex="4">
+        <name>network,msc,relCnfm</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="3">
+        <name>msc,network,rel</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="MobileTrCR">
+    <instance name="MS">
+      <output timeindex="4">
+        <name>ms,msc,released</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="3">
+        <name>bss,ms,disconnect</name>
+        <from>BSS</from>
+      </input>
+      <input timeindex="7">
+        <name>bss,ms,releaseCmplt</name>
+        <from>BSS</from>
+      </input>
+    </instance>
+    <instance name="BSS">
+      <output timeindex="3">
+        <name>bss,ms,disconnect</name>
+        <to>MS</to>
+      </output>
+      <output timeindex="7">
+        <name>bss,ms,releaseCmplt</name>
+        <to>MS</to>
+      </output>
+      <input timeindex="2">
+        <name>msc,bss,discMsg</name>
+        <from>MSC</from>
+      </input>
+      <input timeindex="6">
+        <name>msc,bss,relCmplt</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="MSC">
+      <output timeindex="2">
+        <name>msc,bss,discMsg</name>
+        <to>BSS</to>
+      </output>
+      <output timeindex="5">
+        <name>msc,network,relConf</name>
+        <to>Network</to>
+      </output>
+      <output timeindex="6">
+        <name>msc,bss,relCmplt</name>
+        <to>BSS</to>
+      </output>
+      <input timeindex="1">
+        <name>network,msc,release</name>
+        <from>Network</from>
+      </input>
+      <input timeindex="4">
+        <name>ms,msc,released</name>
+        <from>MS</from>
+      </input>
+    </instance>
+    <instance name="Network">
+      <output timeindex="1">
+        <name>network,msc,release</name>
+        <to>MSC</to>
+      </output>
+      <input timeindex="5">
+        <name>msc,network,relConf</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+  </bmsc>
+  <bmsc name="END">
+    <instance name="MS" />
+    <instance name="BSS">
+      <input timeindex="1">
+        <name>msc,bss,finish</name>
+        <from>MSC</from>
+      </input>
+    </instance>
+    <instance name="MSC">
+      <output timeindex="1">
+        <name>msc,bss,finish</name>
+        <to>BSS</to>
+      </output>
+    </instance>
+    <instance name="Network" />
+  </bmsc>
+</specification>
+

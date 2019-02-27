@@ -1,0 +1,91 @@
+//------------------------- MAS System --------------------------
+
+//--------------------- PROBABILISTIC MODEL ------------------------
+
+//------------------------------------------------------------------
+//----------------------- Components' States -----------------------
+//------------------------------------------------------------------
+
+User = Q0,
+	Q0	= ( (1.0) user.qh.enterQuery -> Q1),
+	Q1	= ( (1.0) endAction -> Q2),
+	Q2	= STOP.
+
+QH = Q0,
+	Q0	= ( (1.0) user.qh.enterQuery -> Q1),
+	Q1	= ( (1.0) qh.qhaux.extractConcepts -> Q2),
+	Q2	= ( (1.0) qhaux.qh._extractConcepts -> Q3),
+	Q3	= ( (1.0) qh.cl.sendConcept -> Q4),
+	Q4	= ( (1.0) qh.rep.sendConcept -> Q5),
+	Q5	= ( (0.5) rep.qh.returnResults -> Q6
+		  | (0.5) cl.qh.newConceptsDetected -> Q7),
+	Q6	= ( (1.0) endAction -> Q8),
+	Q7	= ( (1.0) rep.qh.returnResults -> Q9),
+	Q8	= STOP,
+	Q9	= ( (1.0) endAction -> Q8).
+
+Peer = Q0,
+	Q0	= ( (0.5) endAction -> Q1
+		  | (0.5) cl.peer.startLearning -> Q2),
+	Q1	= STOP,
+	Q2	= ( (1.0) peer.cl.learnConcepts -> Q3),
+	Q3	= ( (1.0) endAction -> Q1).
+
+CL = Q0,
+	Q0	= ( (1.0) qh.cl.sendConcept -> Q1),
+	Q1	= ( (0.5) cl.claux.noNewConcepts -> Q2
+		  | (0.5) cl.claux.newConcepts -> Q3),
+	Q2	= ( (1.0) claux.cl._noNewConcepts -> Q4),
+	Q3	= ( (1.0) claux.cl._newConcepts -> Q5),
+	Q4	= ( (1.0) endAction -> Q6),
+	Q5	= ( (1.0) cl.qh.newConceptsDetected -> Q7),
+	Q6	= STOP,
+	Q7	= ( (1.0) cl.peer.startLearning -> Q8),
+	Q8	= ( (1.0) peer.cl.learnConcepts -> Q9),
+	Q9	= ( (1.0) cl.rep.updateRep -> Q10),
+	Q10	= ( (1.0) endAction -> Q6).
+
+QHaux = Q0,
+	Q0	= ( (1.0) qh.qhaux.extractConcepts -> Q1),
+	Q1	= ( (1.0) qhaux.qh._extractConcepts -> Q2),
+	Q2	= ( (1.0) endAction -> Q3),
+	Q3	= STOP.
+
+Rep = Q0,
+	Q0	= ( (1.0) qh.rep.sendConcept -> Q1),
+	Q1	= ( (0.5) rep.qh.returnResults -> Q2
+		  | (0.5) cl.rep.updateRep -> Q3),
+	Q2	= ( (1.0) endAction -> Q4),
+	Q3	= ( (1.0) rep.qh.returnResults -> Q5),
+	Q4	= STOP,
+	Q5	= ( (1.0) endAction -> Q4).
+
+CLaux = Q0,
+	Q0	= ( (0.5) cl.claux.noNewConcepts -> Q1
+		  | (0.5) cl.claux.newConcepts -> Q2),
+	Q1	= ( (1.0) claux.cl._noNewConcepts -> Q3),
+	Q2	= ( (1.0) claux.cl._newConcepts -> Q4),
+	Q3	= ( (1.0) endAction -> Q5),
+	Q4	= ( (1.0) endAction -> Q5),
+	Q5	= STOP.
+
+//------------------------------------------------------------------
+//----------------------------- Constraints ------------------------
+//------------------------------------------------------------------
+
+// NegScen
+// This constraint makes sure that the results are only returned
+// if there are no new concepts or if the Repository is updated.
+
+NegScen = ({cl.rep.updateRep, cl.claux.noNewConcepts}  -> Aux | {user.qh.enterQuery,qh.qhaux.extractConcepts,qhaux.qh._extractConcepts,qh.cl.sendConcept,qh.rep.sendConcept,claux.cl._noNewConcepts,cl.claux.newConcepts,claux.cl._newConcepts,cl.qh.newConceptsDetected,cl.peer.startLearning,peer.cl.learnConcepts} -> NegScen),
+Aux = (rep.qh.returnResults -> NegScen | {user.qh.enterQuery,qh.qhaux.extractConcepts,qhaux.qh._extractConcepts,qh.cl.sendConcept,qh.rep.sendConcept,cl.claux.noNewConcepts,claux.cl._noNewConcepts,cl.claux.newConcepts,claux.cl._newConcepts,cl.qh.newConceptsDetected,cl.peer.startLearning,peer.cl.learnConcepts,cl.rep.updateRep} -> Aux).
+
+
+//------------------------------------------------------------------
+//----------------------------- Compositions -----------------------
+//------------------------------------------------------------------
+
+ ||ArchitectureModel = (User || QH || QHaux || CL || CLaux || Rep || Peer).
+
+ ||ConstrainedModel = (ArchitectureModel || NegScen).
+ 

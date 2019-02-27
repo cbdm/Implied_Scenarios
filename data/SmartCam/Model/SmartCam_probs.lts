@@ -1,133 +1,170 @@
 //------------------------- SmartCam System --------------------------
 
+//--------------------- PROBABILISTIC MODEL ------------------------
 
 //------------------------------------------------------------------
 //----------------------- Components' States -----------------------
 //------------------------------------------------------------------
 
 Camera1 = Q0,
-	Q0	= (camera3.camera1.ask_confidence -> Q1
-		  |camera2.camera1.ask_confidence -> Q2),
-	Q1	= (camera1.camera3.no_confidence -> Q3),
-	Q2	= (camera1.camera2.no_confidence -> Q4),
-	Q3	= (camera1.object.sees_obj -> Q5
-		  |camera3.camera1.start_search -> Q6),
-	Q4	= (camera1.object.sees_obj -> Q7
-		  |camera2.camera1.start_search -> Q8),
-	Q5	= (camera3.camera1.start_search -> Q9),
-	Q6	= (endAction -> Q10),
-	Q7	= (camera2.camera1.start_search -> Q8),
-	Q8	= (camera1.camera2.found_obj -> Q11),
-	Q9	= (camera1.camera3.found_obj -> Q12),
-	Q10	= END,
-	Q11	= (camera2.camera1.ask_confidence -> Q13),
-	Q12	= (camera3.camera1.ask_confidence -> Q14),
-	Q13	= (camera1.camera2.send_confidence -> Q15),
-	Q14	= (camera1.camera3.send_confidence -> Q16),
-	Q15	= (camera2.camera1.allow_tracking -> Q6),
-	Q16	= (camera3.camera1.allow_tracking -> Q17),
-	Q17	= (camera1.object.start_tracking -> Q18),
-	Q18	= (camera1.object.loses_obj -> Q19),
-	Q19	= (camera1.camera2.start_search -> Q20
-		  |camera1.camera3.start_search -> Q21),
-	Q20	= (camera1.camera3.start_search -> Q22),
-	Q21	= (camera1.camera2.start_search -> Q22),
-	Q22	= (camera2.camera1.found_obj -> Q23),
-	Q23	= (camera1.camera2.ask_confidence -> Q24),
-	Q24	= (camera2.camera1.send_confidence -> Q25),
-	Q25	= (camera1.camera2.allow_tracking -> Q6).
+	Q0	= ( (0.4) camera2.camera1.ask_confidence -> Q1
+		  | (0.6000000000000001) camera3.camera1.ask_confidence -> Q2),
+	Q1	= ( (1.0) camera1.camera2.no_confidence -> Q3),
+	Q2	= ( (1.0) camera1.camera3.no_confidence -> Q4),
+	Q3	= ( (0.5) camera2.camera1.start_search -> Q5
+		  | (0.5) camera1.object.sees_obj -> Q6),
+	Q4	= ( (0.6666666666666666) camera1.object.sees_obj -> Q7
+		  | (0.3333333333333333) camera3.camera1.start_search -> Q8),
+	Q5	= ( (1.0) camera1.camera2.found_obj -> Q9),
+	Q6	= ( (1.0) camera2.camera1.start_search -> Q10),
+	Q7	= ( (1.0) camera3.camera1.start_search -> Q11),
+	Q8	= ( (1.0) endAction -> Q12),
+	Q9	= ( (1.0) camera2.camera1.ask_confidence -> Q13),
+	Q10	= ( (1.0) camera1.camera2.found_obj -> Q14),
+	Q11	= ( (1.0) camera1.camera3.found_obj -> Q15),
+	Q12	= STOP,
+	Q13	= ( (1.0) camera1.camera2.send_confidence -> Q16),
+	Q14	= ( (1.0) camera2.camera1.ask_confidence -> Q17),
+	Q15	= ( (1.0) camera3.camera1.ask_confidence -> Q18),
+	Q16	= ( (1.0) camera2.camera1.allow_tracking -> Q19),
+	Q17	= ( (1.0) camera1.camera2.send_confidence -> Q20),
+	Q18	= ( (1.0) camera1.camera3.send_confidence -> Q21),
+	Q19	= ( (1.0) endAction -> Q12),
+	Q20	= ( (1.0) camera2.camera1.allow_tracking -> Q22),
+	Q21	= ( (1.0) camera3.camera1.allow_tracking -> Q23),
+	Q22	= ( (1.0) endAction -> Q12),
+	Q23	= ( (1.0) camera1.object.start_tracking -> Q24),
+	Q24	= ( (1.0) camera1.object.loses_obj -> Q25),
+	Q25	= ( (0.5) camera1.camera3.start_search -> Q26
+		  | (0.5) camera1.camera2.start_search -> Q27),
+	Q26	= ( (1.0) camera1.camera2.start_search -> Q28),
+	Q27	= ( (1.0) camera1.camera3.start_search -> Q29),
+	Q28	= ( (1.0) camera2.camera1.found_obj -> Q30),
+	Q29	= ( (1.0) camera2.camera1.found_obj -> Q31),
+	Q30	= ( (1.0) camera1.camera2.ask_confidence -> Q32),
+	Q31	= ( (1.0) camera1.camera2.ask_confidence -> Q33),
+	Q32	= ( (1.0) camera2.camera1.send_confidence -> Q34),
+	Q33	= ( (1.0) camera2.camera1.send_confidence -> Q35),
+	Q34	= ( (1.0) camera1.camera2.allow_tracking -> Q36),
+	Q35	= ( (1.0) camera1.camera2.allow_tracking -> Q37),
+	Q36	= ( (1.0) endAction -> Q12),
+	Q37	= ( (1.0) endAction -> Q12).
 
 Camera2 = Q0,
-	Q0	= (camera1.camera2.start_search -> Q1
-		  |camera2.object.sees_obj -> Q2
-		  |camera4.camera2.ask_confidence -> Q3),
-	Q1	= (camera2.object.sees_obj -> Q4),
-	Q2	= (camera2.camera1.ask_confidence -> Q5),
-	Q3	= (camera2.camera4.no_confidence -> Q6),
-	Q4	= (camera2.camera1.found_obj -> Q7),
-	Q5	= (camera2.camera4.ask_confidence -> Q8),
-	Q6	= (endAction -> Q9),
-	Q7	= (camera4.camera2.ask_confidence -> Q10
-		  |camera1.camera2.ask_confidence -> Q11),
-	Q8	= (camera4.camera2.ask_confidence -> Q12
-		  |camera1.camera2.no_confidence -> Q13),
-	Q9	= END,
-	Q10	= (camera2.camera4.send_confidence -> Q14),
-	Q11	= (camera2.camera1.send_confidence -> Q15),
-	Q12	= (camera1.camera2.no_confidence -> Q16),
-	Q13	= (camera4.camera2.no_confidence -> Q17),
-	Q14	= (camera1.camera2.ask_confidence -> Q11),
-	Q15	= (camera1.camera2.allow_tracking -> Q6),
-	Q16	= (camera4.camera2.send_confidence -> Q18),
-	Q17	= (camera2.object.start_tracking -> Q19),
-	Q18	= (camera2.camera4.send_confidence -> Q20),
-	Q19	= (camera2.object.loses_obj -> Q21),
-	Q20	= (camera4.camera2.allow_tracking -> Q17),
-	Q21	= (camera2.camera1.start_search -> Q22),
-	Q22	= (camera2.camera4.start_search -> Q23),
-	Q23	= (camera1.camera2.found_obj -> Q24),
-	Q24	= (camera2.camera1.ask_confidence -> Q25),
-	Q25	= (camera1.camera2.send_confidence -> Q26),
-	Q26	= (camera2.camera1.allow_tracking -> Q6).
+	Q0	= ( (0.4) camera1.camera2.start_search -> Q1
+		  | (0.4) camera2.object.sees_obj -> Q2
+		  | (0.2) camera4.camera2.ask_confidence -> Q3),
+	Q1	= ( (1.0) camera2.object.sees_obj -> Q4),
+	Q2	= ( (1.0) camera2.camera1.ask_confidence -> Q5),
+	Q3	= ( (1.0) camera2.camera4.no_confidence -> Q6),
+	Q4	= ( (1.0) camera2.camera1.found_obj -> Q7),
+	Q5	= ( (1.0) camera2.camera4.ask_confidence -> Q8),
+	Q6	= ( (1.0) endAction -> Q9),
+	Q7	= ( (0.5) camera4.camera2.ask_confidence -> Q10
+		  | (0.5) camera1.camera2.ask_confidence -> Q11),
+	Q8	= ( (0.5) camera1.camera2.no_confidence -> Q12
+		  | (0.5) camera4.camera2.ask_confidence -> Q13),
+	Q9	= STOP,
+	Q10	= ( (1.0) camera2.camera4.send_confidence -> Q14),
+	Q11	= ( (1.0) camera2.camera1.send_confidence -> Q15),
+	Q12	= ( (1.0) camera4.camera2.no_confidence -> Q16),
+	Q13	= ( (1.0) camera1.camera2.no_confidence -> Q17),
+	Q14	= ( (1.0) camera1.camera2.ask_confidence -> Q18),
+	Q15	= ( (1.0) camera1.camera2.allow_tracking -> Q19),
+	Q16	= ( (1.0) camera2.object.start_tracking -> Q20),
+	Q17	= ( (1.0) camera4.camera2.send_confidence -> Q21),
+	Q18	= ( (1.0) camera2.camera1.send_confidence -> Q22),
+	Q19	= ( (1.0) endAction -> Q9),
+	Q20	= ( (1.0) camera2.object.loses_obj -> Q23),
+	Q21	= ( (1.0) camera2.camera4.send_confidence -> Q24),
+	Q22	= ( (1.0) camera1.camera2.allow_tracking -> Q25),
+	Q23	= ( (1.0) camera2.camera1.start_search -> Q26),
+	Q24	= ( (1.0) camera4.camera2.allow_tracking -> Q27),
+	Q25	= ( (1.0) endAction -> Q9),
+	Q26	= ( (1.0) camera2.camera4.start_search -> Q28),
+	Q27	= ( (1.0) camera2.object.start_tracking -> Q29),
+	Q28	= ( (1.0) camera1.camera2.found_obj -> Q30),
+	Q29	= ( (1.0) camera2.object.loses_obj -> Q31),
+	Q30	= ( (1.0) camera2.camera1.ask_confidence -> Q32),
+	Q31	= ( (1.0) camera2.camera1.start_search -> Q33),
+	Q32	= ( (1.0) camera1.camera2.send_confidence -> Q34),
+	Q33	= ( (1.0) camera2.camera4.start_search -> Q35),
+	Q34	= ( (1.0) camera2.camera1.allow_tracking -> Q36),
+	Q35	= ( (1.0) camera1.camera2.found_obj -> Q37),
+	Q36	= ( (1.0) endAction -> Q9),
+	Q37	= ( (1.0) camera2.camera1.ask_confidence -> Q38),
+	Q38	= ( (1.0) camera1.camera2.send_confidence -> Q39),
+	Q39	= ( (1.0) camera2.camera1.allow_tracking -> Q40),
+	Q40	= ( (1.0) endAction -> Q9).
 
 Camera3 = Q0,
-	Q0	= (endAction -> Q1
-		  |camera3.object.sees_obj -> Q2),
-	Q1	= END,
-	Q2	= (camera3.camera1.ask_confidence -> Q3),
-	Q3	= (camera1.camera3.no_confidence -> Q4),
-	Q4	= (camera3.object.start_tracking -> Q5),
-	Q5	= (camera3.object.loses_obj -> Q6),
-	Q6	= (camera3.camera1.start_search -> Q7),
-	Q7	= (endAction -> Q1
-		  |camera1.camera3.found_obj -> Q8),
-	Q8	= (camera3.camera1.ask_confidence -> Q9),
-	Q9	= (camera1.camera3.send_confidence -> Q10),
-	Q10	= (camera3.camera1.allow_tracking -> Q11),
-	Q11	= (camera1.camera3.start_search -> Q12),
-	Q12	= (endAction -> Q1).
+	Q0	= ( (0.4) endAction -> Q1
+		  | (0.6000000000000001) camera3.object.sees_obj -> Q2),
+	Q1	= STOP,
+	Q2	= ( (1.0) camera3.camera1.ask_confidence -> Q3),
+	Q3	= ( (1.0) camera1.camera3.no_confidence -> Q4),
+	Q4	= ( (1.0) camera3.object.start_tracking -> Q5),
+	Q5	= ( (1.0) camera3.object.loses_obj -> Q6),
+	Q6	= ( (1.0) camera3.camera1.start_search -> Q7),
+	Q7	= ( (0.3333333333333333) endAction -> Q1
+		  | (0.6666666666666666) camera1.camera3.found_obj -> Q8),
+	Q8	= ( (1.0) camera3.camera1.ask_confidence -> Q9),
+	Q9	= ( (1.0) camera1.camera3.send_confidence -> Q10),
+	Q10	= ( (1.0) camera3.camera1.allow_tracking -> Q11),
+	Q11	= ( (1.0) camera1.camera3.start_search -> Q12),
+	Q12	= ( (1.0) endAction -> Q1).
 
 Camera4 = Q0,
-	Q0	= (endAction -> Q1
-		  |camera4.object.sees_obj -> Q2
-		  |camera2.camera4.ask_confidence -> Q3),
-	Q1	= END,
-	Q2	= (camera4.camera2.ask_confidence -> Q4
-		  |camera2.camera4.ask_confidence -> Q5),
-	Q3	= (camera4.camera2.no_confidence -> Q6),
-	Q4	= (camera2.camera4.send_confidence -> Q7
-		  |camera2.camera4.no_confidence -> Q8),
-	Q5	= (camera4.camera2.ask_confidence -> Q9),
-	Q6	= (camera2.camera4.start_search -> Q7),
-	Q7	= (endAction -> Q1),
-	Q8	= (camera4.object.start_tracking -> Q7),
-	Q9	= (camera4.camera2.send_confidence -> Q10),
-	Q10	= (camera2.camera4.send_confidence -> Q11),
-	Q11	= (camera4.camera2.allow_tracking -> Q6).
+	Q0	= ( (0.2) endAction -> Q1
+		  | (0.6000000000000001) camera4.object.sees_obj -> Q2
+		  | (0.2) camera2.camera4.ask_confidence -> Q3),
+	Q1	= STOP,
+	Q2	= ( (0.6666666666666666) camera4.camera2.ask_confidence -> Q4
+		  | (0.3333333333333333) camera2.camera4.ask_confidence -> Q5),
+	Q3	= ( (1.0) camera4.camera2.no_confidence -> Q6),
+	Q4	= ( (0.5) camera2.camera4.send_confidence -> Q7
+		  | (0.5) camera2.camera4.no_confidence -> Q8),
+	Q5	= ( (1.0) camera4.camera2.ask_confidence -> Q9),
+	Q6	= ( (1.0) camera2.camera4.start_search -> Q10),
+	Q7	= ( (1.0) endAction -> Q1),
+	Q8	= ( (1.0) camera4.object.start_tracking -> Q11),
+	Q9	= ( (1.0) camera4.camera2.send_confidence -> Q12),
+	Q10	= ( (1.0) endAction -> Q1),
+	Q11	= ( (1.0) endAction -> Q1),
+	Q12	= ( (1.0) camera2.camera4.send_confidence -> Q13),
+	Q13	= ( (1.0) camera4.camera2.allow_tracking -> Q14),
+	Q14	= ( (1.0) camera2.camera4.start_search -> Q15),
+	Q15	= ( (1.0) endAction -> Q1).
 
 Object = Q0,
-	Q0	= (camera3.object.sees_obj -> Q1
-		  |camera2.object.sees_obj -> Q2),
-	Q1	= (camera3.object.start_tracking -> Q3),
-	Q2	= (camera4.object.sees_obj -> Q4
-		  |camera2.object.start_tracking -> Q5),
-	Q3	= (camera1.object.sees_obj -> Q6
-		  |camera3.object.loses_obj -> Q7),
-	Q4	= (camera2.object.start_tracking -> Q8),
-	Q5	= (camera1.object.sees_obj -> Q8),
-	Q6	= (camera3.object.loses_obj -> Q9),
-	Q7	= (camera1.object.sees_obj -> Q10
-		  |camera4.object.sees_obj -> Q11),
-	Q8	= (camera2.object.loses_obj -> Q12),
-	Q9	= (camera1.object.start_tracking -> Q13),
-	Q10	= (camera1.object.start_tracking -> Q14),
-	Q11	= (camera4.object.start_tracking -> Q12),
-	Q12	= (endAction -> Q15),
-	Q13	= (camera1.object.loses_obj -> Q16),
-	Q14	= (camera1.object.loses_obj -> Q17),
-	Q15	= END,
-	Q16	= (camera2.object.sees_obj -> Q12),
-	Q17	= (camera4.object.sees_obj -> Q16).
+	Q0	= ( (0.6000000000000001) camera3.object.sees_obj -> Q1
+		  | (0.4) camera2.object.sees_obj -> Q2),
+	Q1	= ( (1.0) camera3.object.start_tracking -> Q3),
+	Q2	= ( (0.5) camera2.object.start_tracking -> Q4
+		  | (0.5) camera4.object.sees_obj -> Q5),
+	Q3	= ( (0.6666666666666666) camera3.object.loses_obj -> Q6
+		  | (0.3333333333333333) camera1.object.sees_obj -> Q7),
+	Q4	= ( (1.0) camera1.object.sees_obj -> Q8),
+	Q5	= ( (1.0) camera2.object.start_tracking -> Q9),
+	Q6	= ( (0.5) camera4.object.sees_obj -> Q10
+		  | (0.5) camera1.object.sees_obj -> Q11),
+	Q7	= ( (1.0) camera3.object.loses_obj -> Q12),
+	Q8	= ( (1.0) camera2.object.loses_obj -> Q13),
+	Q9	= ( (1.0) camera2.object.loses_obj -> Q14),
+	Q10	= ( (1.0) camera4.object.start_tracking -> Q15),
+	Q11	= ( (1.0) camera1.object.start_tracking -> Q16),
+	Q12	= ( (1.0) camera1.object.start_tracking -> Q17),
+	Q13	= ( (1.0) endAction -> Q18),
+	Q14	= ( (1.0) endAction -> Q18),
+	Q15	= ( (1.0) endAction -> Q18),
+	Q16	= ( (1.0) camera1.object.loses_obj -> Q19),
+	Q17	= ( (1.0) camera1.object.loses_obj -> Q20),
+	Q18	= STOP,
+	Q19	= ( (1.0) camera4.object.sees_obj -> Q21),
+	Q20	= ( (1.0) camera2.object.sees_obj -> Q22),
+	Q21	= ( (1.0) camera2.object.sees_obj -> Q23),
+	Q22	= ( (1.0) endAction -> Q18),
+	Q23	= ( (1.0) endAction -> Q18).
 
 //------------------------------------------------------------------
 //----------------------------- Constraints ------------------------
@@ -173,6 +210,10 @@ Aux2 = ( camera1.object.loses_obj -> camera1.camera3.start_search -> camera1.cam
 // This constraint makes sure that after Camera 1 loses the object, it immediately sends 'start_search' messages before anything else happens.
 // Also guarantees that 'start_search' goes to Camera 2 first, to make Scenario 5 work.
 
+//This constraint was modified because the probabilistic LTSA added another interleaving to the messages
+//Thus, we had to force Scenario5 to finish correctly.
+//This 'forcing' wasn't needed at the non-probabilistic version
+
 // Allows everything until Camera 1 sees the object or Camera 3 loses it.
 NegScen3 = (camera3.object.loses_obj -> Aux1 | { camera1.object.sees_obj, camera2.object.sees_obj, camera4.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera4.camera2.ask_confidence, camera1.camera2.no_confidence, camera4.camera2.send_confidence, camera2.camera4.send_confidence, camera4.camera2.allow_tracking, camera2.object.start_tracking, camera2.object.loses_obj, camera2.camera1.start_search, camera2.camera4.start_search, camera1.camera2.found_obj, camera1.camera2.send_confidence, camera2.camera1.allow_tracking, camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera3.camera1.start_search, camera1.camera3.found_obj, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.object.loses_obj, camera1.camera3.start_search, camera1.camera2.start_search, camera2.camera1.found_obj, camera1.camera2.ask_confidence, camera2.camera1.send_confidence, camera1.camera2.allow_tracking, camera2.camera4.no_confidence, camera4.object.start_tracking, camera4.camera2.no_confidence } -> NegScen3),
 
@@ -182,7 +223,13 @@ Aux1 = (camera1.object.sees_obj -> Aux2 | camera3.camera1.start_search -> NegSce
 
 // Allows everything until Camera 1 loses the object.
 // When it loses, it immediately sends start_search to Cam 2 and Cam 3.
-Aux2 = ( camera1.object.loses_obj -> camera1.camera2.start_search -> camera1.camera3.start_search -> NegScen3 | { camera2.object.sees_obj, camera4.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera4.camera2.ask_confidence, camera1.camera2.no_confidence, camera4.camera2.send_confidence, camera2.camera4.send_confidence, camera4.camera2.allow_tracking, camera2.object.start_tracking, camera2.object.loses_obj, camera2.camera1.start_search, camera2.camera4.start_search, camera1.camera2.found_obj, camera1.camera2.send_confidence, camera2.camera1.allow_tracking, camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera1.object.sees_obj, camera3.object.loses_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.camera3.start_search, camera1.camera2.start_search, camera2.camera1.found_obj, camera1.camera2.ask_confidence, camera2.camera1.send_confidence, camera1.camera2.allow_tracking, camera2.camera4.no_confidence, camera4.object.start_tracking, camera4.camera2.no_confidence } -> Aux2).
+
+Aux2 = ( camera1.object.loses_obj -> camera1.camera2.start_search -> camera1.camera3.start_search  -> AuxP1 | { camera2.object.sees_obj, camera4.object.sees_obj, camera2.camera1.ask_confidence, camera2.camera4.ask_confidence, camera4.camera2.ask_confidence, camera1.camera2.no_confidence, camera4.camera2.send_confidence, camera2.camera4.send_confidence, camera4.camera2.allow_tracking, camera2.object.start_tracking, camera2.object.loses_obj, camera2.camera1.start_search, camera2.camera4.start_search, camera1.camera2.found_obj, camera1.camera2.send_confidence, camera2.camera1.allow_tracking, camera3.object.sees_obj, camera3.camera1.ask_confidence, camera1.camera3.no_confidence, camera3.object.start_tracking, camera1.object.sees_obj, camera3.object.loses_obj, camera3.camera1.start_search, camera1.camera3.found_obj, camera1.camera3.send_confidence, camera3.camera1.allow_tracking, camera1.object.start_tracking, camera1.camera3.start_search, camera1.camera2.start_search, camera2.camera1.found_obj, camera1.camera2.ask_confidence, camera2.camera1.send_confidence, camera1.camera2.allow_tracking, camera2.camera4.no_confidence, camera4.object.start_tracking, camera4.camera2.no_confidence } -> Aux2),
+
+// Added state because of probabilistic LTSA.
+AuxP1 = (camera4.object.sees_obj -> camera2.object.sees_obj -> camera2.camera1.found_obj -> camera4.camera2.ask_confidence -> camera2.camera4.send_confidence -> camera1.camera2.ask_confidence -> camera2.camera1.send_confidence -> camera1.camera2.allow_tracking -> NegScen3).
+
+
 
 //------------------------------------------------------------------
 //----------------------------- Compositions -----------------------
