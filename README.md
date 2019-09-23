@@ -1,4 +1,4 @@
-# Implied_Scenarios
+# Implied Scenarios
 
 Relevant files used for the project _'Characterization of Implied Scenarios as Families of Common Behavior'_.
 
