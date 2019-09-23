@@ -17,4 +17,4 @@ To use it, simply replace the original one in LTSA's plugins folder.
 
 ## Who do I talk to?
 
-caio[dot]batista[at]gmail[dot]com or genainarodrigues[at]gmail[dot]com
+caio[dot]batista[at]gmail[dot]com *or* genainarodrigues[at]gmail[dot]com
