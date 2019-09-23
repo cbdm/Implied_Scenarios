@@ -17,4 +17,4 @@ To use it, simply replace the original one in LTSA's plugins folder.
 
 ## Who do I talk to?
 
-caio.batista@gmail.com and genainarodrigues@gmail.com
+caio.batista@gmail.com or genainarodrigues@gmail.com
