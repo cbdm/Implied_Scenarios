@@ -1,6 +1,6 @@
 # Implied Scenarios
 
-This repository contains relevant files used for [_the paper published at JSS_](https://doi.org/10.1016/j.jss.2019.110425) and the project named after the paper: _Characterization of Implied Scenarios as Families of Common Behavior_.
+This repository contains relevant files used for [_the paper published at the Journal of Systems and Software_](https://doi.org/10.1016/j.jss.2019.110425) and the project named after the paper: _Characterization of Implied Scenarios as Families of Common Behavior_.
 
 ## How do I get set up?
 
